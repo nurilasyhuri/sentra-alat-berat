@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../../data/businessInfo';
+import { buildBreadcrumbSchema, buildFaqSchema } from '../../utils/seo';
+import { buildGeneralInquiryUrl } from '../../utils/whatsapp';
+
+const title = 'Pusat Informasi, Panduan & FAQ Proyek - Sentra Alat Berat';
+const description =
+  'Pusat artikel panduan teknis, faktor biaya sewa excavator, inspeksi unit bekas, pemilihan spare part, dan FAQ layanan Sentra Alat Berat.';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Informasi Alat Berat', path: '/informasi-alat-berat/' },
+  ]),
+  buildFaqSchema(BUSINESS_INFO.faqs),
+];
+
+const articles = [
+  {
+    slug: '/informasi-alat-berat/harga-sewa-excavator/',
+    title: 'Berapa Harga Sewa Excavator? Ini Faktor yang Menentukan Biayanya',
+    excerpt:
+      'Ketahui faktor yang memengaruhi harga sewa excavator, biaya operator, BBM, mobilisasi, durasi kerja, dan checklist meminta penawaran.',
+    image: '/images/services/sewa-alat-berat.webp',
+    alt: 'Panduan faktor penentu harga sewa excavator dan komponen biaya proyek',
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    tags: ['#sewa-excavator', '#biaya-proyek', '#mobilisasi-unit'],
+  },
+  {
+    slug: '/informasi-alat-berat/tips-membeli-excavator-bekas/',
+    title: 'Tips Membeli Excavator Bekas agar Sesuai Kebutuhan Proyek',
+    excerpt:
+      'Pelajari pemeriksaan mesin, sistem hidrolik, undercarriage, jam kerja, dokumen, dan uji fungsi sebelum membeli excavator bekas.',
+    image: '/images/services/jual-alat-berat.webp',
+    alt: 'Panduan inspeksi teknis mesin, hidrolik, dan undercarriage excavator bekas',
+    relatedService: { label: 'Layanan Jual Alat Berat', href: '/jual-alat-berat/' },
+    tags: ['#excavator-bekas', '#inspeksi-unit', '#jual-alat-berat'],
+  },
+  {
+    slug: '/informasi-alat-berat/cara-memilih-spare-part-alat-berat/',
+    title: 'Cara Memilih Spare Part Alat Berat yang Tepat',
+    excerpt:
+      'Panduan memilih spare part alat berat berdasarkan model unit, nomor part, nomor seri PIN, kompatibilitas, kualitas, dan kebutuhan perawatan.',
+    image: '/images/services/spare-part-alat-berat.webp',
+    alt: 'Panduan memilih spare part alat berat berdasarkan nomor part dan nomor seri unit',
+    relatedService: { label: 'Layanan Jual Spare Part', href: '/spare-part-alat-berat/' },
+    tags: ['#spare-part', '#nomor-part', '#perawatan-unit'],
+  },
+];
+
+const waUrl = buildGeneralInquiryUrl('Konsultasi Teknis & Informasi Alat Berat');
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/informasi-alat-berat/" jsonLd={jsonLd}>
+  <!-- Hero Section -->
+  <section class="relative bg-[#020617] text-white pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Informasi Alat Berat</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-5">
+        <h1 class="text-[30px] leading-[36px] tracking-[-0.75px] md:text-[48px] md:leading-[48px] md:tracking-[-1.2px] lg:text-[54px] lg:leading-[56px] font-bold text-white">
+          Pusat Informasi &amp; Panduan Alat Berat
+        </h1>
+        <p class="text-[14px] leading-[22.75px] md:text-[16px] md:leading-[24px] text-slate-300">
+          Kumpulan panduan teknis untuk membantu Anda merencanakan anggaran sewa excavator, memeriksa kondisi unit bekas sebelum transaksi, mencocokkan nomor part suku cadang, serta memahami prosedur layanan di Sentra Alat Berat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] font-bold text-slate-950">
+          Panduan Pembelian, Sewa &amp; Suku Cadang
+        </h2>
+        <p class="text-xs text-slate-600 max-w-md">
+          Setiap panduan disusun agar tim pengadaan, kontraktor, dan pemilik unit dapat menyiapkan spesifikasi secara terukur sebelum meminta penawaran.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {articles.map((article) => (
+          <article class="group rounded-2xl border border-slate-200 bg-white overflow-hidden flex flex-col justify-between">
+            <div>
+              <a href={article.slug} class="block relative aspect-16/10 bg-slate-100 overflow-hidden">
+                <img
+                  src={article.image}
+                  alt={article.alt}
+                  width="480"
+                  height="300"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="p-6 space-y-3">
+                <h3 class="text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] font-bold text-slate-950 group-hover:text-[#b45309] transition-colors">
+                  <a href={article.slug}>{article.title}</a>
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  {article.excerpt}
+                </p>
+              </div>
+            </div>
+
+            <div class="px-6 pb-6 pt-3 border-t border-slate-100 space-y-3">
+              <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-500">
+                <span class="font-medium text-slate-400">Tag:</span>
+                {article.tags.map((tag) => (
+                  <a href={article.slug} class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">
+                    {tag}
+                  </a>
+                ))}
+              </div>
+
+              <div class="flex items-center justify-between gap-2 pt-1">
+                <a
+                  href={article.relatedService.href}
+                  class="text-[11px] font-semibold text-slate-500 hover:text-slate-900 transition-colors"
+                >
+                  {article.relatedService.label}
+                </a>
+                <a
+                  href={article.slug}
+                  class="inline-flex items-center gap-1.5 text-xs font-bold text-[#b45309] hover:text-amber-800 transition-colors"
+                >
+                  <span>Baca Selengkapnya</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9 of .docx: 6 FAQ Website -->
+  <section id="faq" class="bg-slate-50 py-16 lg:py-24 border-y border-slate-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="space-y-2">
+        <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] font-bold text-slate-950">
+          Pertanyaan yang Sering Diajukan (FAQ)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 max-w-2xl">
+          Jawaban langsung mengenai prosedur pengajuan pembelian unit, pencarian spare part berdasarkan foto atau nomor part, permintaan service, dan penawaran sewa alat berat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {BUSINESS_INFO.faqs.map((faq) => (
+          <div class="rounded-2xl bg-white border border-slate-200/90 p-6 space-y-2.5">
+            <h3 class="text-sm font-bold text-slate-950 leading-snug">
+              {faq.q}
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              {faq.a}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Layanan Terkait -->
+  <section class="bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-[#020617] text-white p-8 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-3">
+          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-white">
+            Butuh Informasi Ketersediaan Unit, Spare Part, Service, atau Sewa?
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
+            Hubungi Sentra Alat Berat di <strong class="text-white font-semibold">{BUSINESS_INFO.phoneDisplay}</strong> atau kunjungi <strong class="text-white font-semibold">{BUSINESS_INFO.address.formatted}</strong>. Sampaikan detail teknis agar kebutuhan Anda dapat ditindaklanjuti sesuai ketersediaan aktual.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-wrap lg:justify-end items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            class="px-6 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3.5 rounded-full border border-slate-700 bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"
+          >
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

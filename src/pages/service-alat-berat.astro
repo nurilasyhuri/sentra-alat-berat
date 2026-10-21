@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { getBreadcrumbSchema, getServiceSchema } from '../utils/seo';
+import { generateGeneralInquiryUrl } from '../utils/whatsapp';
+
+const waUrl = generateGeneralInquiryUrl('Service & Perbaikan Alat Berat');
+
+const serviceSchema = getServiceSchema({
+  title: 'Service dan Perbaikan Alat Berat',
+  description:
+    'Ajukan kebutuhan service dan perbaikan alat berat, mulai dari pemeriksaan mesin, hidrolik, hingga perawatan berkala melalui Sentra Alat Berat.',
+  url: '/service-alat-berat/',
+  serviceType: 'Heavy Equipment Maintenance and Repair',
+  image: '/images/services/service-alat-berat.webp',
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: 'Beranda', url: '/' },
+  { name: 'Service & Perbaikan Alat Berat', url: '/service-alat-berat/' },
+]);
+
+const serviceTypes = [
+  {
+    title: 'Pemeriksaan & Perawatan Berkala',
+    desc: 'Pemeriksaan dan perawatan berkala sesuai rekomendasi pabrikan untuk menjaga keandalan kerja unit.',
+  },
+  {
+    title: 'Pemeriksaan Mesin Diesel & Sistem Pendingin',
+    desc: 'Peninjauan gejala tenaga menurun, temperatur meningkat, asap berlebih, atau mesin sulit dinyalakan.',
+  },
+  {
+    title: 'Pemeriksaan Sistem Hidrolik',
+    desc: 'Pemeriksaan kebocoran oli, pompa, hose, silinder, atau gangguan gerakan hidrolik yang melambat.',
+  },
+  {
+    title: 'Pemeriksaan Sistem Kelistrikan & Starter',
+    desc: 'Penelusuran gangguan kelistrikan, starter, alternator, lampu peringatan, dan indikator panel instrumen.',
+  },
+  {
+    title: 'Pemeriksaan Undercarriage & Bagian Kerja',
+    desc: 'Evaluasi keausan komponen undercarriage serta bagian kerja utama pada unit crawler maupun roda.',
+  },
+  {
+    title: 'Troubleshooting Awal Gejala Kerusakan',
+    desc: 'Peninjauan awal berdasarkan gejala kerusakan, kode error, dan riwayat masalah yang dilaporkan.',
+  },
+];
+
+const diagnosticChecklist = [
+  'Jenis unit, merek, model, dan nomor seri jika tersedia.',
+  'Lokasi alat berat saat ini.',
+  'Gejala kerusakan dan kapan mulai terjadi.',
+  'Kode error atau indikator yang muncul, jika ada.',
+  'Foto atau video gejala yang aman untuk direkam.',
+  'Riwayat perbaikan atau penggantian komponen terakhir.',
+];
+---
+
+<BaseLayout
+  title="Service & Perbaikan Alat Berat Proyek - Sentra Alat Berat"
+  description="Ajukan kebutuhan service dan perbaikan alat berat, mulai dari pemeriksaan mesin, hidrolik, hingga perawatan. Hubungi Sentra Alat Berat."
+  jsonLd={[serviceSchema, breadcrumbSchema]}
+>
+  <!-- HERO -->
+  <section class="relative bg-[#020617] text-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <nav aria-label="Breadcrumb" class="text-xs text-slate-400 flex items-center gap-2">
+            <a href="/" class="hover:text-white">Beranda</a>
+            <span>/</span>
+            <span class="text-[#fbbf24] font-semibold">Service Alat Berat</span>
+          </nav>
+
+          <h1 class="text-[30px] leading-[34px] tracking-[-0.75px] md:text-[44px] md:leading-[48px] font-bold text-white">
+            Service dan Perbaikan Alat Berat
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+            Alat berat yang bekerja dalam kondisi beban tinggi memerlukan pemeriksaan dan perawatan yang terencana. Gejala seperti tenaga menurun, temperatur meningkat, kebocoran oli, gerakan hidrolik lambat, suara tidak normal, atau mesin sulit dinyalakan sebaiknya diperiksa agar penyebabnya dapat diketahui.
+          </p>
+
+          <p class="text-sm text-slate-400 leading-relaxed max-w-2xl">
+            Sentra Alat Berat menerima permintaan terkait kebutuhan service dan perbaikan alat berat. Sampaikan jenis unit, lokasi, gejala yang muncul, dan kondisi saat kerusakan terjadi agar kebutuhan dapat ditinjau dan diarahkan sesuai cakupan layanan yang tersedia.
+          </p>
+
+          <div class="pt-2">
+            <button
+              type="button"
+              data-open-rfq
+              data-rfq-category="Service & Perbaikan Alat Berat"
+              class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Ajukan Kebutuhan</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="aspect-4/3 rounded-2xl overflow-hidden border border-white/10 bg-slate-900">
+            <img
+              src="/images/services/service-alat-berat.webp"
+              alt="Pemeriksaan dan perbaikan mesin diesel serta sistem hidrolik alat berat"
+              width="640"
+              height="480"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JENIS KEBUTUHAN SERVICE -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <h2 class="text-[24px] leading-[32px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+        Jenis Kebutuhan Service
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {serviceTypes.map((srv) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 space-y-2">
+            <h3 class="text-base font-bold text-slate-950">{srv.title}</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">{srv.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- TANDA ALAT BERAT PERLU DIPERIKSA & DATA TINDAK LANJUT -->
+  <section class="bg-slate-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-6 space-y-4">
+          <h2 class="text-[24px] leading-[32px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+            Tanda Alat Berat Perlu Diperiksa
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Beberapa tanda yang patut diperhatikan antara lain suara atau getaran yang berubah, temperatur tidak normal, asap berlebihan, kebocoran cairan, gerakan yang melambat, tenaga berkurang, atau lampu peringatan menyala.
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Hentikan pengoperasian jika ada kondisi yang berpotensi membahayakan operator atau memperparah kerusakan, lalu ikuti prosedur keselamatan dan petunjuk pabrikan.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6 rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 space-y-4">
+          <h3 class="text-base sm:text-lg font-bold text-slate-950">
+            Informasi untuk Mempercepat Tindak Lanjut
+          </h3>
+          <ol class="space-y-3 text-xs sm:text-sm text-slate-700">
+            {diagnosticChecklist.map((item, idx) => (
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-amber-50 text-[#b45309] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                  {idx + 1}
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SERVICE -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-[#020617] text-white p-6 sm:p-8 space-y-5">
+        <div class="space-y-2">
+          <h2 class="text-lg sm:text-xl font-bold text-white">
+            Sampaikan Kebutuhan Service Alat Berat
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Hubungi {BUSINESS_INFO.phoneDisplay} untuk menyampaikan kebutuhan service. Diagnosis, jadwal, cakupan pekerjaan, biaya, dan ketersediaan teknisi perlu dikonfirmasi terlebih dahulu.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Service & Perbaikan Alat Berat"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            <span>Ajukan Kebutuhan</span>
+          </button>
+
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+          >
+            <span>Konsultasi via WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="pt-3 border-t border-white/10 flex flex-wrap gap-4 text-xs text-slate-400">
+          <span>Layanan terkait:</span>
+          <a href="/spare-part-alat-berat/" class="text-[#fbbf24] hover:underline">Jual Spare Part Alat Berat</a>
+          <a href="/informasi-alat-berat/cara-memilih-spare-part-alat-berat/" class="text-[#fbbf24] hover:underline">Cara Memilih Spare Part Tepat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

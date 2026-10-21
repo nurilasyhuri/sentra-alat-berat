@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../../data/businessInfo';
+import { buildArticleSchema, buildBreadcrumbSchema } from '../../utils/seo';
+import { buildGeneralInquiryUrl } from '../../utils/whatsapp';
+
+const title = 'Tips Membeli Excavator Bekas agar Tepat - Sentra Alat Berat';
+const description =
+  'Pelajari pemeriksaan mesin, hidrolik, undercarriage, jam kerja, dokumen, dan uji fungsi sebelum membeli excavator bekas.';
+const canonicalPath = '/informasi-alat-berat/tips-membeli-excavator-bekas/';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Informasi Alat Berat', path: '/informasi-alat-berat/' },
+    { name: 'Tips Membeli Excavator Bekas', path: canonicalPath },
+  ]),
+  buildArticleSchema({
+    headline: 'Tips Membeli Excavator Bekas agar Sesuai Kebutuhan Proyek',
+    description,
+    path: canonicalPath,
+    image: '/images/services/jual-alat-berat.webp',
+    datePublished: '2026-10-20',
+    dateModified: '2026-10-20',
+  }),
+];
+
+const inspectionSteps = [
+  {
+    title: '1. Sesuaikan unit dengan pekerjaan',
+    body: 'Tentukan pekerjaan utama, seperti penggalian, pemuatan, pembukaan lahan, atau pekerjaan di area terbatas. Perhatikan kapasitas bucket, jangkauan, kedalaman galian, bobot kerja, serta kondisi medan. Spesifikasi harus cocok dengan kebutuhan proyek, bukan semata-mata berdasarkan harga.',
+  },
+  {
+    title: '2. Periksa mesin dan sistem pendingin',
+    body: 'Perhatikan kemudahan menyalakan mesin, suara yang tidak biasa, asap berlebihan, kebocoran, dan temperatur saat beroperasi. Pemeriksaan sebaiknya dilakukan oleh teknisi yang kompeten, termasuk ketika mesin telah mencapai suhu kerja.',
+  },
+  {
+    title: '3. Periksa sistem hidrolik',
+    body: 'Amati kebocoran pada hose, silinder, sambungan, dan area pompa. Uji respons boom, arm, bucket, serta gerakan lain sesuai prosedur aman. Gerakan lambat atau tidak konsisten perlu diperiksa lebih lanjut dan tidak boleh langsung dianggap sebagai kerusakan tertentu tanpa diagnosis.',
+  },
+  {
+    title: '4. Evaluasi undercarriage',
+    body: 'Pada excavator crawler, kondisi track, roller, idler, sprocket, dan komponen terkait dapat memengaruhi biaya pemeliharaan. Keausan perlu dinilai secara teknis karena penggantian komponen undercarriage dapat menjadi pengeluaran yang signifikan.',
+  },
+  {
+    title: '5. Cocokkan jam kerja dengan kondisi unit',
+    body: 'Catatan jam kerja berguna sebagai salah satu petunjuk, tetapi tidak cukup untuk menilai kondisi secara keseluruhan. Cocokkan indikator dengan keausan pedal, tuas, kursi, struktur, dan riwayat servis bila tersedia.',
+  },
+  {
+    title: '6. Periksa dokumen dan riwayat perawatan',
+    body: 'Pastikan identitas unit dan dokumen pendukung sesuai. Tanyakan riwayat perawatan, komponen yang pernah diganti, pekerjaan besar yang pernah dilakukan, dan alasan unit dijual. Mintalah waktu untuk memeriksa dokumen dan menguji fungsi sebelum menyepakati transaksi.',
+  },
+  {
+    title: '7. Lakukan inspeksi dan uji fungsi',
+    body: 'Jika memungkinkan, lakukan inspeksi langsung dengan teknisi independen. Uji unit di area aman dan periksa fungsi sesuai prosedur. Catat temuan, estimasi perbaikan, serta biaya transportasi dan pengiriman sebelum membandingkan penawaran.',
+  },
+];
+
+const waUrl = buildGeneralInquiryUrl('Pembelian Excavator / Alat Berat');
+---
+
+<BaseLayout title={title} description={description} canonicalPath={canonicalPath} ogType="article" jsonLd={jsonLd}>
+  <!-- Article Header -->
+  <section class="bg-[#020617] text-white pt-28 pb-14 lg:pt-36 lg:pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex flex-wrap items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <a href="/informasi-alat-berat/" class="hover:text-white transition-colors">Informasi Alat Berat</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Tips Membeli Excavator Bekas</span>
+      </nav>
+
+      <div class="space-y-4">
+        <h1 class="text-[28px] leading-[36px] tracking-[-0.7px] md:text-[40px] md:leading-[46px] md:tracking-[-1px] font-bold text-white">
+          Tips Membeli Excavator Bekas agar Sesuai Kebutuhan Proyek
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          Membeli excavator bekas dapat menjadi pilihan bagi perusahaan atau kontraktor yang ingin mendapatkan unit kerja dengan anggaran tertentu. Meski demikian, harga yang terlihat menarik belum tentu menunjukkan nilai terbaik. Kondisi mesin, sistem hidrolik, undercarriage, struktur, dokumen, dan riwayat perawatan perlu diperiksa sebelum transaksi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Article Body -->
+  <article class="bg-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <!-- Featured Visual -->
+      <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
+        <img
+          src="/images/services/jual-alat-berat.webp"
+          alt="Pemeriksaan kondisi fisik, lengan hidrolik, dan roda penggerak excavator bekas sebelum transaksi"
+          width="900"
+          height="500"
+          class="w-full aspect-16/9 object-cover"
+          loading="eager"
+        />
+        <figcaption class="px-5 py-3 text-xs text-slate-500 bg-slate-50 border-t border-slate-200/80">
+          Inspeksi menyeluruh pada mesin diesel, sistem hidrolik, undercarriage, dan kelengkapan dokumen wajib dilakukan sebelum membeli unit bekas.
+        </figcaption>
+      </figure>
+
+      <!-- 7 Inspection Steps -->
+      <section class="space-y-5">
+        <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          7 Langkah Pemeriksaan Sebelum Membeli Excavator Bekas
+        </h2>
+
+        <div class="space-y-4">
+          {inspectionSteps.map((step) => (
+            <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+              <h3 class="text-base md:text-lg font-bold text-slate-950">
+                {step.title}
+              </h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                {step.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Kesimpulan -->
+      <section class="rounded-2xl bg-[#020617] text-white p-7 sm:p-8 space-y-3">
+        <h2 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-white">
+          Kesimpulan
+        </h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Keputusan membeli excavator bekas sebaiknya didasarkan pada gabungan kondisi aktual, spesifikasi, riwayat, dokumen, kebutuhan proyek, dan biaya kepemilikan. Jangan ragu meminta informasi tambahan jika ada hal yang belum jelas.
+        </p>
+      </section>
+
+      <!-- Related Internal Links + Inline Typographic Tags -->
+      <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-500">
+          <span class="font-medium text-slate-400">Tag:</span>
+          <a href="/jual-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#excavator-bekas</a>
+          <a href="/service-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#inspeksi-unit</a>
+          <a href="/jual-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#jual-alat-berat</a>
+          <a href="/spare-part-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#undercarriage</a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+          <a href="/jual-alat-berat/" class="text-[#b45309] hover:text-amber-800 transition-colors">
+            Layanan Jual Alat Berat
+          </a>
+          <a href="/service-alat-berat/" class="text-slate-600 hover:text-slate-950 transition-colors">
+            Inspeksi &amp; Service Unit
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Section: CTA Pembelian Alat Berat -->
+      <section class="rounded-2xl border border-slate-200 bg-slate-50 p-7 sm:p-9 space-y-5">
+        <div class="space-y-2">
+          <h2 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-slate-950">
+            Sampaikan Kebutuhan Pembelian Alat Berat Anda
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Untuk menyampaikan kebutuhan pembelian alat berat, hubungi Sentra Alat Berat di <strong class="text-slate-950 font-semibold">{BUSINESS_INFO.phoneDisplay}</strong>. Sampaikan jenis unit, spesifikasi, kondisi yang diinginkan, dan lokasi penggunaan. Ketersediaan dan harga perlu dikonfirmasi.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Pembelian Alat Berat (Baru / Bekas)"
+            data-rfq-item="Excavator (Baru / Bekas)"
+            class="px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+          >
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

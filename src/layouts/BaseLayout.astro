@@ -1,0 +1,65 @@
+---
+import SeoHead from '../components/common/SeoHead.astro';
+import Header from '../components/common/Header.astro';
+import Footer from '../components/common/Footer.astro';
+import RfqDrawer from '../components/rfq/RfqDrawer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  canonicalPath?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  ogType?: 'website' | 'article';
+  keywords?: string | string[];
+  author?: string;
+  jsonLd?: Record<string, any> | Array<Record<string, any>>;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  canonicalPath,
+  image,
+  type,
+  ogType,
+  keywords,
+  author,
+  jsonLd,
+  noindex = false,
+} = Astro.props;
+
+const resolvedCanonical = canonical || canonicalPath;
+const resolvedType = type || ogType;
+
+const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === '';
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <SeoHead
+      title={title}
+      description={description}
+      canonical={resolvedCanonical}
+      image={image}
+      type={resolvedType}
+      keywords={keywords}
+      author={author}
+      jsonLd={jsonLd}
+      noindex={noindex}
+    />
+  </head>
+  <body class="bg-white text-slate-950 antialiased font-sans">
+    <Header isHomePage={isHomePage} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <RfqDrawer />
+  </body>
+</html>

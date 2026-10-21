@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { buildBreadcrumbSchema } from '../utils/seo';
+import { buildGeneralInquiryUrl } from '../utils/whatsapp';
+
+const title = 'Tentang Kami & Layanan Alat Berat Satu Pintu - Sentra Alat Berat';
+const description =
+  'Profil Sentra Alat Berat di Kedungkandang, Malang: layanan satu pintu untuk jual unit, pencarian spare part, service, dan sewa alat berat.';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Tentang Kami', path: '/tentang-kami/' },
+  ]),
+];
+
+const waUrl = buildGeneralInquiryUrl('Konsultasi Layanan Sentra Alat Berat');
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/tentang-kami/" jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="bg-[#020617] text-white pt-28 pb-16 lg:pt-36 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Tentang Kami</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-5">
+        <h1 class="text-[30px] leading-[36px] tracking-[-0.75px] md:text-[48px] md:leading-[48px] md:tracking-[-1.2px] font-bold text-white">
+          Tentang Sentra Alat Berat
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          {BUSINESS_INFO.tagline} Kami hadir untuk membantu perusahaan konstruksi, pekerjaan tanah, pertambangan, perkebunan, dan kegiatan industri mendapatkan informasi serta tindak lanjut kebutuhan alat berat secara terarah melalui satu pintu layanan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <h2 class="text-[24px] leading-[32px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+            Empat Kebutuhan Utama Alat Berat dalam Satu Sentra
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Sentra Alat Berat membangun alur komunikasi yang jelas agar calon pelanggan dapat menyampaikan spesifikasi unit yang ingin dibeli, mengajukan pencarian spare part sesuai nomor part atau foto komponen, berkonsultasi mengenai service dan perbaikan, serta menyewa alat berat sesuai jadwal dan lokasi proyek.
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Kami mengutamakan transparansi informasi: setiap ketersediaan unit, rincian spesifikasi, kompatibilitas suku cadang, jadwal teknisi, hingga ketentuan harga dikonfirmasi berdasarkan data aktual sebelum transaksi dilakukan.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-16/10">
+            <img
+              src="/images/hero/hero-alat-berat.webp"
+              alt="Aktivitas operasional alat berat untuk konstruksi, pekerjaan tanah, dan pertambangan"
+              width="640"
+              height="400"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pillars Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/70">
+          <h3 class="text-base font-bold text-slate-950">Jual Alat Berat</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Pencarian unit baru maupun bekas sesuai jenis pekerjaan, kapasitas, dan lokasi penggunaan dengan verifikasi dokumen serta kondisi.
+          </p>
+          <a href="/jual-alat-berat/" class="inline-block text-xs font-semibold text-[#b45309] hover:text-amber-800">
+            Lihat Layanan Jual
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/70">
+          <h3 class="text-base font-bold text-slate-950">Jual Spare Part</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Bantuan pencocokan suku cadang mesin, hidrolik, filter, elektrikal, dan undercarriage berdasarkan nomor part atau nomor seri unit.
+          </p>
+          <a href="/spare-part-alat-berat/" class="inline-block text-xs font-semibold text-[#b45309] hover:text-amber-800">
+            Lihat Layanan Spare Part
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/70">
+          <h3 class="text-base font-bold text-slate-950">Service &amp; Perbaikan</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Konsultasi pemeriksaan berkala, penelusuran gejala kerusakan mesin/hidrolik, dan perencanaan penggantian komponen aus.
+          </p>
+          <a href="/service-alat-berat/" class="inline-block text-xs font-semibold text-[#b45309] hover:text-amber-800">
+            Lihat Layanan Service
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/70">
+          <h3 class="text-base font-bold text-slate-950">Sewa Alat Berat</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Penyediaan opsi sewa unit untuk periode proyek tertentu dengan rincian durasi, mobilisasi, operator, dan bahan bakar yang jelas.
+          </p>
+          <a href="/sewa-alat-berat/" class="inline-block text-xs font-semibold text-[#b45309] hover:text-amber-800">
+            Lihat Layanan Sewa
+          </a>
+        </div>
+      </div>
+
+      <!-- Location & Contact Box -->
+      <div class="rounded-2xl bg-[#020617] text-white p-8 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-3">
+          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-white">
+            Hubungi Sentra Alat Berat di Malang
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Alamat: <strong class="text-white font-semibold">{BUSINESS_INFO.address.formatted}</strong> &bull; Telepon / WhatsApp: <strong class="text-white font-semibold">{BUSINESS_INFO.phoneDisplay}</strong>.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-wrap lg:justify-end items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            class="px-6 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3.5 rounded-full border border-slate-700 bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"
+          >
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

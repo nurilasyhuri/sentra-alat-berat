@@ -1,0 +1,105 @@
+export const BUSINESS_INFO = {
+  name: 'Sentra Alat Berat',
+  legalName: 'Sentra Alat Berat - Pusat Jual, Spare Part, Service & Sewa Alat Berat',
+  brandDescriptor: 'Jual Alat Berat, Jual Spare Part, Service & Sewa Alat Berat',
+  tagline: 'Semua Kebutuhan Alat Berat, dalam Satu Sentra.',
+  valueProposition:
+    'Sentra Alat Berat membantu kebutuhan jual alat berat, pencarian spare part, konsultasi service dan perbaikan, serta sewa alat berat untuk proyek konstruksi, pekerjaan tanah, pertambangan, perkebunan, dan kegiatan industri.',
+  description:
+    'Cari alat berat untuk dibeli atau disewa, temukan spare part sesuai nomor part, dan ajukan service alat berat melalui Sentra Alat Berat di Malang.',
+  phoneDisplay: '0851 8300 3060',
+  phone: '085183003060',
+  whatsappNumber: '6285183003060',
+  domain: 'https://sentraalatberat.com',
+  address: {
+    street: 'Puncak Buring Indah',
+    district: 'Kedungkandang',
+    city: 'Malang',
+    province: 'Jawa Timur',
+    country: 'ID',
+    formatted: 'Puncak Buring Indah, Kedungkandang, Malang',
+  },
+  sectors: [
+    'Proyek Konstruksi',
+    'Pekerjaan Tanah',
+    'Pertambangan',
+    'Perkebunan',
+    'Kegiatan Industri',
+  ],
+  unitTypes: [
+    {
+      slug: 'excavator',
+      name: 'Excavator',
+      role: 'Pekerjaan penggalian, pemindahan material, dan pekerjaan tanah.',
+      specNote: 'Konfirmasi kapasitas bucket, kedalaman galian & kondisi unit',
+      image: '/images/units/excavator.webp',
+      alt: 'Unit excavator untuk pekerjaan penggalian tanah dan pemindahan material proyek konstruksi',
+    },
+    {
+      slug: 'bulldozer',
+      name: 'Bulldozer',
+      role: 'Mendorong material, meratakan area, dan pembukaan lahan sesuai spesifikasi unit.',
+      specNote: 'Konfirmasi tipe blade, tenaga mesin & kondisi undercarriage',
+      image: '/images/units/bulldozer.webp',
+      alt: 'Unit bulldozer untuk mendorong material, perataan area, dan pembukaan lahan proyek',
+    },
+    {
+      slug: 'wheel-loader',
+      name: 'Wheel Loader',
+      role: 'Memuat dan memindahkan material ke kendaraan atau area kerja.',
+      specNote: 'Konfirmasi kapasitas bucket, beban angkut & ban kerja',
+      image: '/images/units/wheel-loader.webp',
+      alt: 'Unit wheel loader untuk memuat dan memindahkan material ke dump truck di area kerja',
+    },
+    {
+      slug: 'motor-grader',
+      name: 'Motor Grader',
+      role: 'Membentuk dan meratakan permukaan tanah pada pekerjaan tertentu.',
+      specNote: 'Konfirmasi lebar blade, kemiringan & kebutuhan akses jalan',
+      image: '/images/units/motor-grader.webp',
+      alt: 'Unit motor grader untuk membentuk dan meratakan permukaan jalan serta tanah proyek',
+    },
+    {
+      slug: 'vibro-roller',
+      name: 'Vibro Roller',
+      role: 'Pemadatan tanah atau material sesuai jenis alat dan metode kerja.',
+      specNote: 'Konfirmasi bobot pemadatan, tipe drum & kondisi medan',
+      image: '/images/units/vibro-roller.webp',
+      alt: 'Unit vibro roller untuk pekerjaan pemadatan tanah dan lapis pondasi jalan',
+    },
+    {
+      slug: 'dump-truck',
+      name: 'Dump Truck',
+      role: 'Mengangkut material dalam kegiatan konstruksi dan pekerjaan tanah.',
+      specNote: 'Konfirmasi kapasitas bak, akses lokasi & jarak angkut',
+      image: '/images/units/dump-truck.webp',
+      alt: 'Unit dump truck untuk pengangkutan material tanah, batu, dan tambang di proyek',
+    },
+  ],
+  faqs: [
+    {
+      q: 'Apakah Sentra Alat Berat melayani jual-beli alat berat?',
+      a: 'Website disiapkan untuk menerima permintaan pembelian alat berat. Jenis unit, kondisi, harga, dan ketersediaan perlu dikonfirmasi berdasarkan kebutuhan pelanggan.',
+    },
+    {
+      q: 'Apakah bisa mencari spare part berdasarkan foto?',
+      a: 'Foto dapat membantu pencarian awal. Untuk meningkatkan ketepatan, sertakan merek, model, nomor seri unit, dan nomor part jika tersedia.',
+    },
+    {
+      q: 'Apakah Sentra Alat Berat menerima permintaan service?',
+      a: 'Anda dapat menyampaikan kebutuhan pemeriksaan atau perbaikan melalui WhatsApp. Cakupan pekerjaan, lokasi, jadwal, dan ketersediaan teknisi perlu dikonfirmasi.',
+    },
+    {
+      q: 'Bagaimana cara meminta penawaran sewa alat berat?',
+      a: 'Kirimkan jenis unit, lokasi proyek, tanggal mulai, durasi, jenis pekerjaan, serta kebutuhan operator dan bahan bakar.',
+    },
+    {
+      q: 'Apakah harga tercantum di website?',
+      a: 'Harga dapat berbeda menurut spesifikasi, kondisi, lokasi, durasi, dan ketersediaan. Jika harga belum tercantum, hubungi Sentra Alat Berat untuk meminta penawaran.',
+    },
+    {
+      q: 'Bagaimana cara menghubungi Sentra Alat Berat?',
+      a: 'Telepon atau WhatsApp 0851 8300 3060. Alamat: Puncak Buring Indah, Kedungkandang, Malang.',
+    },
+  ],
+};

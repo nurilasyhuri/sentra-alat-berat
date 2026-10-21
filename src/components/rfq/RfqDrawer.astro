@@ -1,0 +1,402 @@
+---
+import { BUSINESS_INFO } from '../../data/businessInfo';
+---
+
+<div id="rfq-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-xs transition-opacity duration-200 opacity-0 pointer-events-none font-sans">
+  <div
+    id="rfq-drawer-panel"
+    class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-200 ease-out border-l border-slate-200"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="rfq-drawer-title"
+  >
+    <!-- Drawer Header -->
+    <div class="p-4 sm:p-5 border-b border-slate-200 flex items-center justify-between bg-[#020617] text-white">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-[#b45309] text-white flex items-center justify-center font-bold text-sm">
+          <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <div>
+          <h2 id="rfq-drawer-title" class="font-bold text-sm sm:text-base text-white leading-tight">
+            Ajukan Kebutuhan Alat Berat
+          </h2>
+          <p class="text-[11px] text-slate-400">
+            <span id="rfq-items-count-text">0 item</span> dipilih dalam daftar pengajuan
+          </p>
+        </div>
+      </div>
+
+      <button
+        id="rfq-drawer-close"
+        type="button"
+        aria-label="Tutup panel pengajuan kebutuhan"
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+      >
+        <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-5">
+      <div id="rfq-empty-state" class="rounded-xl bg-slate-50 border border-slate-200 p-4 text-xs text-slate-600 leading-relaxed">
+        Sampaikan jenis alat berat, nomor part/foto komponen, gejala service, atau durasi sewa proyek Anda di bawah ini agar tim Sentra Alat Berat dapat menindaklanjuti berdasarkan ketersediaan.
+      </div>
+
+      <div id="rfq-items-container" class="space-y-2.5 hidden" aria-live="polite"></div>
+
+      <div id="rfq-form-section" class="space-y-3">
+        <span class="text-xs font-bold text-slate-900 block">
+          Rincian Permintaan &amp; Lokasi Proyek
+        </span>
+
+        <p id="rfq-error-msg" role="alert" class="hidden text-xs font-semibold text-[#b45309] bg-amber-50 border border-amber-200 rounded-lg px-3 py-2"></p>
+
+        <div class="space-y-2.5 text-xs">
+          <div>
+            <label for="rfq-input-category" class="block font-semibold text-slate-700 mb-1">
+              Kategori Layanan <span class="text-[#b45309]">*</span>
+            </label>
+            <select
+              id="rfq-input-category"
+              class="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-base sm:text-xs text-slate-900 focus:border-[#b45309] transition-colors"
+            >
+              <option value="Pembelian Alat Berat (Baru / Bekas)">Jual Alat Berat (Beli Unit Baru / Bekas)</option>
+              <option value="Pencarian Spare Part Alat Berat">Jual Spare Part Alat Berat (Nomor Part / Foto)</option>
+              <option value="Service & Perbaikan Alat Berat">Service &amp; Perbaikan Alat Berat</option>
+              <option value="Sewa Alat Berat Proyek">Sewa Alat Berat untuk Proyek</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="rfq-input-name" class="block font-semibold text-slate-700 mb-1">
+              Nama Pemohon / PIC <span class="text-[#b45309]">*</span>
+            </label>
+            <input
+              id="rfq-input-name"
+              type="text"
+              placeholder="Contoh: Bpk. Rahmat / Tim Pengadaan"
+              class="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-base sm:text-xs text-slate-900 focus:border-[#b45309] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="rfq-input-location" class="block font-semibold text-slate-700 mb-1">
+              Lokasi Proyek / Pengiriman <span class="text-[#b45309]">*</span>
+            </label>
+            <input
+              id="rfq-input-location"
+              type="text"
+              placeholder="Contoh: Kedungkandang, Malang / Lokasi Proyek"
+              class="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-base sm:text-xs text-slate-900 focus:border-[#b45309] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="rfq-input-notes" class="block font-semibold text-slate-700 mb-1">
+              Spesifikasi Unit / Nomor Part / Gejala Kerusakan / Durasi
+            </label>
+            <textarea
+              id="rfq-input-notes"
+              rows="3"
+              placeholder="Sebutkan jenis unit, merek/model, nomor seri PIN, nomor part, gejala kerusakan, atau tanggal mulai & durasi sewa..."
+              class="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-base sm:text-xs text-slate-900 focus:border-[#b45309] transition-colors resize-none"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-4 sm:p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+      <div class="flex items-baseline justify-between">
+        <span class="text-xs font-semibold text-slate-600">Status Harga &amp; Unit:</span>
+        <span class="text-xs sm:text-sm font-bold text-slate-900">
+          Dikonfirmasi Sesuai Spesifikasi
+        </span>
+      </div>
+
+      <button
+        id="rfq-submit-wa"
+        type="button"
+        class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white font-bold text-xs sm:text-sm transition-colors select-none cursor-pointer"
+      >
+        <span>Kirim Pengajuan Kebutuhan</span>
+      </button>
+
+      <div class="flex items-center justify-between text-[11px] text-slate-500">
+        <button
+          id="rfq-clear-btn"
+          type="button"
+          class="text-slate-500 hover:text-[#b45309] transition-colors cursor-pointer"
+        >
+          Reset Daftar
+        </button>
+        <span>Sentra Alat Berat Malang</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ whatsappNumber: BUSINESS_INFO.whatsappNumber }}>
+  const STORAGE_KEY = 'sentra_alat_berat_rfq_items';
+
+  function getItems() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  }
+
+  function saveItems(items) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    updateBadges(items);
+    renderDrawerItems(items);
+  }
+
+  function updateBadges(items) {
+    const totalCount = items.reduce((acc, item) => acc + (item.quantity || 1), 0);
+    const badges = document.querySelectorAll('.rfq-badge-counter');
+    badges.forEach((el) => {
+      el.textContent = totalCount.toString();
+      if (totalCount > 0) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    });
+
+    const countText = document.getElementById('rfq-items-count-text');
+    if (countText) {
+      countText.textContent = `${items.length} jenis (${totalCount} item)`;
+    }
+
+    const emptyState = document.getElementById('rfq-empty-state');
+    const itemsContainer = document.getElementById('rfq-items-container');
+    if (items.length === 0) {
+      emptyState?.classList.remove('hidden');
+      itemsContainer?.classList.add('hidden');
+    } else {
+      emptyState?.classList.add('hidden');
+      itemsContainer?.classList.remove('hidden');
+    }
+  }
+
+  function renderDrawerItems(items) {
+    const container = document.getElementById('rfq-items-container');
+    if (!container) return;
+    if (items.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+
+    container.innerHTML = items
+      .map((item, idx) => {
+        const qty = Number(item.quantity || 1);
+        return `
+      <div class="p-3 rounded-lg border border-slate-200 bg-white flex items-start justify-between gap-3">
+        <div class="space-y-1 min-w-0 flex-1">
+          <div class="flex items-center gap-1.5 text-[11px] text-[#b45309] font-semibold">
+            <span>${item.category || 'Kebutuhan Alat Berat'}</span>
+          </div>
+          <h4 class="font-bold text-xs text-slate-900 leading-snug">
+            ${item.title}
+          </h4>
+          <div class="pt-1.5 flex items-center justify-between gap-2">
+            <div class="inline-flex items-center border border-slate-200 rounded-md bg-slate-50">
+              <button
+                type="button"
+                data-change-qty="${idx}"
+                data-delta="-1"
+                aria-label="Kurangi jumlah ${item.title}"
+                class="w-7 h-7 flex items-center justify-center text-xs font-bold text-slate-700 hover:bg-slate-200 rounded-l-md cursor-pointer"
+              >
+                &minus;
+              </button>
+              <span class="w-8 text-center text-xs font-bold text-slate-900">${qty}</span>
+              <button
+                type="button"
+                data-change-qty="${idx}"
+                data-delta="1"
+                aria-label="Tambah jumlah ${item.title}"
+                class="w-7 h-7 flex items-center justify-center text-xs font-bold text-slate-700 hover:bg-slate-200 rounded-r-md cursor-pointer"
+              >
+                &#43;
+              </button>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-600">Konfirmasi Stok</span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          data-remove-idx="${idx}"
+          aria-label="Hapus ${item.title}"
+          class="p-1.5 text-slate-400 hover:text-[#b45309] transition-colors rounded-md hover:bg-amber-50 cursor-pointer"
+        >
+          <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
+      </div>
+    `;
+      })
+      .join('');
+
+    container.querySelectorAll('[data-change-qty]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget;
+        const idx = parseInt(target.getAttribute('data-change-qty'), 10);
+        const delta = parseInt(target.getAttribute('data-delta'), 10);
+        const current = getItems();
+        if (current[idx]) {
+          current[idx].quantity = Math.max(1, (current[idx].quantity || 1) + delta);
+          saveItems(current);
+        }
+      });
+    });
+
+    container.querySelectorAll('[data-remove-idx]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget;
+        const idx = parseInt(target.getAttribute('data-remove-idx'), 10);
+        const current = getItems();
+        current.splice(idx, 1);
+        saveItems(current);
+      });
+    });
+  }
+
+  const backdrop = document.getElementById('rfq-drawer-backdrop');
+  const panel = document.getElementById('rfq-drawer-panel');
+  const closeBtn = document.getElementById('rfq-drawer-close');
+  const clearBtn = document.getElementById('rfq-clear-btn');
+  const submitWaBtn = document.getElementById('rfq-submit-wa');
+  const errorMsg = document.getElementById('rfq-error-msg');
+  const categorySelect = document.getElementById('rfq-input-category');
+
+  function showError(msg) {
+    if (!errorMsg) return;
+    errorMsg.textContent = msg;
+    errorMsg.classList.remove('hidden');
+  }
+
+  function clearError() {
+    if (!errorMsg) return;
+    errorMsg.textContent = '';
+    errorMsg.classList.add('hidden');
+  }
+
+  function openDrawer(presetCategory) {
+    clearError();
+    if (presetCategory && categorySelect) {
+      categorySelect.value = presetCategory;
+    }
+    backdrop?.classList.remove('opacity-0', 'pointer-events-none');
+    backdrop?.classList.add('opacity-100');
+    panel?.classList.remove('translate-x-full');
+    panel?.classList.add('translate-x-0');
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeDrawer() {
+    backdrop?.classList.add('opacity-0', 'pointer-events-none');
+    backdrop?.classList.remove('opacity-100');
+    panel?.classList.add('translate-x-full');
+    panel?.classList.remove('translate-x-0');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  closeBtn?.addEventListener('click', closeDrawer);
+  backdrop?.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeDrawer();
+  });
+
+  clearBtn?.addEventListener('click', () => {
+    saveItems([]);
+    clearError();
+  });
+
+  document.querySelectorAll('[data-open-rfq]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = el.getAttribute('data-rfq-category');
+      const itemTitle = el.getAttribute('data-rfq-item');
+      if (itemTitle) {
+        const current = getItems();
+        const existingIdx = current.findIndex((x) => x.title === itemTitle);
+        if (existingIdx >= 0) {
+          current[existingIdx].quantity = (current[existingIdx].quantity || 1) + 1;
+        } else {
+          current.push({
+            title: itemTitle,
+            category: cat || 'Kebutuhan Alat Berat',
+            quantity: 1,
+          });
+        }
+        saveItems(current);
+      }
+      openDrawer(cat);
+    });
+  });
+
+  submitWaBtn?.addEventListener('click', () => {
+    const items = getItems();
+    const nameInput = document.getElementById('rfq-input-name');
+    const locationInput = document.getElementById('rfq-input-location');
+    const notesInput = document.getElementById('rfq-input-notes');
+
+    const category = categorySelect?.value || 'Kebutuhan Alat Berat';
+    const name = nameInput?.value.trim();
+    const location = locationInput?.value.trim();
+    const notes = notesInput?.value.trim();
+
+    if (!name) {
+      showError('Mohon isi Nama Pemohon / PIC terlebih dahulu.');
+      nameInput?.focus();
+      return;
+    }
+    if (!location) {
+      showError('Mohon isi Lokasi Proyek / Pengiriman terlebih dahulu.');
+      locationInput?.focus();
+      return;
+    }
+
+    clearError();
+
+    let text = `Halo Sentra Alat Berat, saya ingin mengajukan kebutuhan alat berat:\n\n`;
+    text += `• Kategori: ${category}\n`;
+    text += `• Nama PIC: ${name}\n`;
+    text += `• Lokasi Proyek / Pengiriman: ${location}\n`;
+
+    if (items.length > 0) {
+      text += `\nUnit / Layanan Dipilih:\n`;
+      items.forEach((item, i) => {
+        text += `${i + 1}. ${item.title} (${item.quantity || 1} unit)\n`;
+      });
+    }
+
+    if (notes) {
+      text += `\nRincian Spesifikasi / Nomor Part / Gejala / Durasi:\n${notes}\n`;
+    }
+
+    text += `\nMohon konfirmasi ketersediaan, spesifikasi, harga, dan ketentuan layanan. Terima kasih.`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDrawer();
+    }
+  });
+
+  const initialItems = getItems();
+  updateBadges(initialItems);
+  renderDrawerItems(initialItems);
+</script>

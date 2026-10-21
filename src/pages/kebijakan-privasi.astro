@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { buildBreadcrumbSchema } from '../utils/seo';
+
+const title = 'Kebijakan Privasi & Perlindungan Data Klien - Sentra Alat Berat';
+const description =
+  'Kebijakan privasi Sentra Alat Berat terkait pengelolaan data permintaan penawaran unit, pencarian spare part, service, dan sewa alat berat.';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Kebijakan Privasi', path: '/kebijakan-privasi/' },
+  ]),
+];
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/kebijakan-privasi/" jsonLd={jsonLd}>
+  <section class="bg-[#020617] text-white pt-28 pb-14 lg:pt-36 lg:pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Kebijakan Privasi</span>
+      </nav>
+      <h1 class="text-[28px] leading-[36px] md:text-[40px] md:leading-[46px] font-bold text-white">
+        Kebijakan Privasi
+      </h1>
+      <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+        Kebijakan ini menjelaskan bagaimana {BUSINESS_INFO.name} ({BUSINESS_INFO.domain}) mengelola informasi yang Anda sampaikan saat mengajukan permintaan penawaran unit, pencarian spare part, konsultasi service, atau sewa alat berat.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-sm text-slate-700 leading-relaxed">
+      <div class="space-y-2">
+        <h2 class="text-lg font-bold text-slate-950">1. Informasi yang Anda Sampaikan</h2>
+        <p>
+          Saat Anda menghubungi {BUSINESS_INFO.name} melalui formulir pengajuan kebutuhan maupun saluran telepon/WhatsApp ({BUSINESS_INFO.phoneDisplay}), Anda dapat menyampaikan informasi seperti nama, nama perusahaan, nomor kontak, lokasi proyek, spesifikasi unit atau nomor part yang dicari, serta rincian kebutuhan teknis.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h2 class="text-lg font-bold text-slate-950">2. Penggunaan Informasi</h2>
+        <p>
+          Informasi yang diterima digunakan semata-mata untuk meninjau kebutuhan teknis Anda, memeriksa ketersediaan unit atau suku cadang, mengonfirmasi jadwal pemeriksaan/service, menyusun penawaran harga, dan berkomunikasi dengan Anda terkait permintaan tersebut.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h2 class="text-lg font-bold text-slate-950">3. Penyimpanan &amp; Keamanan Komunikasi</h2>
+        <p>
+          Formulir pengajuan kebutuhan di situs ini meneruskan rincian spesifikasi langsung ke aplikasi WhatsApp Anda agar komunikasi tercatat jelas di perangkat Anda. Kami tidak menjual atau menyewakan data kontak pelanggan kepada pihak ketiga untuk pemasaran di luar layanan {BUSINESS_INFO.name}.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h2 class="text-lg font-bold text-slate-950">4. Kontak Pengelola</h2>
+        <p>
+          Apabila Anda memiliki pertanyaan mengenai pengelolaan informasi Anda, silakan hubungi {BUSINESS_INFO.name} di telepon/WhatsApp <strong class="text-slate-950 font-semibold">{BUSINESS_INFO.phoneDisplay}</strong> atau alamat operasional <strong class="text-slate-950 font-semibold">{BUSINESS_INFO.address.formatted}</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

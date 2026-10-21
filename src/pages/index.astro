@@ -1,0 +1,624 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { getLocalBusinessSchema, getWebsiteSchema } from '../utils/seo';
+import { generateGeneralInquiryUrl } from '../utils/whatsapp';
+
+const localBusinessSchema = getLocalBusinessSchema();
+const websiteSchema = getWebsiteSchema();
+const waInquiryUrl = generateGeneralInquiryUrl('Kebutuhan Alat Berat (Jual / Spare Part / Service / Sewa)');
+
+const mainServices = [
+  {
+    title: 'Jual & Sewa Unit Alat Berat',
+    href: '/jual-alat-berat/',
+    image: '/images/services/jual-alat-berat.webp',
+    alt: 'Layanan jual alat berat baru maupun bekas serta sewa unit proyek konstruksi dan tambang',
+  },
+  {
+    title: 'Jual Spare Part Alat Berat',
+    href: '/spare-part-alat-berat/',
+    image: '/images/services/spare-part-alat-berat.webp',
+    alt: 'Pencarian spare part alat berat berdasarkan merek, model unit, nomor part, atau foto komponen',
+  },
+  {
+    title: 'Service & Perbaikan Alat Berat',
+    href: '/service-alat-berat/',
+    image: '/images/services/service-alat-berat.webp',
+    alt: 'Layanan pemeriksaan, perawatan berkala, dan perbaikan mesin diesel serta hidrolik alat berat',
+  },
+];
+
+const serviceWorkflow = [
+  {
+    num: '1',
+    title: 'Sampaikan Kebutuhan',
+    desc: 'Sebutkan unit yang dicari, nomor part atau foto komponen, gejala kerusakan, atau rencana sewa proyek.',
+  },
+  {
+    num: '2',
+    title: 'Verifikasi Spesifikasi',
+    desc: 'Tim meninjau informasi merek, model, kapasitas, lokasi proyek, serta kompatibilitas teknis.',
+  },
+  {
+    num: '3',
+    title: 'Konfirmasi Penawaran',
+    desc: 'Rincian ketersediaan, kondisi barang, jadwal, dan harga dikonfirmasi secara jelas sebelum transaksi.',
+  },
+  {
+    num: '4',
+    title: 'Tindak Lanjut',
+    desc: 'Proses pembelian, pengiriman suku cadang, pemeriksaan teknis, atau sewa unit dijalankan sesuai kesepakatan.',
+  },
+];
+
+const sectorDocs = [
+  {
+    title: 'Penggalian Tanah & Pemindahan Material Excavator',
+    image: '/images/projects/konstruksi-galian.webp',
+    alt: 'Penggunaan excavator pada pekerjaan penggalian tanah dan pemindahan material konstruksi',
+    href: '/jual-alat-berat/',
+  },
+  {
+    title: 'Perataan Area & Pendorong Material Bulldozer',
+    image: '/images/projects/pembukaan-lahan.webp',
+    alt: 'Unit bulldozer mendorong material dan meratakan area pembukaan lahan proyek',
+    href: '/sewa-alat-berat/',
+  },
+  {
+    title: 'Pengangkutan Material Proyek dengan Dump Truck',
+    image: '/images/projects/pertambangan-material.webp',
+    alt: 'Unit dump truck mengangkut material tambang dan tanah pada kegiatan proyek',
+    href: '/jual-alat-berat/',
+  },
+  {
+    title: 'Pemuatan Material Curah dengan Wheel Loader',
+    image: '/images/projects/perkebunan-drainase.webp',
+    alt: 'Unit wheel loader memuat dan memindahkan material ke kendaraan angkut di area kerja',
+    href: '/sewa-alat-berat/',
+  },
+  {
+    title: 'Identifikasi Hydraulic Pump, Hose, Seal & Valve',
+    image: '/images/projects/inspeksi-hidrolik.webp',
+    alt: 'Pemeriksaan silinder, hose, dan komponen sistem hidrolik pada lengan excavator',
+    href: '/spare-part-alat-berat/',
+  },
+  {
+    title: 'Track Shoe, Roller, Idler & Sprocket Alat Berat',
+    image: '/images/projects/komponen-undercarriage.webp',
+    alt: 'Evaluasi keausan track shoe, roller, idler, dan sprocket undercarriage excavator crawler',
+    href: '/spare-part-alat-berat/',
+  },
+  {
+    title: 'Faktor Penentu Harga Sewa Excavator Proyek',
+    image: '/images/projects/mobilisasi-unit.webp',
+    alt: 'Persiapan mobilisasi dan perhitungan biaya sewa excavator untuk lokasi proyek',
+    href: '/informasi-alat-berat/harga-sewa-excavator/',
+  },
+  {
+    title: 'Tips Membeli Excavator Bekas Sesuai Spesifikasi',
+    image: '/images/projects/perawatan-mesin.webp',
+    alt: 'Pemeriksaan teknis mesin diesel dan sistem pendingin sebelum membeli alat berat bekas',
+    href: '/informasi-alat-berat/tips-membeli-excavator-bekas/',
+  },
+  {
+    title: 'Cara Memilih Spare Part Berdasarkan Nomor Part',
+    image: '/images/services/spare-part-alat-berat.webp',
+    alt: 'Pencocokan nomor part dan nomor seri PIN unit saat memesan spare part alat berat',
+    href: '/informasi-alat-berat/cara-memilih-spare-part-alat-berat/',
+  },
+];
+---
+
+<BaseLayout
+  title="Pusat Jual, Spare Part, Service & Sewa - Sentra Alat Berat"
+  description="Cari alat berat untuk dibeli atau disewa, temukan spare part sesuai nomor part, dan ajukan service melalui Sentra Alat Berat di 0851 8300 3060."
+  jsonLd={[localBusinessSchema, websiteSchema]}
+>
+  <!-- SECTION 1: DARK FULL-BLEED INDUSTRIAL HERO -->
+  <section class="relative bg-[#020617] text-white h-[844px] md:h-[900px] flex flex-col justify-between overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/images/hero/hero-alat-berat.webp"
+        alt="Unit excavator bekerja pada proyek konstruksi dan pekerjaan tanah Sentra Alat Berat"
+        width="1440"
+        height="900"
+        class="w-full h-full object-cover object-center opacity-45"
+        loading="eager"
+        decoding="async"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#020617]/90 to-[#020617]/35"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-[#020617]/50"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-24 pb-6 flex-1 flex flex-col justify-center">
+      <div class="max-w-2xl space-y-5">
+        <h1 class="text-[30px] leading-[33.6px] tracking-[-0.75px] md:text-[48px] md:leading-[48px] md:tracking-[-1.2px] lg:text-[60px] lg:leading-[60px] lg:tracking-[-1.5px] font-bold text-white">
+          Pusat Jual, Spare Part, Service &amp; Sewa Alat Berat
+        </h1>
+
+        <p class="text-[14px] leading-[22.75px] md:text-[16px] md:leading-[24px] text-slate-300 max-w-xl font-normal">
+          Sentra Alat Berat hadir membantu kebutuhan alat berat melalui satu pintu layanan. Sampaikan spesifikasi unit yang ingin dibeli, kebutuhan spare part, keluhan service dan perbaikan, atau rencana sewa sesuai lokasi proyek.
+        </p>
+
+        <div class="pt-2">
+          <button
+            type="button"
+            data-open-rfq
+            class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer shadow-lg"
+          >
+            <span>Ajukan Kebutuhan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Hero Operational Summary Strip -->
+    <div class="relative z-10 border-t border-white/10 bg-[#020617]/75 backdrop-blur-xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-7">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 lg:gap-14">
+          <div>
+            <div class="text-base sm:text-lg font-bold text-white leading-snug">
+              Jual &amp; Sewa Unit
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Excavator hingga Dump Truck</div>
+          </div>
+
+          <div>
+            <div class="text-base sm:text-lg font-bold text-white leading-snug">
+              Spare Part
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Sesuai Nomor Part &amp; Seri Unit</div>
+          </div>
+
+          <div>
+            <div class="text-base sm:text-lg font-bold text-white leading-snug">
+              Service &amp; Perbaikan
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Mesin, Hidrolik &amp; Undercarriage</div>
+          </div>
+
+          <div>
+            <div class="text-base sm:text-lg font-bold text-white leading-snug">
+              Malang
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Kedungkandang, Puncak Buring</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: LAYANAN SENTRA ALAT BERAT + ALUR LAYANAN -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-20">
+      <div class="space-y-8">
+        <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
+          Layanan Sentra Alat Berat
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {mainServices.map((srv) => (
+            <a href={srv.href} class="group block space-y-4">
+              <div class="aspect-4/3 rounded-2xl overflow-hidden bg-slate-100">
+                <img
+                  src={srv.image}
+                  alt={srv.alt}
+                  width="480"
+                  height="360"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex items-center justify-between gap-4 pt-0.5">
+                <h3 class="text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] font-bold text-slate-950 group-hover:text-[#b45309] transition-colors">
+                  {srv.title}
+                </h3>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#b45309] text-slate-600 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+                  <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Part B: Alur Layanan (Real 4-step sequence from brief) -->
+      <div class="space-y-6">
+        <h3 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-slate-950">
+          Alur Layanan
+        </h3>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {serviceWorkflow.map((step) => (
+            <div class="rounded-2xl bg-slate-50/90 border border-slate-100 p-5 sm:p-6 space-y-2.5">
+              <span class="inline-flex w-7 h-7 rounded-full bg-amber-50 text-[#b45309] font-bold text-xs items-center justify-center">
+                {step.num}
+              </span>
+              <h4 class="text-[13px] leading-[18px] md:text-[15px] md:leading-[22px] font-bold text-slate-950">
+                {step.title}
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                {step.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PILIHAN JENIS ALAT BERAT (3x2 CLEAN SHOWCASE) -->
+  <section id="pilihan-unit" class="bg-white py-14 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 md:space-y-14">
+      <div class="max-w-2xl space-y-2">
+        <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
+          Jenis Alat Berat untuk Jual &amp; Sewa
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Pilihan unit untuk pekerjaan penggalian, pendorong material, pemuatan, perataan jalan, pemadatan tanah, dan angkutan proyek.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 sm:gap-x-10 gap-y-10 md:gap-y-14">
+        {BUSINESS_INFO.unitTypes.map((unit) => (
+          <a
+            href="/jual-alat-berat/"
+            class="group flex flex-col items-center text-center space-y-3 md:space-y-4"
+          >
+            <div class="w-full aspect-square max-w-[160px] md:max-w-[260px] mx-auto rounded-2xl overflow-hidden bg-slate-50 border border-slate-200/80 p-2.5 md:p-4 flex items-center justify-center">
+              <img
+                src={unit.image}
+                alt={unit.alt}
+                width="320"
+                height="320"
+                class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="space-y-1 max-w-xs">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-950 group-hover:text-[#b45309] transition-colors">
+                {unit.name}
+              </h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed line-clamp-2">
+                {unit.role}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: KEBUTUHAN PROYEK & INFORMASI TEKNIS (3x3 GRID) -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 lg:space-y-10">
+      <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
+        Kebutuhan Proyek &amp; Informasi Teknis
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        {sectorDocs.map((doc) => (
+          <a
+            href={doc.href}
+            class="group relative aspect-16/10 rounded-2xl overflow-hidden bg-[#020617] block"
+          >
+            <img
+              src={doc.image}
+              alt={doc.alt}
+              width="440"
+              height="275"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020617]/95 via-[#020617]/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5">
+              <h3 class="text-sm sm:text-base font-bold text-white group-hover:text-[#fbbf24] transition-colors leading-snug">
+                {doc.title}
+              </h3>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PEMERIKSAAN UNIT, SPARE PART & PROSEDUR SERVICE -->
+  <section class="bg-[#020617] text-white py-16 lg:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <div class="space-y-2.5">
+            <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-white">
+              Pemeriksaan Unit, Spare Part &amp; Prosedur Service
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Setiap keputusan pembelian unit bekas, penggantian komponen, maupun perbaikan alat berat perlu didasarkan pada pemeriksaan teknis yang terukur.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 p-4 space-y-1.5">
+              <h3 class="text-xs font-bold text-[#fbbf24]">
+                Mesin &amp; Hidrolik
+              </h3>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Periksa kondisi mesin diesel, pendingin, pompa, silinder, dan hose sebelum operasi
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 p-4 space-y-1.5">
+              <h3 class="text-xs font-bold text-[#fbbf24]">
+                Nomor Part &amp; PIN
+              </h3>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Cocokkan merek, model, nomor seri PIN unit, dan nomor part agar tidak salah beli
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 p-4 space-y-1.5">
+              <h3 class="text-xs font-bold text-[#fbbf24]">
+                Undercarriage
+              </h3>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Evaluasi keausan track shoe, roller, idler, sprocket, struktur, dan jam kerja
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-1">
+            <a
+              href="/informasi-alat-berat/"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold transition-colors"
+            >
+              <span>Baca Panduan Teknis</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4">
+          <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] aspect-16/9 lg:aspect-21/9">
+            <img
+              src="/images/services/service-alat-berat.webp"
+              alt="Pemeriksaan teknis mesin diesel dan komponen alat berat oleh teknisi"
+              width="640"
+              height="360"
+              class="w-full h-full object-cover opacity-85"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="space-y-2.5">
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 px-4 py-3.5">
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong class="text-[#fbbf24] font-bold">Inspeksi Pra-Transaksi:</strong> Periksa mesin, sistem hidrolik, kelistrikan, jam kerja, dan kelengkapan dokumen unit.
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 px-4 py-3.5">
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong class="text-[#fbbf24] font-bold">Identifikasi Suku Cadang:</strong> Konfirmasi kategori genuine/OEM, aftermarket, atau rekondisi beserta garansi.
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-white/[0.03] border border-white/10 px-4 py-3.5">
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong class="text-[#fbbf24] font-bold">Prosedur Keselamatan Kerja:</strong> Hentikan operasi bila muncul gejala berbahaya dan ikuti petunjuk pabrikan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: LOKASI OPERASIONAL & LAYANAN PROYEK -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
+        Mengapa Menghubungi Sentra Alat Berat?
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div class="aspect-16/10 rounded-2xl overflow-hidden bg-slate-100">
+            <img
+              src="/images/services/jual-alat-berat.webp"
+              alt="Lokasi layanan Sentra Alat Berat di Puncak Buring Indah Kedungkandang Malang"
+              width="600"
+              height="375"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] font-bold text-slate-950">
+              Sentra Alat Berat (Kedungkandang, Malang)
+            </h3>
+            <p class="text-xs text-slate-600">
+              Alamat: {BUSINESS_INFO.address.formatted}
+            </p>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Empat kebutuhan utama tersedia dalam satu pintu: jual unit alat berat, pencarian spare part, konsultasi service, dan sewa alat berat proyek.
+            </p>
+            <div class="pt-1">
+              <a href="/kontak/" class="text-xs font-bold text-[#b45309] hover:text-amber-800 transition-colors">
+                Lihat Detail Kontak &amp; Alamat
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="aspect-16/10 rounded-2xl overflow-hidden bg-slate-100">
+            <img
+              src="/images/services/sewa-alat-berat.webp"
+              alt="Layanan konsultasi spesifikasi unit, sewa alat berat, dan pengiriman ke lokasi proyek"
+              width="600"
+              height="375"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] font-bold text-slate-950">
+              Penyesuaian Spesifikasi &amp; Konfirmasi Transparan
+            </h3>
+            <p class="text-xs text-slate-600">
+              Konstruksi, Pekerjaan Tanah, Pertambangan, Perkebunan &amp; Industri
+            </p>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Informasi kebutuhan disesuaikan dengan jenis proyek dan spesifikasi yang diperlukan. Calon pelanggan dapat meminta konfirmasi harga, ketersediaan, dan ketentuan layanan sebelum mengambil keputusan.
+            </p>
+            <div class="pt-1">
+              <a href="/sewa-alat-berat/" class="text-xs font-bold text-[#b45309] hover:text-amber-800 transition-colors">
+                Pelajari Layanan Sewa Proyek
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: AJUKAN KEBUTUHAN ALAT BERAT ANDA (CONSULTATION SPLIT) -->
+  <section id="ajukan-kebutuhan" class="bg-white py-10 md:py-12 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-4/3 lg:aspect-4/5 max-w-md mx-auto lg:max-w-none">
+            <img
+              src="/images/projects/konsultasi-teknis.webp"
+              alt="Tim teknis Sentra Alat Berat siap menindaklanjuti permintaan unit, spare part, service, dan sewa"
+              width="480"
+              height="600"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-2.5">
+            <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
+              Ajukan Kebutuhan Alat Berat Anda
+            </h2>
+            <p class="text-[14px] leading-[22.75px] md:text-[16px] md:leading-[24px] text-slate-600">
+              Ceritakan kebutuhan Anda kepada Sentra Alat Berat. Sertakan jenis alat berat atau spare part, merek dan model bila diketahui, jumlah, lokasi, serta waktu yang dibutuhkan. Untuk servis, jelaskan gejala kerusakan dan lokasi unit.
+            </p>
+          </div>
+
+          <!-- Interactive Checklist Helper -->
+          <div class="rounded-2xl bg-slate-50 border border-slate-200/80 p-5 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <span class="text-xs font-bold text-slate-900">
+                Panduan Data yang Perlu Disiapkan
+              </span>
+              <span id="prep-guide-summary" class="text-xs font-semibold text-[#b45309]">
+                Siapkan: Jenis unit, merek/model, kapasitas, kondisi &amp; lokasi proyek
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="prep-service-type" class="block text-[11px] font-semibold text-slate-600 mb-1">
+                  Pilih Jenis Kebutuhan
+                </label>
+                <select
+                  id="prep-service-type"
+                  class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-950 font-semibold text-xs"
+                >
+                  <option value="jual" selected>Pembelian Unit (Baru / Bekas)</option>
+                  <option value="part">Pencarian Spare Part Alat Berat</option>
+                  <option value="service">Service &amp; Perbaikan Alat Berat</option>
+                  <option value="sewa">Sewa Alat Berat Proyek</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="prep-sector-type" class="block text-[11px] font-semibold text-slate-600 mb-1">
+                  Sektor Pekerjaan
+                </label>
+                <select
+                  id="prep-sector-type"
+                  class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-950 font-semibold text-xs"
+                >
+                  <option value="Konstruksi & Pekerjaan Tanah" selected>Konstruksi &amp; Pekerjaan Tanah</option>
+                  <option value="Pertambangan & Quarry">Pertambangan &amp; Quarry</option>
+                  <option value="Perkebunan & Pembukaan Lahan">Perkebunan &amp; Pembukaan Lahan</option>
+                  <option value="Kegiatan Industri & Logistik">Kegiatan Industri &amp; Logistik</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 list-disc pl-5">
+            <li>
+              Telepon atau WhatsApp <strong class="text-slate-950 font-bold">{BUSINESS_INFO.phoneDisplay}</strong> untuk tindak lanjut cepat.
+            </li>
+            <li>
+              Konfirmasi harga, ketersediaan unit atau part, dan ketentuan layanan sebelum transaksi.
+            </li>
+            <li>
+              Lokasi operasional: {BUSINESS_INFO.address.formatted}.
+            </li>
+          </ul>
+
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              data-open-rfq
+              class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Ajukan Kebutuhan</span>
+            </button>
+
+            <a
+              href={waInquiryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+            >
+              <span>Konsultasi via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASIDE SUMMARY STRIP -->
+  <aside aria-label="Ringkasan Layanan Sentra Alat Berat" class="bg-[#020617]/80 md:bg-white text-white md:text-slate-600 border-t border-white/10 md:border-slate-200 py-6 md:py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-4 items-center text-xs leading-4">
+      <div class="truncate font-semibold">
+        Sentra Alat Berat — Jual, Spare Part, Service &amp; Sewa
+      </div>
+      <div class="truncate text-right text-slate-300 md:text-slate-500">
+        {BUSINESS_INFO.address.formatted}
+      </div>
+    </div>
+  </aside>
+</BaseLayout>
+
+<script>
+  const serviceSelect = document.getElementById('prep-service-type') as HTMLSelectElement | null;
+  const summaryEl = document.getElementById('prep-guide-summary');
+
+  const guides: Record<string, string> = {
+    jual: 'Siapkan: Jenis unit, merek/model, kapasitas, kondisi & lokasi proyek',
+    part: 'Siapkan: Merek, model, nomor seri PIN unit, nomor part & foto komponen',
+    service: 'Siapkan: Jenis unit, lokasi saat ini, gejala kerusakan & riwayat servis',
+    sewa: 'Siapkan: Jenis unit, lokasi proyek, tanggal mulai, durasi & operator',
+  };
+
+  serviceSelect?.addEventListener('change', () => {
+    const val = serviceSelect.value;
+    if (summaryEl && guides[val]) {
+      summaryEl.textContent = guides[val];
+    }
+  });
+</script>

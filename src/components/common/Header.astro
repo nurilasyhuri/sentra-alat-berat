@@ -1,0 +1,468 @@
+---
+export interface Props {
+  isHomePage?: boolean;
+}
+
+const currentPath = Astro.url.pathname;
+const { isHomePage = currentPath === '/' || currentPath === '' } = Astro.props;
+
+const layananSeoItems = [
+  {
+    title: 'Jual Alat Berat',
+    desc: 'Excavator, bulldozer, wheel loader, grader, vibro roller & dump truck.',
+    href: '/jual-alat-berat/',
+  },
+  {
+    title: 'Spare Part Alat Berat',
+    desc: 'Pencarian suku cadang sesuai nomor part, seri unit, atau foto.',
+    href: '/spare-part-alat-berat/',
+  },
+  {
+    title: 'Service & Perbaikan',
+    desc: 'Pemeriksaan berkala, mesin diesel, hidrolik & undercarriage.',
+    href: '/service-alat-berat/',
+  },
+  {
+    title: 'Sewa Alat Berat',
+    desc: 'Penyewaan unit sesuai lokasi, jenis pekerjaan & durasi proyek.',
+    href: '/sewa-alat-berat/',
+  },
+];
+
+const navLinks = [
+  { label: 'Informasi', href: '/informasi-alat-berat/' },
+  { label: 'Tentang', href: '/tentang-kami/' },
+  { label: 'Kontak', href: '/kontak/' },
+];
+
+const searchItems = [
+  {
+    title: 'Jual Alat Berat untuk Berbagai Kebutuhan Proyek',
+    desc: 'Excavator, bulldozer, wheel loader, motor grader, vibro roller, dan dump truck baru maupun bekas.',
+    url: '/jual-alat-berat/',
+    category: 'Layanan Jual',
+    badge: 'Unit Proyek',
+  },
+  {
+    title: 'Jual Spare Part Alat Berat Sesuai Kebutuhan Unit',
+    desc: 'Filter, komponen mesin diesel, hydraulic pump/hose/seal, undercarriage, kelistrikan, dan attachment.',
+    url: '/spare-part-alat-berat/',
+    category: 'Suku Cadang',
+    badge: 'Nomor Part / Foto',
+  },
+  {
+    title: 'Service dan Perbaikan Alat Berat',
+    desc: 'Pemeriksaan berkala, mesin diesel, sistem hidrolik, kelistrikan, undercarriage, dan troubleshooting.',
+    url: '/service-alat-berat/',
+    category: 'Teknis & Perbaikan',
+    badge: 'Diagnosis Unit',
+  },
+  {
+    title: 'Sewa Alat Berat untuk Kebutuhan Proyek',
+    desc: 'Sewa excavator, bulldozer, wheel loader, vibro roller, motor grader, dan dump truck sesuai durasi proyek.',
+    url: '/sewa-alat-berat/',
+    category: 'Rental Proyek',
+    badge: 'Sesuai Durasi',
+  },
+  {
+    title: 'Berapa Harga Sewa Excavator? Ini Faktor yang Menentukan Biayanya',
+    desc: 'Faktor kapasitas unit, durasi sewa, lokasi mobilisasi, operator, bahan bakar, dan cara menghitung anggaran.',
+    url: '/informasi-alat-berat/harga-sewa-excavator/',
+    category: 'Artikel SEO',
+    badge: 'Panduan Sewa',
+  },
+  {
+    title: 'Tips Membeli Excavator Bekas agar Sesuai Kebutuhan Proyek',
+    desc: 'Panduan memeriksa mesin, sistem hidrolik, undercarriage, jam kerja, dokumen, dan uji fungsi unit bekas.',
+    url: '/informasi-alat-berat/tips-membeli-excavator-bekas/',
+    category: 'Artikel SEO',
+    badge: 'Panduan Beli',
+  },
+  {
+    title: 'Cara Memilih Spare Part Alat Berat yang Tepat',
+    desc: 'Cara mencocokkan nomor part, merek, model, nomor seri PIN unit, kualitas komponen, dan foto suku cadang.',
+    url: '/informasi-alat-berat/cara-memilih-spare-part-alat-berat/',
+    category: 'Artikel SEO',
+    badge: 'Panduan Part',
+  },
+];
+
+const isLayananActive =
+  currentPath.startsWith('/jual-alat-berat') ||
+  currentPath.startsWith('/spare-part-alat-berat') ||
+  currentPath.startsWith('/service-alat-berat') ||
+  currentPath.startsWith('/sewa-alat-berat');
+---
+
+<header
+  id="main-header"
+  data-is-home={isHomePage ? 'true' : 'false'}
+  class="sticky top-0 z-40 h-[72px] md:h-20 bg-white md:bg-[#020617]/95 backdrop-blur-md border-b border-slate-200 md:border-white/10 font-sans"
+>
+  <div class="w-full h-full">
+    <div class="w-full h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
+      <!-- Left: Brand Identity -->
+      <a href="/" class="inline-flex items-center gap-2.5 shrink-0 select-none group min-w-0">
+        <span class="w-9 h-9 rounded-full bg-[#020617] md:bg-white/10 border border-slate-800 md:border-white/20 text-white font-bold text-xs flex items-center justify-center tracking-tight shrink-0">
+          SA
+        </span>
+        <div class="flex flex-col min-w-0">
+          <div class="flex items-center gap-1.5 text-sm sm:text-base font-bold tracking-tight leading-none">
+            <span class="text-slate-950 md:text-white">SENTRA</span>
+            <span class="text-[#b45309] md:text-[#fbbf24]">ALAT BERAT</span>
+          </div>
+          <span class="text-[10px] text-slate-500 md:text-slate-400 font-medium leading-none mt-1 truncate">
+            Jual, Spare Part, Service &amp; Sewa
+          </span>
+        </div>
+      </a>
+
+      <!-- Center: Desktop Navigation -->
+      <nav aria-label="Navigasi Utama" class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
+        <a
+          href="/"
+          class:list={[
+            'transition-colors py-1',
+            isHomePage ? 'text-[#fbbf24] font-semibold' : 'hover:text-white text-slate-300',
+          ]}
+        >
+          Beranda
+        </a>
+
+        <div class="relative group" id="desktop-layanan-dropdown">
+          <button
+            type="button"
+            id="desktop-layanan-btn"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class:list={[
+              'inline-flex items-center gap-1.5 py-2 transition-colors cursor-pointer',
+              isLayananActive ? 'text-[#fbbf24] font-semibold' : 'text-slate-300 hover:text-white',
+            ]}
+          >
+            <span>Layanan</span>
+            <svg
+              aria-hidden="true"
+              class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div
+            id="desktop-layanan-menu"
+            class="hidden group-hover:block group-focus-within:block absolute left-0 top-full pt-2 w-[320px] z-50"
+          >
+            <div class="rounded-2xl bg-[#020617] border border-white/15 shadow-2xl p-2 space-y-0.5">
+              {layananSeoItems.map((item) => (
+                <a
+                  href={item.href}
+                  class="block rounded-xl px-3 py-2.5 hover:bg-white/5 transition-colors group/item"
+                >
+                  <span class="block text-xs font-bold text-white group-hover/item:text-[#fbbf24] transition-colors">
+                    {item.title}
+                  </span>
+                  <p class="text-[11px] leading-snug text-slate-400 mt-0.5">
+                    {item.desc}
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {navLinks.map((link) => {
+          const isActive = currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href));
+          return (
+            <a
+              href={link.href}
+              class:list={[
+                'transition-colors py-1',
+                isActive ? 'text-[#fbbf24] font-semibold' : 'hover:text-white text-slate-300',
+              ]}
+            >
+              {link.label}
+            </a>
+          );
+        })}
+      </nav>
+
+      <!-- Right: Search + Primary Inquiry Drawer Trigger + Mobile Toggle -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button
+          type="button"
+          data-open-search
+          aria-label="Cari layanan alat berat, spare part, atau panduan"
+          class="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors cursor-pointer"
+        >
+          <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          data-open-rfq
+          aria-label="Ajukan Kebutuhan Alat Berat"
+          class="hidden md:inline-flex relative items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold transition-colors cursor-pointer select-none"
+        >
+          <svg aria-hidden="true" class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span>Ajukan Kebutuhan</span>
+          <span class="rfq-badge-counter hidden px-1.5 py-0.5 rounded-full bg-white text-slate-950 font-bold text-[10px] leading-none min-w-[18px] text-center">
+            0
+          </span>
+        </button>
+
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 md:border-white/15 bg-slate-100 md:bg-white/5 text-slate-900 md:text-slate-200 hover:bg-slate-200 md:hover:bg-white/10 transition-colors cursor-pointer"
+        >
+          <svg id="icon-menu-open" aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-menu-close" aria-hidden="true" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-drawer" class="fixed inset-0 z-50 lg:hidden hidden font-sans">
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs"></div>
+
+  <div class="fixed inset-y-0 right-0 w-full max-w-sm bg-[#020617] text-white shadow-2xl border-l border-white/10 flex flex-col justify-between overflow-y-auto">
+    <div class="p-4 border-b border-white/10 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white font-bold text-xs flex items-center justify-center">
+          SA
+        </span>
+        <div>
+          <span class="font-bold text-sm text-white tracking-tight">SENTRA </span>
+          <span class="font-bold text-sm text-[#fbbf24] tracking-tight">ALAT BERAT</span>
+        </div>
+      </div>
+      <button
+        id="mobile-drawer-close"
+        type="button"
+        aria-label="Tutup menu"
+        class="inline-flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 cursor-pointer"
+      >
+        <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="p-5 space-y-5 flex-1 overflow-y-auto">
+      <button
+        type="button"
+        data-open-search
+        class="w-full flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 font-medium text-left cursor-pointer"
+      >
+        <svg aria-hidden="true" class="w-4 h-4 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <span>Cari jual unit, spare part, service, sewa...</span>
+      </button>
+
+      <nav aria-label="Menu Mobile" class="space-y-3 text-sm font-medium text-slate-200">
+        <div class="space-y-1">
+          <a href="/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/5">Beranda</a>
+          <a href="/informasi-alat-berat/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/5">Informasi</a>
+          <a href="/tentang-kami/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/5">Tentang</a>
+          <a href="/kontak/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/5">Kontak</a>
+        </div>
+
+        <div class="rounded-2xl bg-white/[0.03] border border-white/10 p-3 space-y-1.5">
+          <span class="block px-2 py-1 text-xs font-bold text-[#fbbf24]">
+            Layanan
+          </span>
+          <div class="space-y-1">
+            {layananSeoItems.map((item) => (
+              <a
+                href={item.href}
+                class="block px-3 py-2 rounded-xl hover:bg-white/5 transition-colors text-xs font-semibold text-white"
+              >
+                {item.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="p-4 border-t border-white/10">
+      <button
+        type="button"
+        data-open-rfq
+        class="w-full py-3 px-5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white font-semibold text-xs flex items-center justify-center gap-2 cursor-pointer"
+      >
+        <span>Ajukan Kebutuhan</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Search Modal -->
+<div
+  id="search-modal"
+  class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs p-4 sm:p-6 md:p-12 overflow-y-auto font-sans"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="search-modal-title"
+>
+  <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden mt-6 sm:mt-12">
+    <div class="p-4 border-b border-slate-200 flex items-center gap-3 bg-slate-50">
+      <svg aria-hidden="true" class="w-5 h-5 text-[#b45309] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <label id="search-modal-title" for="global-search-input" class="sr-only">
+        Cari layanan alat berat, spare part, atau panduan teknis
+      </label>
+      <input
+        id="global-search-input"
+        type="search"
+        placeholder="Cari Excavator, Bulldozer, Spare Part, Service, Sewa..."
+        class="w-full bg-transparent text-slate-900 placeholder-slate-400 text-base sm:text-sm font-medium rounded-md px-1 focus-visible:outline-2 focus-visible:outline-[#b45309]"
+        autocomplete="off"
+      />
+      <button
+        id="close-search-modal"
+        type="button"
+        class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-slate-950 text-xs font-semibold shrink-0 cursor-pointer"
+      >
+        Tutup
+      </button>
+    </div>
+
+    <div id="search-results-list" class="max-h-[60vh] overflow-y-auto divide-y divide-slate-100 p-2">
+      {searchItems.map((item) => (
+        <a
+          href={item.url}
+          data-search-item
+          data-title={item.title.toLowerCase()}
+          data-desc={item.desc.toLowerCase()}
+          data-cat={item.category.toLowerCase()}
+          class="flex items-start justify-between gap-3 p-3 rounded-xl hover:bg-slate-50 transition-colors group"
+        >
+          <div class="space-y-0.5 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                {item.category}
+              </span>
+              <span class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-[#b45309] transition-colors truncate">
+                {item.title}
+              </span>
+            </div>
+            <p class="text-xs text-slate-500 line-clamp-1">{item.desc}</p>
+          </div>
+          <span class="text-[11px] font-bold text-[#b45309] shrink-0 mt-1">
+            {item.badge}
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <div id="search-empty-state" class="hidden py-10 px-4 text-center space-y-2">
+      <p class="text-sm font-bold text-slate-800">Layanan atau panduan tidak ditemukan</p>
+      <p class="text-xs text-slate-500">Coba kata kunci seperti "Excavator", "Spare Part", "Service", atau "Sewa"</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileDrawer = document.getElementById('mobile-drawer');
+  const mobileClose = document.getElementById('mobile-drawer-close');
+  const mobileBackdrop = document.getElementById('mobile-drawer-backdrop');
+  const iconOpen = document.getElementById('icon-menu-open');
+  const iconClose = document.getElementById('icon-menu-close');
+
+  function toggleMobileDrawer(open: boolean) {
+    if (!mobileDrawer || !mobileBtn) return;
+    mobileDrawer.classList.toggle('hidden', !open);
+    mobileBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    iconOpen?.classList.toggle('hidden', open);
+    iconClose?.classList.toggle('hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+
+  mobileBtn?.addEventListener('click', () => {
+    const isHidden = mobileDrawer?.classList.contains('hidden');
+    toggleMobileDrawer(Boolean(isHidden));
+  });
+  mobileClose?.addEventListener('click', () => toggleMobileDrawer(false));
+  mobileBackdrop?.addEventListener('click', () => toggleMobileDrawer(false));
+
+  const searchModal = document.getElementById('search-modal');
+  const searchInput = document.getElementById('global-search-input') as HTMLInputElement | null;
+  const closeSearchBtn = document.getElementById('close-search-modal');
+  const searchItemsEls = document.querySelectorAll('[data-search-item]');
+  const searchEmpty = document.getElementById('search-empty-state');
+
+  function filterSearch(q: string) {
+    const query = q.trim().toLowerCase();
+    let visibleCount = 0;
+    searchItemsEls.forEach((el) => {
+      const title = el.getAttribute('data-title') || '';
+      const desc = el.getAttribute('data-desc') || '';
+      const cat = el.getAttribute('data-cat') || '';
+      const match = !query || title.includes(query) || desc.includes(query) || cat.includes(query);
+      (el as HTMLElement).style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    });
+    if (searchEmpty) {
+      searchEmpty.classList.toggle('hidden', visibleCount > 0);
+    }
+  }
+
+  function openSearchModal(initialQuery = '') {
+    if (!searchModal) return;
+    toggleMobileDrawer(false);
+    searchModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (searchInput) {
+      searchInput.value = initialQuery;
+      filterSearch(initialQuery);
+      setTimeout(() => searchInput.focus(), 50);
+    }
+  }
+
+  function closeSearchModal() {
+    if (!searchModal) return;
+    searchModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-open-search]').forEach((btn) => {
+    btn.addEventListener('click', () => openSearchModal(''));
+  });
+
+  closeSearchBtn?.addEventListener('click', closeSearchModal);
+  searchModal?.addEventListener('click', (e) => {
+    if (e.target === searchModal) closeSearchModal();
+  });
+
+  searchInput?.addEventListener('input', () => {
+    filterSearch(searchInput.value);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeSearchModal();
+      toggleMobileDrawer(false);
+    }
+  });
+</script>

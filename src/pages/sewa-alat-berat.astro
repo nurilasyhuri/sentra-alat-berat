@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { getBreadcrumbSchema, getServiceSchema } from '../utils/seo';
+import { generateGeneralInquiryUrl } from '../utils/whatsapp';
+
+const waUrl = generateGeneralInquiryUrl('Sewa Alat Berat Proyek');
+
+const serviceSchema = getServiceSchema({
+  title: 'Sewa Alat Berat untuk Kebutuhan Proyek',
+  description:
+    'Ajukan kebutuhan sewa excavator, bulldozer, wheel loader, vibro roller, dan alat berat lain sesuai pekerjaan, lokasi, serta durasi proyek.',
+  url: '/sewa-alat-berat/',
+  serviceType: 'Heavy Equipment Rental',
+  image: '/images/services/sewa-alat-berat.webp',
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: 'Beranda', url: '/' },
+  { name: 'Sewa Alat Berat', url: '/sewa-alat-berat/' },
+]);
+
+const rentalChecklist = [
+  'Pastikan jenis dan kapasitas unit sesuai pekerjaan.',
+  'Tentukan tanggal mulai, durasi, dan jam kerja.',
+  'Konfirmasikan apakah operator dan bahan bakar termasuk.',
+  'Tanyakan biaya mobilisasi dan demobilisasi.',
+  'Pastikan kondisi unit, prosedur keselamatan, serta dukungan jika terjadi gangguan.',
+  'Minta rincian harga, ketentuan pembayaran, perpanjangan, dan pembatalan secara tertulis.',
+];
+---
+
+<BaseLayout
+  title="Sewa Alat Berat untuk Proyek Konstruksi - Sentra Alat Berat"
+  description="Ajukan kebutuhan sewa excavator, bulldozer, wheel loader, vibro roller, dan alat berat lain sesuai pekerjaan, lokasi, serta durasi proyek."
+  jsonLd={[serviceSchema, breadcrumbSchema]}
+>
+  <!-- HERO -->
+  <section class="relative bg-[#020617] text-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <nav aria-label="Breadcrumb" class="text-xs text-slate-400 flex items-center gap-2">
+            <a href="/" class="hover:text-white">Beranda</a>
+            <span>/</span>
+            <span class="text-[#fbbf24] font-semibold">Sewa Alat Berat</span>
+          </nav>
+
+          <h1 class="text-[30px] leading-[34px] tracking-[-0.75px] md:text-[44px] md:leading-[48px] font-bold text-white">
+            Sewa Alat Berat untuk Kebutuhan Proyek
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+            Sewa alat berat dapat menjadi pilihan bagi perusahaan atau pelaksana proyek yang membutuhkan unit untuk periode tertentu tanpa harus membeli dan mengelola armada sendiri. Pemilihan unit yang tepat perlu mempertimbangkan jenis pekerjaan, kondisi lapangan, target produktivitas, akses lokasi, dan durasi penggunaan.
+          </p>
+
+          <p class="text-sm text-slate-400 leading-relaxed max-w-2xl">
+            Sentra Alat Berat membantu menerima kebutuhan sewa alat berat berdasarkan informasi proyek. Sebutkan jenis pekerjaan, lokasi, tanggal mulai, durasi sewa, spesifikasi unit, dan apakah membutuhkan operator.
+          </p>
+
+          <div class="pt-2">
+            <button
+              type="button"
+              data-open-rfq
+              data-rfq-category="Sewa Alat Berat Proyek"
+              class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Ajukan Kebutuhan</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="aspect-4/3 rounded-2xl overflow-hidden border border-white/10 bg-slate-900">
+            <img
+              src="/images/services/sewa-alat-berat.webp"
+              alt="Armada alat berat untuk disewa pada proyek konstruksi dan pekerjaan tanah"
+              width="640"
+              height="480"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JENIS ALAT BERAT UNTUK DISEWA -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <h2 class="text-[24px] leading-[32px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+        Jenis Alat Berat untuk Disewa
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {BUSINESS_INFO.unitTypes.map((unit) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 space-y-4">
+            <div class="aspect-4/3 rounded-xl overflow-hidden bg-slate-100">
+              <img
+                src={unit.image}
+                alt={unit.alt}
+                width="400"
+                height="300"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="text-base font-bold text-slate-950">Sewa {unit.name}</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">{unit.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAKTOR BIAYA & CHECKLIST SEBELUM MENYEWA -->
+  <section class="bg-slate-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-6 space-y-4">
+          <h2 class="text-[24px] leading-[32px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+            Faktor yang Memengaruhi Biaya Sewa
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Biaya sewa alat berat tidak selalu sama. Penawaran dapat dipengaruhi jenis dan kapasitas unit, durasi sewa, lokasi proyek, jarak mobilisasi, kondisi medan, kebutuhan operator, bahan bakar, jam kerja, serta ketentuan lembur.
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Karena itu, mintalah rincian penawaran yang menjelaskan komponen biaya dan tanggung jawab setiap pihak sebelum pekerjaan dimulai.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6 rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 space-y-4">
+          <h3 class="text-base sm:text-lg font-bold text-slate-950">
+            Checklist Sebelum Menyewa
+          </h3>
+          <ol class="space-y-3 text-xs sm:text-sm text-slate-700">
+            {rentalChecklist.map((item, idx) => (
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-amber-50 text-[#b45309] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                  {idx + 1}
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SEWA -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-[#020617] text-white p-6 sm:p-8 space-y-5">
+        <div class="space-y-2">
+          <h2 class="text-lg sm:text-xl font-bold text-white">
+            Ajukan Kebutuhan Sewa Alat Berat
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Ajukan kebutuhan sewa melalui WhatsApp {BUSINESS_INFO.phoneDisplay}. Ketersediaan unit, lokasi layanan, dan harga akhir harus dikonfirmasi berdasarkan detail proyek.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Sewa Alat Berat Proyek"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            <span>Ajukan Kebutuhan</span>
+          </button>
+
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+          >
+            <span>Konsultasi via WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="pt-3 border-t border-white/10 flex flex-wrap gap-4 text-xs text-slate-400">
+          <span>Panduan terkait:</span>
+          <a href="/informasi-alat-berat/harga-sewa-excavator/" class="text-[#fbbf24] hover:underline">Berapa Harga Sewa Excavator?</a>
+          <a href="/jual-alat-berat/" class="text-[#fbbf24] hover:underline">Jual Alat Berat Baru &amp; Bekas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

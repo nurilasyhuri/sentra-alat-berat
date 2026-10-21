@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../../data/businessInfo';
+import { buildArticleSchema, buildBreadcrumbSchema } from '../../utils/seo';
+import { buildGeneralInquiryUrl } from '../../utils/whatsapp';
+
+const title = 'Harga Sewa Excavator: Faktor Biaya Proyek - Sentra Alat Berat';
+const description =
+  'Ketahui faktor yang memengaruhi harga sewa excavator, biaya operator, BBM, mobilisasi, durasi kerja, dan tips meminta penawaran.';
+const canonicalPath = '/informasi-alat-berat/harga-sewa-excavator/';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Informasi Alat Berat', path: '/informasi-alat-berat/' },
+    { name: 'Harga Sewa Excavator', path: canonicalPath },
+  ]),
+  buildArticleSchema({
+    headline: 'Berapa Harga Sewa Excavator? Ini Faktor yang Menentukan Biayanya',
+    description,
+    path: canonicalPath,
+    image: '/images/services/sewa-alat-berat.webp',
+    datePublished: '2026-10-20',
+    dateModified: '2026-10-20',
+  }),
+];
+
+const checklistItems = [
+  'Lokasi dan jenis pekerjaan.',
+  'Jenis atau kapasitas excavator.',
+  'Tanggal mulai dan perkiraan durasi.',
+  'Kebutuhan operator dan bahan bakar.',
+  'Akses lokasi serta kebutuhan mobilisasi.',
+  'Rincian biaya, jam kerja, lembur, dan ketentuan kerusakan.',
+];
+
+const waUrl = buildGeneralInquiryUrl('Sewa Excavator Proyek');
+---
+
+<BaseLayout title={title} description={description} canonicalPath={canonicalPath} ogType="article" jsonLd={jsonLd}>
+  <!-- Article Header -->
+  <section class="bg-[#020617] text-white pt-28 pb-14 lg:pt-36 lg:pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex flex-wrap items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <a href="/informasi-alat-berat/" class="hover:text-white transition-colors">Informasi Alat Berat</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Harga Sewa Excavator</span>
+      </nav>
+
+      <div class="space-y-4">
+        <h1 class="text-[28px] leading-[36px] tracking-[-0.7px] md:text-[40px] md:leading-[46px] md:tracking-[-1px] font-bold text-white">
+          Berapa Harga Sewa Excavator? Ini Faktor yang Menentukan Biayanya
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          Harga sewa excavator menjadi salah satu komponen penting dalam perencanaan proyek konstruksi, penggalian, perataan lahan, dan pekerjaan tanah. Namun, tidak ada satu tarif yang berlaku untuk semua proyek. Biaya sewa dipengaruhi jenis unit, kapasitas, durasi penggunaan, lokasi, kondisi medan, dan komponen layanan yang termasuk dalam penawaran.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Article Body -->
+  <article class="bg-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <!-- Featured Visual -->
+      <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
+        <img
+          src="/images/services/sewa-alat-berat.webp"
+          alt="Unit excavator bekerja pada proyek konstruksi dan penggalian tanah"
+          width="900"
+          height="500"
+          class="w-full aspect-16/9 object-cover"
+          loading="eager"
+        />
+        <figcaption class="px-5 py-3 text-xs text-slate-500 bg-slate-50 border-t border-slate-200/80">
+          Pemilihan kelas kapasitas excavator, durasi kerja, dan skema mobilisasi menentukan struktur biaya sewa secara keseluruhan.
+        </figcaption>
+      </figure>
+
+      <!-- Section: Apa Saja yang Memengaruhi Harga Sewa Excavator? -->
+      <section class="space-y-6">
+        <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          Apa Saja yang Memengaruhi Harga Sewa Excavator?
+        </h2>
+
+        <div class="space-y-5">
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+            <h3 class="text-base md:text-lg font-bold text-slate-950">
+              1. Jenis dan kapasitas excavator
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              Excavator mini, medium, dan unit berkapasitas lebih besar memiliki kemampuan kerja serta kebutuhan transportasi yang berbeda. Pilih unit berdasarkan kedalaman galian, volume material, ruang gerak, kondisi tanah, dan akses lokasi. Menggunakan unit yang tidak sesuai dapat membuat pekerjaan lebih lambat atau menambah biaya.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+            <h3 class="text-base md:text-lg font-bold text-slate-950">
+              2. Durasi sewa
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              Penawaran dapat menggunakan satuan jam, shift, hari, minggu, atau bulan, bergantung pada penyedia dan kesepakatan. Pastikan definisi jam kerja, waktu istirahat, lembur, dan ketentuan perpanjangan tercantum jelas.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+            <h3 class="text-base md:text-lg font-bold text-slate-950">
+              3. Lokasi proyek dan mobilisasi
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              Jarak antara lokasi unit dan proyek dapat memengaruhi biaya pengiriman, mobilisasi, serta demobilisasi. Akses jalan, kebutuhan kendaraan pengangkut, izin melintas, dan kondisi lokasi juga dapat memengaruhi perencanaan.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+            <h3 class="text-base md:text-lg font-bold text-slate-950">
+              4. Operator dan bahan bakar
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              Pastikan apakah operator, bahan bakar, dan kebutuhan pendukung sudah termasuk dalam tarif. Dua penawaran dengan angka awal serupa bisa memiliki total biaya berbeda jika komponen yang disertakan tidak sama.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+            <h3 class="text-base md:text-lg font-bold text-slate-950">
+              5. Kondisi lapangan dan jenis pekerjaan
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              Tanah keras, area berlumpur, ruang kerja terbatas, kedalaman galian, serta target produksi dapat memengaruhi pemilihan unit dan waktu kerja. Berikan gambaran pekerjaan yang cukup jelas saat meminta penawaran.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Cara Menghitung Anggaran Sewa Excavator -->
+      <section class="rounded-2xl bg-[#020617] text-white p-7 sm:p-8 space-y-3">
+        <h2 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-white">
+          Cara Menghitung Anggaran Sewa Excavator
+        </h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Untuk membuat estimasi awal, jumlahkan komponen yang relevan: biaya sewa unit, operator jika terpisah, bahan bakar jika ditanggung penyewa, mobilisasi dan demobilisasi, serta biaya tambahan sesuai kontrak. Gunakan angka penawaran aktual dari penyedia, bukan asumsi umum yang belum diverifikasi.
+        </p>
+      </section>
+
+      <!-- Section: Checklist Saat Meminta Penawaran -->
+      <section class="space-y-5">
+        <h2 class="text-[22px] leading-[30px] md:text-[26px] md:leading-[34px] font-bold text-slate-950">
+          Checklist Saat Meminta Penawaran
+        </h2>
+        <ol class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          {checklistItems.map((item, idx) => (
+            <li class="rounded-xl border border-slate-200 bg-white p-4 flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-amber-50 text-[#b45309] font-bold text-xs flex items-center justify-center shrink-0">
+                {idx + 1}
+              </span>
+              <span class="text-xs sm:text-sm font-medium text-slate-800 leading-relaxed">
+                {item}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <!-- Related Internal Links + Inline Typographic Tags -->
+      <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-500">
+          <span class="font-medium text-slate-400">Tag:</span>
+          <a href="/sewa-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#sewa-excavator</a>
+          <a href="/sewa-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#biaya-proyek</a>
+          <a href="/jual-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#alat-berat</a>
+          <a href="/informasi-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#mobilisasi-unit</a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+          <a href="/sewa-alat-berat/" class="text-[#b45309] hover:text-amber-800 transition-colors">
+            Layanan Sewa Alat Berat
+          </a>
+          <a href="/informasi-alat-berat/tips-membeli-excavator-bekas/" class="text-slate-600 hover:text-slate-950 transition-colors">
+            Tips Membeli Excavator Bekas
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Ajukan Kebutuhan Sewa Excavator -->
+      <section class="rounded-2xl border border-slate-200 bg-slate-50 p-7 sm:p-9 space-y-5">
+        <div class="space-y-2">
+          <h2 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-slate-950">
+            Ajukan Kebutuhan Sewa Excavator
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Sedang mencari sewa excavator untuk proyek? Hubungi Sentra Alat Berat melalui WhatsApp <strong class="text-slate-950 font-semibold">{BUSINESS_INFO.phoneDisplay}</strong>. Sampaikan lokasi, durasi, jenis pekerjaan, dan spesifikasi unit agar kebutuhan dapat ditinjau berdasarkan ketersediaan. Harga dan jadwal harus dikonfirmasi sebelum pemesanan.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Sewa Alat Berat Proyek"
+            data-rfq-item="Sewa Excavator Proyek"
+            class="px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+          >
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Halaman Tidak Ditemukan (404) & Navigasi Utama - Sentra Alat Berat';
+const description =
+  'Halaman yang Anda cari tidak ditemukan. Silakan kembali ke beranda Sentra Alat Berat untuk layanan jual, spare part, service, dan sewa unit.';
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/404/" noindex={true}>
+  <section class="bg-[#020617] text-white pt-32 pb-24 lg:pt-40 lg:pb-32">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <span class="inline-block px-3.5 py-1 rounded-full bg-white/10 text-[#fbbf24] text-xs font-semibold">
+        Kode Status 404
+      </span>
+      <h1 class="text-[30px] leading-[36px] md:text-[44px] md:leading-[48px] font-bold text-white">
+        Halaman Tidak Ditemukan
+      </h1>
+      <p class="text-sm md:text-base text-slate-300 leading-relaxed max-w-xl mx-auto">
+        Tautan yang Anda tuju mungkin telah berpindah atau tidak tersedia. Silakan gunakan navigasi di bawah ini untuk mengakses layanan utama Sentra Alat Berat.
+      </p>
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-3">
+        <a
+          href="/"
+          class="px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors"
+        >
+          Kembali ke Beranda
+        </a>
+        <a
+          href="/jual-alat-berat/"
+          class="px-5 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"
+        >
+          Jual Alat Berat
+        </a>
+        <a
+          href="/spare-part-alat-berat/"
+          class="px-5 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"
+        >
+          Jual Spare Part
+        </a>
+        <a
+          href="/sewa-alat-berat/"
+          class="px-5 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"
+        >
+          Sewa Alat Berat
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

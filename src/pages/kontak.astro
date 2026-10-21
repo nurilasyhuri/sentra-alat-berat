@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../data/businessInfo';
+import { buildBreadcrumbSchema } from '../utils/seo';
+import { buildGeneralInquiryUrl } from '../utils/whatsapp';
+
+const title = 'Kontak, Alamat & Pengajuan Kebutuhan Proyek - Sentra Alat Berat';
+const description =
+  'Hubungi Sentra Alat Berat di 0851 8300 3060 atau Puncak Buring Indah, Kedungkandang, Malang untuk kebutuhan unit, spare part, service, dan sewa.';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Kontak', path: '/kontak/' },
+  ]),
+];
+
+const waUrl = buildGeneralInquiryUrl('Konsultasi Kebutuhan Alat Berat');
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/kontak/" jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="bg-[#020617] text-white pt-28 pb-16 lg:pt-36 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Kontak</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-5">
+        <h1 class="text-[30px] leading-[36px] tracking-[-0.75px] md:text-[48px] md:leading-[48px] md:tracking-[-1.2px] font-bold text-white">
+          Hubungi Sentra Alat Berat
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          Sampaikan kebutuhan pembelian alat berat, pencarian spare part berdasarkan nomor part atau foto, permintaan pemeriksaan dan service, maupun rencana sewa alat berat untuk proyek Anda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information & Preparation Guide -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+        <!-- Left Column: Direct Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 space-y-6">
+            <div class="space-y-1.5">
+              <h2 class="text-xl font-bold text-slate-950">Sentra Alat Berat</h2>
+              <p class="text-xs text-slate-600">{BUSINESS_INFO.brandDescriptor}</p>
+            </div>
+
+            <div class="space-y-4 text-xs sm:text-sm">
+              <div class="p-4 rounded-xl bg-white border border-slate-200/80 space-y-1">
+                <div class="text-xs font-semibold text-slate-500">Telepon / WhatsApp</div>
+                <div class="text-base font-bold text-slate-950">{BUSINESS_INFO.phoneDisplay}</div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-slate-200/80 space-y-1">
+                <div class="text-xs font-semibold text-slate-500">Alamat Operasional</div>
+                <div class="text-sm font-bold text-slate-950">{BUSINESS_INFO.address.formatted}</div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-slate-200/80 space-y-1">
+                <div class="text-xs font-semibold text-slate-500">Website Resmi</div>
+                <div class="text-sm font-bold text-slate-950">{BUSINESS_INFO.domain}</div>
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                data-open-rfq
+                class="px-6 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+              >
+                Ajukan Kebutuhan
+              </button>
+              <a
+                href={waUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3.5 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+              >
+                Konsultasi via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Data to Prepare per Service -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-2">
+            <h2 class="text-[24px] leading-[32px] md:text-[30px] md:leading-[36px] font-bold text-slate-950">
+              Data yang Perlu Disiapkan Saat Menghubungi Kami
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Agar tim Sentra Alat Berat dapat menindaklanjuti permintaan secara akurat, sertakan informasi berikut sesuai kategori kebutuhan Anda:
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="rounded-2xl border border-slate-200 p-6 space-y-2.5">
+              <h3 class="text-base font-bold text-slate-950">Jual Alat Berat</h3>
+              <ul class="space-y-1.5 text-xs text-slate-600 leading-relaxed list-disc pl-4">
+                <li>Jenis alat berat &amp; kapasitas kerja</li>
+                <li>Preferensi kondisi baru atau bekas</li>
+                <li>Merek/model jika sudah ditentukan</li>
+                <li>Lokasi proyek &amp; rencana waktu penggunaan</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6 space-y-2.5">
+              <h3 class="text-base font-bold text-slate-950">Pencarian Spare Part</h3>
+              <ul class="space-y-1.5 text-xs text-slate-600 leading-relaxed list-disc pl-4">
+                <li>Merek, model &amp; nomor seri (PIN) unit</li>
+                <li>Nomor part atau nama komponen</li>
+                <li>Foto komponen lama / label dari beberapa sisi</li>
+                <li>Jumlah kebutuhan &amp; tujuan pengiriman</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6 space-y-2.5">
+              <h3 class="text-base font-bold text-slate-950">Service &amp; Perbaikan</h3>
+              <ul class="space-y-1.5 text-xs text-slate-600 leading-relaxed list-disc pl-4">
+                <li>Jenis, merek, dan model alat berat</li>
+                <li>Lokasi unit saat ini</li>
+                <li>Gejala kerusakan atau keluhan saat beroperasi</li>
+                <li>Riwayat perawatan atau pergantian part terakhir</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6 space-y-2.5">
+              <h3 class="text-base font-bold text-slate-950">Sewa Alat Berat</h3>
+              <ul class="space-y-1.5 text-xs text-slate-600 leading-relaxed list-disc pl-4">
+                <li>Jenis unit &amp; spesifikasi kapasitas</li>
+                <li>Lokasi proyek &amp; akses kendaraan angkut</li>
+                <li>Tanggal mulai &amp; durasi sewa</li>
+                <li>Kebutuhan operator serta bahan bakar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

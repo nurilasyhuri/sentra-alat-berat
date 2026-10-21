@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS_INFO } from '../../data/businessInfo';
+import { buildArticleSchema, buildBreadcrumbSchema } from '../../utils/seo';
+import { buildGeneralInquiryUrl } from '../../utils/whatsapp';
+
+const title = 'Cara Memilih Spare Part Alat Berat yang Tepat - Sentra Alat Berat';
+const description =
+  'Panduan memilih spare part alat berat berdasarkan model unit, nomor part, nomor seri, kompatibilitas, kualitas, dan kebutuhan perawatan.';
+const canonicalPath = '/informasi-alat-berat/cara-memilih-spare-part-alat-berat/';
+
+const jsonLd = [
+  buildBreadcrumbSchema([
+    { name: 'Beranda', path: '/' },
+    { name: 'Informasi Alat Berat', path: '/informasi-alat-berat/' },
+    { name: 'Cara Memilih Spare Part Alat Berat', path: canonicalPath },
+  ]),
+  buildArticleSchema({
+    headline: 'Cara Memilih Spare Part Alat Berat yang Tepat',
+    description,
+    path: canonicalPath,
+    image: '/images/services/spare-part-alat-berat.webp',
+    datePublished: '2026-10-20',
+    dateModified: '2026-10-20',
+  }),
+];
+
+const guides = [
+  {
+    title: '1. Gunakan nomor part jika tersedia',
+    body: 'Nomor part merupakan salah satu cara paling membantu untuk mencocokkan komponen. Bandingkan nomor pada katalog, label, atau komponen lama dengan informasi dari penjual. Jika ada nomor pengganti atau supersession, minta konfirmasi kompatibilitas berdasarkan model dan nomor seri unit.',
+  },
+  {
+    title: '2. Cocokkan merek, model, dan nomor seri unit',
+    body: 'Jangan hanya menyebut merek alat berat. Model dan nomor seri/PIN dapat membantu mengidentifikasi variasi komponen yang digunakan. Data ini sangat berguna ketika terdapat perubahan spesifikasi antar tahun produksi.',
+  },
+  {
+    title: '3. Perhatikan jenis dan kualitas komponen',
+    body: 'Tanyakan apakah komponen merupakan genuine/OEM, aftermarket, atau rekondisi, sesuai kategori yang ditawarkan. Mintalah penjelasan mengenai kondisi, asal produk, ketentuan garansi, dan kebijakan retur. Hindari menganggap semua komponen dengan tampilan serupa memiliki kualitas yang sama.',
+  },
+  {
+    title: '4. Kirim foto dan informasi yang lengkap',
+    body: 'Jika nomor part tidak terbaca, kirim foto komponen dari beberapa sisi, foto label jika ada, serta gambaran lokasi pemasangan. Sertakan jumlah yang dibutuhkan dan waktu penggunaan. Informasi lengkap dapat membantu proses pencarian lebih efisien.',
+  },
+  {
+    title: '5. Jangan mengabaikan biaya dan waktu pengiriman',
+    body: 'Dalam pekerjaan proyek, waktu tunggu suku cadang dapat memengaruhi jadwal perbaikan. Bandingkan kecocokan, kualitas, harga total, estimasi pengiriman, garansi, dan dukungan purna jual—bukan hanya harga satuan.',
+  },
+];
+
+const waUrl = buildGeneralInquiryUrl('Pencarian Spare Part Alat Berat');
+---
+
+<BaseLayout title={title} description={description} canonicalPath={canonicalPath} ogType="article" jsonLd={jsonLd}>
+  <!-- Article Header -->
+  <section class="bg-[#020617] text-white pt-28 pb-14 lg:pt-36 lg:pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex flex-wrap items-center gap-2">
+        <a href="/" class="hover:text-white transition-colors">Beranda</a>
+        <span>/</span>
+        <a href="/informasi-alat-berat/" class="hover:text-white transition-colors">Informasi Alat Berat</a>
+        <span>/</span>
+        <span class="text-[#fbbf24] font-medium">Cara Memilih Spare Part</span>
+      </nav>
+
+      <div class="space-y-4">
+        <h1 class="text-[28px] leading-[36px] tracking-[-0.7px] md:text-[40px] md:leading-[46px] md:tracking-[-1px] font-bold text-white">
+          Cara Memilih Spare Part Alat Berat yang Tepat
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          Memilih spare part alat berat membutuhkan ketelitian karena setiap model unit dapat menggunakan komponen dengan spesifikasi berbeda. Komponen yang terlihat mirip belum tentu memiliki ukuran, material, konektor, atau karakteristik kerja yang sama. Sebelum membeli, pastikan identitas unit dan informasi suku cadang sudah sesuai.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Article Body -->
+  <article class="bg-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <!-- Featured Visual -->
+      <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
+        <img
+          src="/images/services/spare-part-alat-berat.webp"
+          alt="Pemeriksaan komponen hidrolik dan suku cadang alat berat berdasarkan nomor part"
+          width="900"
+          height="500"
+          class="w-full aspect-16/9 object-cover"
+          loading="eager"
+        />
+        <figcaption class="px-5 py-3 text-xs text-slate-500 bg-slate-50 border-t border-slate-200/80">
+          Mencocokkan nomor part, model, dan nomor seri (PIN) unit mencegah kesalahan spesifikasi saat pemesanan suku cadang.
+        </figcaption>
+      </figure>
+
+      <!-- Guide Sections -->
+      <section class="space-y-5">
+        <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          Langkah Mencocokkan Suku Cadang Alat Berat
+        </h2>
+
+        <div class="space-y-4">
+          {guides.map((g) => (
+            <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-6 space-y-2">
+              <h3 class="text-base md:text-lg font-bold text-slate-950">
+                {g.title}
+              </h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                {g.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Related Internal Links + Inline Typographic Tags -->
+      <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-500">
+          <span class="font-medium text-slate-400">Tag:</span>
+          <a href="/spare-part-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#spare-part</a>
+          <a href="/spare-part-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#nomor-part</a>
+          <a href="/service-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#perawatan-unit</a>
+          <a href="/informasi-alat-berat/" class="py-0.5 text-xs text-slate-600 hover:text-[#b45309] transition-colors">#komponen-hidrolik</a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+          <a href="/spare-part-alat-berat/" class="text-[#b45309] hover:text-amber-800 transition-colors">
+            Layanan Jual Spare Part
+          </a>
+          <a href="/service-alat-berat/" class="text-slate-600 hover:text-slate-950 transition-colors">
+            Layanan Service &amp; Perbaikan
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Ajukan Pencarian Spare Part -->
+      <section class="rounded-2xl border border-slate-200 bg-slate-50 p-7 sm:p-9 space-y-5">
+        <div class="space-y-2">
+          <h2 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-slate-950">
+            Ajukan Pencarian Spare Part
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Hubungi Sentra Alat Berat melalui WhatsApp <strong class="text-slate-950 font-semibold">{BUSINESS_INFO.phoneDisplay}</strong>. Siapkan merek, model, nomor seri unit, nomor part atau foto komponen, jumlah, dan lokasi pengiriman. Ketersediaan, spesifikasi, harga, dan garansi harus dikonfirmasi sebelum pemesanan.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Pencarian Spare Part Alat Berat"
+            data-rfq-item="Pencarian Spare Part (Nomor Part / Foto)"
+            class="px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold transition-colors"
+          >
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
