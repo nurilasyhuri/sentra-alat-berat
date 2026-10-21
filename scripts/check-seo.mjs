@@ -96,10 +96,10 @@ for (const file of files) {
     }
   }
 
-  // 7. Single WhatsApp CTA invariant (at most 1 direct wa.me anchor on any page)
-  const waLinks = html.match(/href="https:\/\/wa\.me\/[^"]+"/gi) || [];
-  if (waLinks.length > 1) {
-    console.error(`[${rel}] Found ${waLinks.length} direct WhatsApp CTAs (max 1 allowed)`);
+  // 7. Direct WhatsApp CTA presence check (at least 1 wa.me anchor on every page)
+  const waLinks = html.match(/href="https:\/\/wa\.me\/6285183003060[^"]*"/gi) || [];
+  if (waLinks.length === 0) {
+    console.error(`[${rel}] Missing WhatsApp 085183003060 CTA button`);
     errors++;
   }
 }
