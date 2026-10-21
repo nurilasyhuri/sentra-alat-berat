@@ -190,16 +190,16 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 2: LAYANAN SENTRA ALAT BERAT + ALUR LAYANAN -->
-  <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-20">
-      <div class="space-y-8">
+  <section class="bg-white pt-12 pb-8 lg:pt-16 lg:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 lg:space-y-12">
+      <div class="space-y-6">
         <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
           Layanan Sentra Alat Berat
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {mainServices.map((srv) => (
-            <a href={srv.href} class="group block space-y-4">
+            <a href={srv.href} class="group block space-y-3">
               <div class="aspect-4/3 rounded-2xl overflow-hidden bg-slate-100">
                 <img
                   src={srv.image}
@@ -226,14 +226,14 @@ const sectorDocs = [
       </div>
 
       <!-- Part B: Alur Layanan (Real 4-step sequence from brief) -->
-      <div class="space-y-6">
+      <div class="space-y-5">
         <h3 class="text-[20px] leading-[28px] md:text-[24px] md:leading-[32px] font-bold text-slate-950">
           Alur Layanan
         </h3>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {serviceWorkflow.map((step) => (
-            <div class="rounded-2xl bg-slate-50/90 border border-slate-100 p-5 sm:p-6 space-y-2.5">
+            <div class="rounded-2xl bg-slate-50/90 border border-slate-100 p-5 space-y-2">
               <span class="inline-flex w-7 h-7 rounded-full bg-amber-50 text-[#b45309] font-bold text-xs items-center justify-center">
                 {step.num}
               </span>
@@ -251,9 +251,9 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 3: PILIHAN JENIS ALAT BERAT (3x2 CLEAN SHOWCASE) -->
-  <section id="pilihan-unit" class="bg-white py-14 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 md:space-y-14">
-      <div class="max-w-2xl space-y-2">
+  <section id="pilihan-unit" class="bg-white py-8 lg:py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="max-w-2xl space-y-1.5">
         <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
           Jenis Alat Berat untuk Jual &amp; Sewa
         </h2>
@@ -262,13 +262,13 @@ const sectorDocs = [
         </p>
       </div>
 
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 sm:gap-x-10 gap-y-10 md:gap-y-14">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 sm:gap-x-8 gap-y-8">
         {BUSINESS_INFO.unitTypes.map((unit) => (
           <a
             href="/jual-alat-berat/"
-            class="group flex flex-col items-center text-center space-y-3 md:space-y-4"
+            class="group flex flex-col items-center text-center space-y-2.5"
           >
-            <div class="w-full aspect-square max-w-[160px] md:max-w-[260px] mx-auto rounded-2xl overflow-hidden bg-slate-50 border border-slate-200/80 p-2.5 md:p-4 flex items-center justify-center">
+            <div class="w-full aspect-square max-w-[160px] md:max-w-[240px] mx-auto rounded-2xl overflow-hidden bg-slate-50 border border-slate-200/80 p-2.5 md:p-3.5 flex items-center justify-center">
               <img
                 src={unit.image}
                 alt={unit.alt}
@@ -293,8 +293,8 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 4: KEBUTUHAN PROYEK & INFORMASI TEKNIS (3x3 GRID) -->
-  <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 lg:space-y-10">
+  <section class="bg-white pt-8 pb-12 lg:pt-10 lg:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 lg:space-y-8">
       <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
         Kebutuhan Proyek &amp; Informasi Teknis
       </h2>
@@ -326,10 +326,10 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 5: PEMERIKSAAN UNIT, SPARE PART & PROSEDUR SERVICE -->
-  <section class="bg-[#020617] text-white py-16 lg:py-12">
+  <section class="bg-[#020617] text-white py-12 lg:py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <div class="lg:col-span-6 space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div class="lg:col-span-6 space-y-5">
           <div class="space-y-2.5">
             <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-white">
               Pemeriksaan Unit, Spare Part &amp; Prosedur Service
@@ -415,8 +415,8 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 6: LOKASI OPERASIONAL & LAYANAN PROYEK -->
-  <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section class="bg-white pt-12 pb-8 lg:pt-16 lg:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       <h2 class="text-[24px] leading-[32px] tracking-[-0.6px] md:text-[30px] md:leading-[36px] md:tracking-[-0.75px] lg:text-[36px] lg:leading-[40px] lg:tracking-[-0.9px] font-bold text-slate-950">
         Mengapa Menghubungi Sentra Alat Berat?
       </h2>
@@ -486,9 +486,9 @@ const sectorDocs = [
   </section>
 
   <!-- SECTION 7: AJUKAN KEBUTUHAN ALAT BERAT ANDA (CONSULTATION SPLIT) -->
-  <section id="ajukan-kebutuhan" class="bg-white py-10 md:py-12 lg:py-20">
+  <section id="ajukan-kebutuhan" class="bg-white pt-6 pb-12 lg:pt-8 lg:pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div class="lg:col-span-5">
           <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-4/3 lg:aspect-4/5 max-w-md mx-auto lg:max-w-none">
             <img
@@ -590,18 +590,6 @@ const sectorDocs = [
       </div>
     </div>
   </section>
-
-  <!-- ASIDE SUMMARY STRIP -->
-  <aside aria-label="Ringkasan Layanan Sentra Alat Berat" class="bg-[#020617]/80 md:bg-white text-white md:text-slate-600 border-t border-white/10 md:border-slate-200 py-6 md:py-3.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-4 items-center text-xs leading-4">
-      <div class="truncate font-semibold">
-        Sentra Alat Berat — Jual, Spare Part, Service &amp; Sewa
-      </div>
-      <div class="truncate text-right text-slate-300 md:text-slate-500">
-        {BUSINESS_INFO.address.formatted}
-      </div>
-    </div>
-  </aside>
 </BaseLayout>
 
 <script>
