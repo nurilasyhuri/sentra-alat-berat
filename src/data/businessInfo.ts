@@ -10,7 +10,7 @@ export const BUSINESS_INFO = {
   phoneDisplay: '0851 8300 3060',
   phone: '085183003060',
   whatsappNumber: '6285183003060',
-  domain: 'https://sentraalatberat.com',
+  domain: 'https://sewaalatberat.com',
   address: {
     street: 'Puncak Buring Indah',
     district: 'Kedungkandang',

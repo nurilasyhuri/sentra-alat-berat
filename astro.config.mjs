@@ -4,7 +4,7 @@ import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://sentraalatberat.com',
+  site: 'https://sewaalatberat.com',
   trailingSlash: 'always',
   integrations: [
     tailwind({

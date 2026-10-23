@@ -1,6 +1,6 @@
 import { BUSINESS_INFO } from '../data/businessInfo';
 
-export const CANONICAL_BASE = 'https://sentraalatberat.com';
+export const CANONICAL_BASE = 'https://sewaalatberat.com';
 
 export function ensureAbsoluteUrl(url: string): string {
   if (url.startsWith('http://') || url.startsWith('https://')) {
