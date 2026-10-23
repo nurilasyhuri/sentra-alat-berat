@@ -58,7 +58,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
   jsonLd={jsonLd}
 >
   <!-- ARTICLE HERO HEADER -->
-  <section class="bg-[#020617] text-white py-12 lg:py-16">
+  <section class="bg-[#020617] text-white py-12 lg:py-16 border-b border-slate-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <nav aria-label="Breadcrumb" class="text-xs text-slate-400 mb-6 flex flex-wrap items-center gap-2">
         <a href="/" class="hover:text-white transition-colors">Beranda</a>
@@ -68,25 +68,33 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
         <span class="text-[#fbbf24] font-medium truncate max-w-xs">{article.title}</span>
       </nav>
 
-      <div class="space-y-4">
+      <div class="space-y-5">
         <div class="flex flex-wrap items-center gap-3 text-xs">
           <span class="px-3 py-1 rounded-full bg-amber-500/20 text-[#fbbf24] font-semibold border border-amber-500/30">
             {article.category}
           </span>
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Review Praktisi Lapangan
+          </span>
           <time datetime={article.datePublished} class="text-slate-400">
-            Dipublikasikan: {article.datePublished}
+            {article.datePublished}
           </time>
-          <span class="text-slate-500">•</span>
+          <span class="text-slate-600">•</span>
           <span class="text-slate-400">{article.author}</span>
         </div>
 
-        <h1 class="text-[28px] leading-[36px] tracking-[-0.7px] md:text-[40px] md:leading-[46px] md:tracking-[-1px] font-bold text-white">
+        <h1 class="text-[28px] leading-[36px] tracking-[-0.7px] md:text-[38px] md:leading-[46px] md:tracking-[-1px] font-bold text-white">
           {article.h1}
         </h1>
 
-        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
-          {article.leadParagraph}
-        </p>
+        <div class="p-4 sm:p-5 rounded-2xl bg-slate-900/80 border border-slate-800 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p class="font-normal">
+            {article.leadParagraph}
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -95,7 +103,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
   <article class="bg-white py-10 lg:py-14">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       <!-- Featured Image -->
-      <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
+      <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
         <img
           src={article.image}
           alt={article.imageAlt}
@@ -104,15 +112,16 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
           class="w-full aspect-16/9 object-cover"
           loading="eager"
         />
-        <figcaption class="px-5 py-3 text-xs text-slate-500 bg-slate-50 border-t border-slate-200/80">
-          {article.imageCaption}
+        <figcaption class="px-5 py-3 text-xs text-slate-500 bg-slate-50 border-t border-slate-200/80 flex items-center justify-between">
+          <span>{article.imageCaption}</span>
+          <span class="text-slate-400 text-[11px] hidden sm:inline">Sentra Alat Berat Field Report</span>
         </figcaption>
       </figure>
 
       <!-- Content Sections with H2 and H3 -->
       {article.sections.map((sec) => (
         <section class="space-y-5">
-          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950 tracking-[-0.4px]">
             {sec.heading}
           </h2>
 
@@ -123,18 +132,26 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
           </div>
 
           {sec.subsections && sec.subsections.map((sub) => (
-            <div class="mt-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-              <h3 class="text-base font-bold text-slate-900">{sub.heading}</h3>
+            <div class="mt-4 p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+              <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                {sub.heading}
+              </h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">{sub.content}</p>
             </div>
           ))}
 
           {sec.highlights && (
-            <div class="rounded-2xl bg-amber-50/70 border border-amber-200/80 p-5 space-y-2">
-              <span class="text-xs font-bold text-[#b45309] uppercase tracking-wider block">
-                Poin Penting Operasional:
-              </span>
-              <ul class="space-y-2 text-xs sm:text-sm text-slate-800 list-disc pl-5">
+            <div class="rounded-2xl bg-amber-50/80 border border-amber-200 p-5 sm:p-6 space-y-3">
+              <div class="flex items-center gap-2 text-xs font-bold text-[#b45309] uppercase tracking-wider">
+                <svg class="w-4 h-4 shrink-0 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Catatan Mandor &amp; Poin Kritis Lapangan</span>
+              </div>
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-800 list-disc pl-5 leading-relaxed">
                 {sec.highlights.map((hl) => (
                   <li>{hl}</li>
                 ))}
@@ -147,7 +164,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
       <!-- TABEL LOKASI PROYEK SE-INDONESIA -->
       <section class="space-y-5 pt-4">
         <div class="space-y-2">
-          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950 tracking-[-0.4px]">
             {article.locationTable.heading}
           </h2>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -169,7 +186,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
             </thead>
             <tbody class="divide-y divide-slate-200 bg-white">
               {article.locationTable.rows.map((row, idx) => (
-                <tr class={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/60'}>
+                <tr class={idx % 2 === 0 ? 'bg-white hover:bg-amber-50/30' : 'bg-slate-50/60 hover:bg-amber-50/30'}>
                   <td class="px-4 py-3 font-bold text-slate-950 whitespace-nowrap">
                     {row.region}
                   </td>
@@ -180,7 +197,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
                     {row.dominantProjects}
                   </td>
                   <td class="px-4 py-3 text-slate-700 min-w-[170px]">
-                    <span class="inline-flex px-2 py-0.5 rounded-md bg-slate-100 text-slate-800 text-[11px] font-medium">
+                    <span class="inline-flex px-2 py-0.5 rounded-md bg-slate-100 text-slate-800 text-[11px] font-medium border border-slate-200">
                       {row.mobilizationMode}
                     </span>
                   </td>
@@ -203,21 +220,24 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
       <!-- FAQ SECTION (SCHEMA COMPLIANT) -->
       <section class="space-y-6 pt-4">
         <div class="space-y-2">
-          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950">
+          <h2 class="text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] font-bold text-slate-950 tracking-[-0.4px]">
             Pertanyaan yang Sering Diajukan (FAQ)
           </h2>
           <p class="text-xs sm:text-sm text-slate-600">
-            Informasi penting terkait syarat sewa, mobilisasi unit, dan dukungan teknis di lapangan.
+            Pertanyaan seputar spesifikasi teknis, ketentuan operasional, dan garansi layanan.
           </p>
         </div>
 
         <div class="space-y-4">
           {article.faqs.map((faq) => (
-            <div class="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
-              <h3 class="text-sm sm:text-base font-bold text-slate-950">
-                {faq.question}
+            <div class="rounded-2xl border border-slate-200 p-5 sm:p-6 bg-white space-y-2 hover:border-slate-300 transition-colors">
+              <h3 class="text-sm sm:text-base font-bold text-slate-950 flex items-start gap-2.5">
+                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 text-[#b45309] text-xs shrink-0 font-bold">
+                  Q
+                </span>
+                <span>{faq.question}</span>
               </h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pl-8">
                 {faq.answer}
               </p>
             </div>
@@ -226,19 +246,24 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
       </section>
 
       <!-- INTERNAL LINKING STRATEGIS -->
-      <section class="rounded-2xl bg-slate-50 border border-slate-200 p-6 space-y-4">
-        <h3 class="text-sm font-bold text-slate-950 uppercase tracking-wider">
-          Rujukan Layanan Sentra Alat Berat Terkait
-        </h3>
-        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+      <section class="rounded-2xl bg-slate-50 border border-slate-200 p-6 sm:p-7 space-y-4">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+          </svg>
+          <h3 class="text-sm font-bold text-slate-950 uppercase tracking-wider">
+            Rujukan Layanan Sentra Alat Berat Terkait
+          </h3>
+        </div>
+        <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
           {article.internalLinks.map((link) => (
-            <li class="flex items-start gap-2">
+            <li class="flex items-start gap-2.5">
               <svg aria-hidden="true" class="w-4 h-4 text-[#b45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
               </svg>
               <span>
                 {link.context}{' '}
-                <a href={link.href} class="font-bold text-[#b45309] hover:underline">
+                <a href={link.href} class="font-bold text-[#b45309] hover:underline underline-offset-2">
                   {link.anchorText}
                 </a>.
               </span>
@@ -248,24 +273,27 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
       </section>
 
       <!-- BOTTOM CTA BOX -->
-      <section class="rounded-2xl bg-[#020617] text-white p-6 sm:p-8 space-y-5">
+      <section class="rounded-2xl bg-[#020617] text-white p-6 sm:p-8 space-y-5 border border-slate-800 shadow-xl">
         <div class="space-y-2">
-          <h2 class="text-lg sm:text-xl font-bold text-white">
-            Konsultasi Kebutuhan Alat Berat untuk Proyek Anda
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-[#fbbf24] text-xs font-semibold border border-amber-500/30">
+            <span>Dukungan Operasional 24/7</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-[-0.5px]">
+            Konsultasikan Kebutuhan Alat Berat untuk Proyek Anda
           </h2>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Hubungi tim teknis Sentra Alat Berat di {BUSINESS_INFO.phoneDisplay}. Sampaikan spesifikasi unit, durasi sewa, dan koordinat lokasi kerja untuk estimasi penawaran resmi.
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
+            Sampaikan estimasi volume kubikasi, durasi sewa, dan koordinat lokasi kerja ke tim teknis kami di {BUSINESS_INFO.phoneDisplay}. Dapatkan surat penawaran harga resmi (SPH) lengkap dengan skema mobilisasi armada terdekat.
           </p>
         </div>
 
-        <div class="flex flex-wrap items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3 pt-2">
           <button
             type="button"
             data-open-rfq
             data-rfq-category={article.category}
             class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer shadow-lg"
           >
-            <span>Ajukan Kebutuhan</span>
+            <span>Ajukan Penawaran Sewa</span>
           </button>
 
           <a
@@ -277,7 +305,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
             <svg aria-hidden="true" class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
             </svg>
-            <span>WhatsApp {BUSINESS_INFO.phoneDisplay}</span>
+            <span>WhatsApp Tim Teknis</span>
           </a>
         </div>
       </section>
@@ -292,7 +320,7 @@ const relatedArticles = allArticles.filter((a) => a.slug !== article.slug).slice
             {relatedArticles.map((rel) => (
               <a
                 href={`/informasi-alat-berat/${rel.slug}/`}
-                class="group block p-4 rounded-xl border border-slate-200 hover:border-[#b45309] bg-white transition-colors"
+                class="group block p-4 rounded-xl border border-slate-200 hover:border-[#b45309] bg-white transition-colors shadow-xs"
               >
                 <div class="aspect-16/10 rounded-lg overflow-hidden bg-slate-100 mb-2.5">
                   <img
