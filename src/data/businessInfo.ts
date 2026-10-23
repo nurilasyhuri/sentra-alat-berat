@@ -1,6 +1,6 @@
 export const BUSINESS_INFO = {
   name: 'Sentra Alat Berat',
-  legalName: 'Sentra Alat Berat - Pusat Jual, Spare Part, Service & Sewa Alat Berat',
+  legalName: 'Sentra Alat Berat - Pusat Jual Spare Part Alat Berat, Service & Sewa Alat Berat',
   brandDescriptor: 'Jual Alat Berat, Jual Spare Part, Service & Sewa Alat Berat',
   tagline: 'Semua Kebutuhan Alat Berat, dalam Satu Sentra.',
   valueProposition:
