@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BUSINESS_INFO } from '../../data/businessInfo';
 import { buildBreadcrumbSchema, buildFaqSchema } from '../../utils/seo';
 import { buildGeneralInquiryUrl } from '../../utils/whatsapp';
+import { getAllPublishedArticles } from '../../data/articlesData';
 
 const title = 'Pusat Informasi, Panduan & FAQ Proyek - Sentra Alat Berat';
 const description =
@@ -16,7 +17,17 @@ const jsonLd = [
   buildFaqSchema(BUSINESS_INFO.faqs),
 ];
 
-const articles = [
+const dynamicArticles = getAllPublishedArticles().map((a) => ({
+  slug: `/informasi-alat-berat/${a.slug}/`,
+  title: a.title,
+  excerpt: a.metaDescription,
+  image: a.image,
+  alt: a.imageAlt,
+  relatedService: a.relatedService,
+  tags: a.tags,
+}));
+
+const legacyArticles = [
   {
     slug: '/informasi-alat-berat/harga-sewa-excavator/',
     title: 'Berapa Harga Sewa Excavator? Ini Faktor yang Menentukan Biayanya',
@@ -48,6 +59,8 @@ const articles = [
     tags: ['#spare-part', '#nomor-part', '#perawatan-unit'],
   },
 ];
+
+const articles = [...dynamicArticles, ...legacyArticles];
 
 const waUrl = buildGeneralInquiryUrl('Konsultasi Teknis & Informasi Alat Berat');
 ---
