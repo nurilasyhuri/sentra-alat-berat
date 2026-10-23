@@ -1,12 +1,12 @@
 export const BUSINESS_INFO = {
   name: 'Sentra Alat Berat',
   legalName: 'Sentra Alat Berat - Pusat Jual Spare Part Alat Berat, Service & Sewa Alat Berat',
-  brandDescriptor: 'Jual Alat Berat, Jual Spare Part, Service & Sewa Alat Berat',
+  brandDescriptor: 'Jual Spare Part Alat Berat, Service & Sewa Alat Berat',
   tagline: 'Semua Kebutuhan Alat Berat, dalam Satu Sentra.',
   valueProposition:
-    'Sentra Alat Berat membantu kebutuhan jual alat berat, pencarian spare part, konsultasi service dan perbaikan, serta sewa alat berat untuk proyek konstruksi, pekerjaan tanah, pertambangan, perkebunan, dan kegiatan industri.',
+    'Sentra Alat Berat melayani pengadaan unit, pencarian spare part sesuai nomor part & PIN, inspeksi perbaikan mesin dan hidrolik, serta sewa alat berat untuk proyek konstruksi, pekerjaan tanah, pertambangan, dan perkebunan.',
   description:
-    'Cari alat berat untuk dibeli atau disewa, temukan spare part sesuai nomor part, dan ajukan service alat berat melalui Sentra Alat Berat di Malang.',
+    'Penyedia alat berat terpadu di Malang: sewa alat berat proyek, pengadaan suku cadang mesin & hidrolik presisi, serta layanan service teknisi panggilan.',
   phoneDisplay: '0851 8300 3060',
   phone: '085183003060',
   whatsappNumber: '6285183003060',
@@ -78,28 +78,28 @@ export const BUSINESS_INFO = {
   ],
   faqs: [
     {
-      q: 'Apakah Sentra Alat Berat melayani jual-beli alat berat?',
-      a: 'Website disiapkan untuk menerima permintaan pembelian alat berat. Jenis unit, kondisi, harga, dan ketersediaan perlu dikonfirmasi berdasarkan kebutuhan pelanggan.',
+      q: 'Apakah Sentra Alat Berat melayani pengadaan dan penjualan alat berat?',
+      a: 'Ya, kami melayani penjualan unit alat berat baru dan rekondisi siap kerja (excavator, bulldozer, wheel loader, vibro roller, dump truck). Setiap unit melalui inspeksi mesin, hidrolik, dan keabsahan dokumen sebelum penawaran diajukan.',
     },
     {
-      q: 'Apakah bisa mencari spare part berdasarkan foto?',
-      a: 'Foto dapat membantu pencarian awal. Untuk meningkatkan ketepatan, sertakan merek, model, nomor seri unit, dan nomor part jika tersedia.',
+      q: 'Apakah bisa mencari spare part berdasarkan foto fisik?',
+      a: 'Bisa. Foto fisik, label nameplate, atau nomor seri PIN unit sangat membantu tim kami mengidentifikasi komponen di katalog suku cadang agar spesifikasi yang dikirimkan 100% presisi.',
     },
     {
-      q: 'Apakah Sentra Alat Berat menerima permintaan service?',
-      a: 'Anda dapat menyampaikan kebutuhan pemeriksaan atau perbaikan melalui WhatsApp. Cakupan pekerjaan, lokasi, jadwal, dan ketersediaan teknisi perlu dikonfirmasi.',
+      q: 'Apakah Sentra Alat Berat melayani servis teknisi ke lokasi proyek?',
+      a: 'Ya, teknisi kami melayani inspeksi dan perbaikan langsung di lokasi kerja proyek, meliputi troubleshooting mesin diesel, kebocoran sistem hidrolik, kelistrikan, hingga rekondisi undercarriage.',
     },
     {
-      q: 'Bagaimana cara meminta penawaran sewa alat berat?',
-      a: 'Kirimkan jenis unit, lokasi proyek, tanggal mulai, durasi, jenis pekerjaan, serta kebutuhan operator dan bahan bakar.',
+      q: 'Bagaimana alur penyewaan alat berat untuk proyek?',
+      a: 'Kirimkan informasi jenis unit, lokasi proyek, perkiraan tanggal mulai, durasi kerja, serta opsi include/exclude operator dan solar. Tim kami akan segera mengirimkan surat penawaran sewa resmi.',
     },
     {
-      q: 'Apakah harga tercantum di website?',
-      a: 'Harga dapat berbeda menurut spesifikasi, kondisi, lokasi, durasi, dan ketersediaan. Jika harga belum tercantum, hubungi Sentra Alat Berat untuk meminta penawaran.',
+      q: 'Bagaimana penentuan harga dan skema pembayaran?',
+      a: 'Harga disesuaikan dengan kapasitas unit, durasi pemakaian (harian/bulanan), jarak mobilisasi alat, dan kondisi kerja di lapangan. Seluruh rincian biaya disampaikan transparan secara tertulis sebelum kontrak.',
     },
     {
-      q: 'Bagaimana cara menghubungi Sentra Alat Berat?',
-      a: 'Telepon atau WhatsApp 0851 8300 3060. Alamat: Puncak Buring Indah, Kedungkandang, Malang.',
+      q: 'Bagaimana cara cepat berkonsultasi dengan Sentra Alat Berat?',
+      a: 'Hubungi langsung nomor telepon atau WhatsApp resmi kami di 0851 8300 3060. Kantor operasional kami berlokasi di Puncak Buring Indah, Kedungkandang, Malang.',
     },
   ],
 };
