@@ -832,6 +832,253 @@ export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
       },
     ],
   },
+  {
+    slug: 'sewa-dump-truck-tronton-indeks-24',
+    title: "Sewa Dump Truck Tronton Indeks 24 m³ untuk Angkut Tanah & Tambang",
+    metaDescription: "Rental dump truck tronton 10 roda indeks 24 kubik untuk angkutan tanah galian cut & fill, batu quarry, pasir, dan batubara di seluruh Indonesia.",
+    h1: "Sewa Dump Truck Tronton Indeks 24 m³ untuk Proyek Tanah & Tambang Se-Indonesia",
+    leadParagraph: "Menghitung efisiensi pemindahan tanah jarak jauh (hauling) dari galian ke area disposal sangat bergantung pada daya muat dan keandalan armada dump truck. Menggunakan dump truck engkel isi 8 kubik untuk jarak tempuh di atas 10 km sering kali bikin tekor solar dan upah sopir. Di sinilah dump truck tronton 10 roda berindeks 24 m³ jadi pilihan paling ekonomis bagi para kontraktor sipil dan tambang.",
+    image: '/images/units/dump-truck.webp',
+    imageAlt: "Armada dump truck tronton 10 roda mengangkut material proyek tanah",
+    imageCaption: "Dump truck tronton indeks 24 kubik siap melayani ritase angkutan tanah dan material tambang.",
+    category: 'Sewa Alat Berat',
+    tags: ["#sewa-dump-truck","#dump-truck-tronton","#indeks-24","#angkut-material"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-24',
+    dateModified: '2026-10-24',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Kenapa Tronton 10 Roda Indeks 24 m³ Jadi Standar Hauling Efisien?",
+            "content": [
+                  "Dump truck tronton 10 roda berpenggerak 6x4 dirancang untuk menahan beban muatan tanah timbunan atau batubara hingga 25–30 ton tanpa membuat sasis melengkung. Gardan ganda di roda belakang memberikan traksi kuat saat merayap di tanjakan licin disposal tambang maupun medan proyek yang berlumpur sehabis hujan.",
+                  "Dengan kapasitas bak 24 m³, satu unit tronton bisa memangkas separuh frekuensi ritase jika dibandingkan dump truck standar 12 kubik. Hal ini berdampak langsung pada kelancaran antrean loading di dekat excavator dan memperkecil kemacetan di pintu keluar area proyek."
+            ],
+            "subsections": [
+                  {
+                        "heading": "Sistem Hidrolik Silinder Teleskopik Dump",
+                        "content": "Bak dump menggunakan sistem hidrolik teleskopik bertenaga tinggi yang mampu mengangkat bak penuh material basah hingga sudut 50 derajat dalam tempo kurang dari 25 detik, memastikan material tidak lengket di dasar bak."
+                  }
+            ],
+            "highlights": [
+                  "Konfigurasi penggerak 6x4 dengan transmisi heavy-duty dan differential lock roda belakang.",
+                  "Plat bak baja tahan gesek tebal 6–8 mm, aman untuk muatan batu belah andesit dan sirtu.",
+                  "Pilihan skema kontrak bulanan, sewa lepas unit, atau sistem borongan ritase kubikasi."
+            ]
+      },
+      {
+            "heading": "Tips Estimator: Menentukan Rasio Jumlah Dump Truck per Excavator",
+            "content": [
+                  "Kesalahan paling fatal di lapangan adalah membiarkan excavator menganggur menunggu truk datang (idle time), atau sebaliknya: belasan dump truck menumpuk mengantre panjang membakar solar sia-sia.",
+                  "Untuk jarak disposal 3 sampai 5 kilometer, perbandingan ideal adalah 1 unit excavator PC200 melayani 4 hingga 5 unit dump truck tronton 24 m³. Jika jarak tempuh melar hingga di atas 10 km melewati jalur umum yang padat lalu lintas, tambahkan 2 sampai 3 unit truk agar ritme kerja galian tetap stabil tanpa jeda."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Apakah sewa dump truck tronton tersedia skema include solar dan supir?",
+            "answer": "Tersedia. Kami melayani skema sewa lepas armada (unit only) maupun skema all-in lengkap dengan supir berpengalaman SIM B2 Umum dan pasokan solar industri resmi di lokasi kerja."
+      },
+      {
+            "question": "Berapa tarif sewa bulanan untuk dump truck tronton 24 kubik?",
+            "answer": "Tarif sewa bulanan berkisar antara Rp 35.000.000 hingga Rp 50.000.000 per unit tergantung rute medan kerja, tahun rakitan armada, dan ketentuan jam shift kerja."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-excavator-long-arm-normalisasi-sungai',
+    title: "Sewa Excavator Long Arm Jangkauan 15–18 Meter untuk Normalisasi Sungai",
+    metaDescription: "Rental excavator long arm super reach jangkauan 15 hingga 18 meter untuk pengerukan lumpur sungai, pembuatan tanggul kolam tambak, dan galian basement dalam.",
+    h1: "Sewa Excavator Long Arm Jangkauan 15–18 Meter Se-Indonesia",
+    leadParagraph: "Mengeruk sedimentasi lumpur di palung sungai lebar, membersihkan enceng gondok dan sedimentasi danau, atau membentuk tanggul tambak pesisir sering kali mustahil dikerjakan excavator arm standar. Jika unit dipaksa maju mendekati bibir air, risiko unit tergelincir atau amblas ke dalam lumpur hidup sangat besar. Excavator long arm dengan jangkauan 15 hingga 18 meter adalah solusi mutlak untuk pekerjaan galian radius jauh dari atas tanggul yang kokoh.",
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: "Excavator long arm dengan boom panjang mengeruk lumpur dan sedimen di saluran air",
+    imageCaption: "Excavator long reach 16 meter siap menangani pengerukan tebing dan saluran air luas.",
+    category: 'Sewa Alat Berat',
+    tags: ["#excavator-long-arm","#sewa-long-arm","#normalisasi-sungai","#pengerukan-lumpur"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-24',
+    dateModified: '2026-10-24',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Karakteristik & Keseimbangan Excavator Super Long Front (SLF)",
+            "content": [
+                  "Excavator long arm bukan sekadar excavator standar yang disambung besinya secara sembarangan. Struktur boom dan arm panjang didesain khusus oleh pabrikan dengan bobot balance counterweight belakang yang jauh lebih berat guna menjaga titik pusat gravitasi mesin saat mengayun.",
+                  "Kapasitas bucket excavator long arm umumnya sengaja diturunkan ke ukuran 0.4 hingga 0.5 m³ (setengah dari bucket PC200 standar). Pengurangan volume bucket ini krusial untuk mencegah beban jungkit (tipping load) pada struktur swing bearing saat arm terentang penuh sejauh belasan meter di atas air."
+            ],
+            "highlights": [
+                  "Jangkauan galian horisontal mencapai 15.5 hingga 18.2 meter dari poros swing bodi.",
+                  "Kedalaman galian vertikal ke dasar palung sungai mencapai 11.5 hingga 13 meter.",
+                  "Pilihan bucket pembersih parit (ditch cleaning bucket) berpola lebar untuk mengeruk lumpur cair dan eceng gondok secara cepat."
+            ]
+      },
+      {
+            "heading": "SOP Keselamatan Kerja: Hindari Unit Terguling ke Aliran Sungai",
+            "content": [
+                  "Bekerja di bibir tebing sungai menuntut kehati-hatian ekstra. Terapkan SOP berikut:",
+                  "1. Pastikan posisi travel motor track crawler berada di bagian belakang menghadap daratan kering, bukan menghadap ke arah bibir tebing air, agar alat bisa langsung mundur bila tebing runtuh mendadak.",
+                  "2. Jangan pernah melakukan gerakan mengayun mendadak (sudden swing stop) saat bucket penuh lumpur cair pada posisi lengan terentang maksimal.",
+                  "3. Gunakan matras kayu (wooden swamp mats) bila tanah tumpuan di bibir tanggul mulai lembek atau retak."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Berapa kapasitas bucket excavator long arm dibandingkan unit standar?",
+            "answer": "Kapasitas bucket excavator long arm sengaja dirancang 0.4 hingga 0.5 m³ guna mencegah risiko tipping load (kehilangan keseimbangan) pada struktur lengan yang panjang saat menjangkau titik terjauh."
+      },
+      {
+            "question": "Apakah excavator long arm bisa dimobilisasi menggunakan trailer biasa?",
+            "answer": "Mobilisasi excavator long arm membutuhkan trailer lowbed dengan panjang geladak khusus. Untuk rute jalan berliku atau sempit, arm terkadang dilepas terpisah demi keselamatan ruang bebas jalan raya."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'panduan-ganti-undercarriage-alat-berat',
+    title: "Panduan Ganti Spare Part Undercarriage: Track Shoe, Roller & Sprocket",
+    metaDescription: "Cara memeriksa tingkat keausan undercarriage alat berat crawler (excavator & bulldozer). Spesifikasi suku cadang track shoe, link, idler, dan sprocket.",
+    h1: "Panduan Penggantian Suku Cadang Undercarriage Alat Berat Se-Indonesia",
+    leadParagraph: "Tahukah Anda bahwa hampir 50% dari total pengeluaran biaya perawatan alat berat crawler (tipe rantai besi) tersedot untuk sistem kaki-kaki atau undercarriage? Di area kerja berpasir kuarsa tajam atau tanah cadas tambang, gesekan besi ketemu batu terjadi setiap detik. Memahami batas toleransi aus komponen undercarriage adalah kunci agar dompet perusahaan tidak kebobolan akibat kerusakan berantai pada final drive motor.",
+    image: '/images/services/spare-part-alat-berat.webp',
+    imageAlt: "Komponen undercarriage track link roller dan sprocket alat berat crawler",
+    imageCaption: "Pemeriksaan ketebalan link dan keausan sprocket mencegah rantai crawler lepas di lapangan.",
+    category: 'Spare Part Alat Berat',
+    tags: ["#undercarriage","#track-shoe","#spare-part-alat-berat","#roller-sprocket"],
+    relatedService: { label: 'Layanan Jual Spare Part', href: '/spare-part-alat-berat/' },
+    datePublished: '2026-10-24',
+    dateModified: '2026-10-24',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "4 Komponen Vital Undercarriage & Batas Kritis Toleransi Aus",
+            "content": [
+                  "Sistem undercarriage menopang beban puluhan ton alat berat sekaligus mentransfer tenaga gerak putar menjadi daya dorong di atas tanah. Ada empat komponen utama yang wajib diinspeksi secara rutin:",
+                  "1. Track Link & Pin Bushing: Titik tumpu rantai. Bila jarak antar pin (pitch) sudah melar melampaui toleransi 100%, rantai akan terasa kendur dan gampang copot dari jalurnya.",
+                  "2. Track Roller & Carrier Roller: Roda penumpu beban bodi. Periksa apakah seal oli internal roller masih rapat. Roller yang macet berputar akan membuat tapak rantai tergerus tajam seperti dipahat.",
+                  "3. Drive Sprocket: Gigi bintang penggerak putaran rantai. Jika mata gigi sprocket sudah menipis runcing menyerupai sirip hiu, segera lakukan penggantian bersamaan dengan rantai link baru.",
+                  "4. Front Idler & Spring Recoil: Roda pemandu depan penahan hentakan batu. Periksa ketebalan bibir pemandu idler agar rantai tidak goyang melintir saat unit berbelok."
+            ],
+            "highlights": [
+                  "Lakukan rotasi bushing (turning pin & bushing) saat tingkat keausan mencapai 70–80% untuk memperpanjang usia pakai rantai hingga 30%.",
+                  "Jangan pasang rantai track link baru pada gigi sprocket yang sudah aus runcing karena akan merusak bushing baru dalam tempo singkat."
+            ]
+      },
+      {
+            "heading": "Pentingnya Penyetelan Ketegangan Rantai (Track Sag)",
+            "content": [
+                  "Setiap jenis tanah membutuhkan setelan kelenturan rantai yang berbeda. Di tanah lempung basah, kendorkan setelan sag 10–15 mm lebih longgar dibanding standar karena tanah yang menempel di sela rel undercarriage akan membuat rantai menegang dengan sendirinya saat berputar.",
+                  "Rantai yang disetel terlalu kencang meningkatkan gesekan beban mesin hingga 15% dan memicu panas ekstrem pada bearing travel motor hidrolik."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Kapan saat yang paling tepat mengganti satu set rantai undercarriage?",
+            "answer": "Saat ketebalan link height dan diameter luar bushing sudah menipis mendekati batas service limit manual book (keausan di atas 100%), atau ketika rantai sudah berulang kali lepas (anjlok) meski sudah disetel pompa gemuk recoil."
+      },
+      {
+            "question": "Apakah Sentra Alat Berat menjual undercarriage OEM dan Genuine?",
+            "answer": "Ya, kami menyediakan suku cadang undercarriage Genuine pabrikan maupun OEM berkualitas heavy-duty (seperti Berco, ITR, dan CH) untuk unit Komatsu, Caterpillar, Kobelco, dan Hitachi."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  }
 ];
 
 export function getAllPublishedArticles(): SeoArticle[] {
