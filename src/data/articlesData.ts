@@ -1078,6 +1078,234 @@ export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
         context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
       },
     ],
+  },
+  {
+    slug: 'service-pompa-hidrolik-silinder-excavator',
+    title: "Service Pompa Hidrolik & Silinder Excavator Bocor: Solusi Cepat Lapangan",
+    metaDescription: "Layanan service perbaikan pompa hidrolik utama, seal kit silinder bocor, dan control valve alat berat excavator ke lokasi proyek di Indonesia.",
+    h1: "Service Perbaikan Sistem Hidrolik & Pompa Excavator Se-Indonesia",
+    leadParagraph: "Saat excavator Anda mulai loyo mengangkat beban galian, gerakan silinder arm melambat saat oli mulai panas, atau arm boom turun sendiri secara perlahan (hydraulic drift), jangan biarkan operator memaksakan kerja unit. Gejala tersebut adalah tanda peringatan bahwa sistem hidrolik mengalami kebocoran internal atau pompa hidrolik utama (main pump) mulai aus. Menunda perbaikan hidrolik bisa memicu kontaminasi serpihan gram besi ke seluruh sirkuit kontrol valve yang biaya perbaikannya berkali lipat lebih mahal.",
+    image: '/images/services/service-alat-berat.webp',
+    imageAlt: "Teknisi memeriksa tekanan pompa hidrolik utama excavator dengan pressure gauge",
+    imageCaption: "Pengujian tekanan hidrolik utama (main relief valve) untuk memulihkan tenaga galian unit.",
+    category: 'Service Alat Berat',
+    tags: ["#service-hidrolik","#pompa-hidrolik-excavator","#seal-silinder-bocor","#mekanik-alat-berat"],
+    relatedService: { label: 'Layanan Service Alat Berat', href: '/service-alat-berat/' },
+    datePublished: '2026-10-25',
+    dateModified: '2026-10-25',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Penyebab Tekanan Hidrolik Drop & Gejala Kerusakan Utama",
+            "content": [
+                  "Tekanan kerja hidrolik excavator 20 ton modern berada di kisaran 34.3 hingga 37.3 MPa (sekitar 350–380 bar). Begitu tekanan ini drop akibat ausnya barel piston atau piringan klep (valve plate), daya gali unit akan merosot drastis.",
+                  "Penyebab umum meliputi temperatur oli hidrolik yang berlebihan (overheating) akibat pendingin oli tersumbat debu, atau keterlambatan penggantian filter return oli hidrolik sehingga partikel kotoran menggores dinding silinder hidrolik."
+            ],
+            "highlights": [
+                  "Penanganan seal kit silinder boom, arm, dan bucket menggunakan bahan polyurethane tahan temperatur tinggi.",
+                  "Kalibrasi ulang tekanan main relief valve dan pilot pressure menggunakan instrumen pressure gauge digital presisi.",
+                  "Flushing total tangki dan sirkuit selang hidrolik untuk memastikan bebas gram serpihan logam."
+            ]
+      },
+      {
+            "heading": "Keuntungan Layanan Mekanik Panggilan Sentra Alat Berat",
+            "content": [
+                  "Membawa excavator rusak dari lokasi tambang atau proyek perbukitan ke bengkel kota butuh biaya sewa lowbed dan waktu berhari-hari. Tim mekanik Sentra Alat Berat siap datang langsung ke lokasi kerja Anda dengan membawa tooling hidrolik portabel, kit seal pengganti, dan unit tester tekanan untuk penanganan cepat di tempat."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Berapa lama waktu perbaikan kebocoran seal silinder arm excavator di lokasi?",
+            "answer": "Penggantian seal kit silinder arm di lapangan umumnya membutuhkan waktu 4 hingga 8 jam kerja jika batang as piston silinder tidak mengalami luka baret yang parah."
+      },
+      {
+            "question": "Apakah ada garansi setelah service sistem hidrolik?",
+            "answer": "Ya, Sentra Alat Berat memberikan garansi service hidrolik hingga 3 bulan atau 500 jam operasi dengan ketentuan penggunaan oli dan filter hidrolik sesuai standar rekomendasi pabrikan."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'tips-memilih-filter-solar-oli-alat-berat',
+    title: "Tips Memilih Filter Solar & Filter Oli Alat Berat Komatsu & Caterpillar",
+    metaDescription: "Panduan memilih filter solar (fuel water separator) dan filter oli mesin alat berat untuk mencegah kerusakan common rail injector akibat solar kotor.",
+    h1: "Panduan Memilih Filter Solar & Oli Alat Berat Komatsu & Caterpillar",
+    leadParagraph: "Mesin diesel alat berat generasi terkini menggunakan teknologi Common Rail Direct Injection (CRDi) dengan tekanan semprot bahan bakar mencapai lebih dari 1.800 bar. Lubang nozel injector pada sistem ini berukuran mikroskopis dan sangat rentan tersumbat atau aus akibat partikel kotoran dan endapan air dalam solar B35. Memilih filter solar berkualitas tinggi dengan filtrasi 2–5 mikron adalah asuransi termurah untuk melindungi injector mesin berharga puluhan juta rupiah.",
+    image: '/images/services/spare-part-alat-berat.webp',
+    imageAlt: "Deretan filter oli dan filter bahan bakar diesel untuk alat berat",
+    imageCaption: "Filter solar dengan efisiensi mikron tinggi melindungi injector mesin diesel generasi baru.",
+    category: 'Spare Part Alat Berat',
+    tags: ["#filter-solar-alat-berat","#filter-oli-mesin","#komatsu-caterpillar","#suku-cadang"],
+    relatedService: { label: 'Layanan Jual Spare Part', href: '/spare-part-alat-berat/' },
+    datePublished: '2026-10-25',
+    dateModified: '2026-10-25',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Sistem Filtrasi Bertingkat: Pre-Filter Water Separator & Main Fuel Filter",
+            "content": [
+                  "Pada alat berat Komatsu, Cat, Kobelco, maupun Hitachi, sistem bahan bakar diesel dibagi menjadi dua lapis proteksi:",
+                  "1. Pre-Filter / Fuel Water Separator: Menyaring kotoran kasar berukuran 10–30 mikron dan memisahkan butiran air yang terperangkap dalam solar. Air yang mengendap di dasar mangkuk kaca separator wajib dibuang (drain) setiap pagi sebelum memutar kunci kontak.",
+                  "2. Main Fuel Filter: Terletak setelah supply pump, memiliki pori kertas filter ultra-padat 2–5 mikron untuk menangkap partikel mikroskopis sebelum masuk ke pipa common rail bertekanan tinggi."
+            ],
+            "highlights": [
+                  "Jangan pernah menggunakan filter imitasi tanpa sertifikasi efisiensi mikron.",
+                  "Ganti filter solar setiap 250 hingga 500 jam operasi, atau lebih cepat bila indikator perbedaan tekanan di kabin menyala.",
+                  "Olesi karet seal filter dengan oli bersih sebelum dipasang, dan kencangkan dengan tangan tanpa menggunakan kunci rantai agar kaleng filter tidak penyok."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Bagaimana cara memastikan nomor part filter cocok dengan unit alat berat saya?",
+            "answer": "Cukup kirimkan foto pelat nama (nameplate) unit mesin atau nomor part lamanya via WhatsApp ke 0851 8300 3060. Tim suku cadang kami akan mencocokkan nomor part secara presisi di katalog suku cadang resmi pabrikan."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-excavator-breaker-pemecah-batu',
+    title: "Sewa Excavator Breaker untuk Pemecahan Batu Cadas & Bongkar Beton",
+    metaDescription: "Layanan sewa excavator breaker hidrolik (hydraulic rock breaker) untuk quarry batu kali, galian cadas perbukitan, dan pembongkaran struktur beton se-Indonesia.",
+    h1: "Sewa Excavator Breaker Hidrolik untuk Pemecah Batu & Pembongkaran Se-Indonesia",
+    leadParagraph: "Saat pekerjaan galian tanah terbentur formasi batuan cadas padat atau fondasi beton bertulang lama yang tidak mempan dikeruk bucket gigi excavator biasa, menggunakan hydraulic breaker adalah satu-satunya jalan keluar. Getaran pukulan pahat baja (chisel) berenergi impak ribuan joule sanggup meretakkan batu gunung dan membongkar struktur jembatan lama dalam tempo hitungan menit.",
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: "Excavator dengan attachment hydraulic breaker memecah bongkahan batu cadas keras",
+    imageCaption: "Excavator breaker hidrolik siap menuntaskan pekerjaan pembongkaran cadas dan beton bertulang.",
+    category: 'Sewa Alat Berat',
+    tags: ["#excavator-breaker","#rock-breaker","#pemecah-batu","#sewa-alat-berat"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-25',
+    dateModified: '2026-10-25',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Kapasitas Pukulan Hydraulic Breaker & Pemilihan Chisel Pahat",
+            "content": [
+                  "Memilih excavator breaker yang tepat harus menyesuaikan kelas tonase unit dengan ukuran chisel pahatnya. Untuk excavator kelas 20 ton, breaker yang digunakan biasanya memiliki bobot 1.6 hingga 1.8 ton dengan diameter pahat batang 135–140 mm.",
+                  "Bentuk mata pahat juga menentukan kecepatan kerja: tipe Moil Point (kerucut runcing) untuk batuan keras tak beraturan, tipe Chisel (pipih seperti obeng min) untuk memotong lapisan batu berlapis, dan tipe Blunt (tumpul rata) untuk meremukkan bongkahan batu besar di area stockpile crusher."
+            ],
+            "highlights": [
+                  "Energi pukulan impak mencapai 4.500 hingga 5.500 Joule per hantaman.",
+                  "Frekuensi pukulan berkisar 350 hingga 600 pukulan per menit (blows per minute).",
+                  "Sistem peredam getaran internal dan accumulator gas nitrogen untuk meredam hentakan balik ke boom excavator."
+            ]
+      },
+      {
+            "heading": "Tips Operasional: Jangan Memukul Batu Lebih dari 15 Detik di Titik yang Sama",
+            "content": [
+                  "Operator breaker wajib menerapkan teknik kerja yang benar untuk mencegah kerusakan pahat dan silinder arm:",
+                  "1. Jangan pernah memukul pada satu titik batuan melebihi 15 detik berturut-turut. Bila batu belum retak, segera pindahkan posisi chisel beberapa inci ke sisi tepi batuan agar tercipta bidang patah bebas (free face).",
+                  "2. Jangan menggerakkan arm untuk mengungkit batu saat posisi pahat masih tertancap dalam rongga rekahan karena as pahat chisel bisa patah seketika.",
+                  "3. Lumasi pelat bush pahat menggunakan pasta gemuk khusus tahan panas (chisel paste molybdenum) setiap 2 jam pemakaian terus menerus."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Berapa tarif sewa excavator breaker per jam?",
+            "answer": "Tarif sewa excavator breaker kelas 20 ton berkisar antara Rp 300.000 hingga Rp 420.000 per jam kerja aktif, sebanding dengan beban kerja ekstrem pada sistem hidrolik dan konsumsi solar yang lebih tinggi."
+      },
+      {
+            "question": "Apakah pahat chisel yang patah saat kerja ditanggung penyewa?",
+            "answer": "Keausan wajar pada pahat chisel sudah termasuk dalam paket sewa kami. Namun patah akibat kelalaian operasional (seperti mengungkit batu secara paksa) diatur sesuai klausul perjanjian kerja sama sewa."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
   }
 ];
 
