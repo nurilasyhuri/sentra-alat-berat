@@ -1306,6 +1306,218 @@ export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
         context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
       },
     ],
+  },
+  {
+    slug: 'sewa-bulldozer-rawa-lgp-lahan-gambut',
+    title: "Sewa Bulldozer Rawa LGP untuk Pembersihan Lahan Gambut & Kanal Sawit",
+    metaDescription: "Rental bulldozer rawa tipe LGP (Low Ground Pressure) bertapak sepatu lebar untuk pembukaan perkebunan kelapa sawit di tanah gambut lunak se-Indonesia.",
+    h1: "Sewa Bulldozer Rawa LGP untuk Pembukaan Lahan Gambut & Perkebunan Se-Indonesia",
+    leadParagraph: "Membuka lahan gambut untuk perkebunan kelapa sawit atau penataan kanal drainase di wilayah Riau, Jambi, maupun Kalimantan Barat memiliki tantangan yang sangat khas: daya dukung tanahnya sangat rendah. Bulldozer standar berbobot 20 ton bertapak sepatu sempit dijamin langsung amblas ke dalam kubangan gambut. Solusi satu-satunya adalah mengerahkan Bulldozer Rawa bertipe LGP (Low Ground Pressure) seperti Komatsu D85P atau D65P.",
+    image: '/images/units/bulldozer.webp',
+    imageAlt: "Bulldozer rawa tipe LGP melintasi lahan gambut lunak tanpa amblas",
+    imageCaption: "Bulldozer rawa LGP dengan tapak segitiga ekstra lebar siap bekerja di lahan basah gambut.",
+    category: 'Sewa Alat Berat',
+    tags: ["#bulldozer-rawa","#bulldozer-lgp","#lahan-gambut","#kebun-sawit"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-26',
+    dateModified: '2026-10-26',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Teknologi Low Ground Pressure: Mencegah Alat Amblas di Atas Rawa",
+            "content": [
+                  "Kunci keunggulan bulldozer rawa terletak pada distribusi tekanan tapak tanah (ground pressure). Dengan menggunakan sepatu track berbentuk segitiga bertapak lebar (swamp shoe) selebar 910 mm hingga 1.100 mm, tekanan alat berat ke atas tanah dipangkas hingga hanya sekitar 0.28–0.34 kg/cm²—bahkan lebih ringan dibanding injakan telapak kaki manusia.",
+                  "Track frame yang diperpanjang juga memberikan daya apung (flotation) yang stabil saat mendorong tumpukan gambut basah dan meratakan jalur rintisan tanggul kanal perkebunan."
+            ],
+            "highlights": [
+                  "Lebar tapak sepatu track segitiga 910–1.100 mm untuk daya apung optimal di lahan lunak.",
+                  "Pisau Straight Tilt Blade berpola lebar untuk mendorong vegetasi pakis dan gambut basah dalam volume besar.",
+                  "Sistem seal undercarriage kedap air untuk mencegah lumpur gambut masuk ke bearing roller."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Apakah bulldozer rawa aman melintasi tunggul kayu tajam di lahan gambut?",
+            "answer": "Aman, asalkan operator dibekali pengalaman merobohkan dan memotong tunggul secara bertahap agar tapak track shoe tidak tersangkut pada akar kayu keras."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-motor-grader-tambang-kalimantan-timur-5562',
+    title: "Sewa Motor Grader 14 Kaki di Kalimantan Timur: Solusi Proyek Perawatan Rutin Jalan Hauling Tambang Batubara & Nikel",
+    metaDescription: "Layanan rental motor grader pisau 14 kaki untuk pemeliharaan jalan hauling tambang agar kecepatan truk stabil dan ban awet. Tersedia armada prima, operator bersertifikat SIO, dan dukungan teknisi siaga di Kalimantan Timur.",
+    h1: "Sewa Motor Grader 14 Kaki di Kalimantan Timur untuk Kebutuhan Perawatan Rutin Jalan Hauling Tambang Batubara & Nikel",
+    leadParagraph: "Jalan angkut tambang yang bergelombang dan berlumpur bikin konsumsi solar dump truck boros dan ban mudah robek. Motor grader dengan moldboard 14 kaki menjaga kemiringan permukaan tetap rata dan bebas genangan air. Sentra Alat Berat siap memobilisasi armada ke lokasi proyek Anda di wilayah Kalimantan Timur dengan dukungan teknisi berpengalaman.",
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: "Unit Motor Grader 14 Kaki beroperasi di proyek Kalimantan Timur",
+    imageCaption: "Armada Motor Grader 14 Kaki siap mobilisasi ke lokasi kerja Anda di Kalimantan Timur.",
+    category: 'Sewa Alat Berat',
+    tags: ["#sewa-motor-grader-14-kaki","#alat-berat-kalimantan-timur","#rental-proyek"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-26',
+    dateModified: '2026-10-26',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Spesifikasi Kerja & Keunggulan Motor Grader 14 Kaki di Wilayah Kalimantan Timur",
+            "content": [
+                  "Pekerjaan perawatan rutin jalan hauling tambang batubara & nikel di area Kalimantan Timur menuntut armada dengan kondisi hidrolik dan mesin diesel prima. Setiap unit yang kami berangkatkan telah lolos uji checklist 30 titik untuk memastikan tidak ada waktu terbuang akibat kendala mesin di lokasi.",
+                  "Dukungan ketersediaan suku cadang fast-moving dan mekanik yang siap meluncur ke basecamp proyek Anda menjamin operasional kerja berjalan sesuai jadwal."
+            ],
+            "highlights": [
+                  "Inspeksi menyeluruh pada mesin, transmisi, dan kebocoran silinder hidrolik sebelum mobilisasi.",
+                  "Operator berpengalaman dengan kepemilikan Surat Izin Operator (SIO) aktif dari Kemenaker.",
+                  "Jaminan jam breakdown transparan: argo jam sewa dihentikan bila unit mengalami gangguan teknis."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Berapa lama estimasi mobilisasi Motor Grader 14 Kaki ke lokasi kerja di Kalimantan Timur?",
+            "answer": "Waktu mobilisasi berkisar 1–3 hari kerja menggunakan trailer lowbed darat atau penyeberangan kapal ferry terkoordinasi."
+      },
+      {
+            "question": "Apakah unit bisa disewa include operator dan bahan bakar solar?",
+            "answer": "Bisa. Kami melayani skema sewa kering (unit saja) maupun skema sewa basah (include operator bersertifikat SIO dan solar industri resmi)."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-vibro-padfoot-lempung-sumatera-selatan-5562',
+    title: "Sewa Vibro Roller Padfoot di Sumatera Selatan: Solusi Proyek Pemadatan Tanah Lempung Kohesif & Tanggul Waduk",
+    metaDescription: "Rental compactor drum kaki kambing (sheepfoot) 12 ton untuk memadatkan tanah timbunan liat basah dan oprit jembatan. Tersedia armada prima, operator bersertifikat SIO, dan dukungan teknisi siaga di Sumatera Selatan.",
+    h1: "Sewa Vibro Roller Padfoot di Sumatera Selatan untuk Kebutuhan Pemadatan Tanah Lempung Kohesif & Tanggul Waduk",
+    leadParagraph: "Memadatkan tanah lempung basah dengan roller drum halus hanya akan mengilapkan lapisan atas sementara bagian dalamnya tetap gembur. Drum kaki kambing (padfoot) meremas butiran tanah liat hingga air pori terperas keluar sempurna. Sentra Alat Berat siap memobilisasi armada ke lokasi proyek Anda di wilayah Sumatera Selatan dengan dukungan teknisi berpengalaman.",
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: "Unit Vibro Roller Padfoot beroperasi di proyek Sumatera Selatan",
+    imageCaption: "Armada Vibro Roller Padfoot siap mobilisasi ke lokasi kerja Anda di Sumatera Selatan.",
+    category: 'Sewa Alat Berat',
+    tags: ["#sewa-vibro-roller-padfoot","#alat-berat-sumatera-selatan","#rental-proyek"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-26',
+    dateModified: '2026-10-26',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Spesifikasi Kerja & Keunggulan Vibro Roller Padfoot di Wilayah Sumatera Selatan",
+            "content": [
+                  "Pekerjaan pemadatan tanah lempung kohesif & tanggul waduk di area Sumatera Selatan menuntut armada dengan kondisi hidrolik dan mesin diesel prima. Setiap unit yang kami berangkatkan telah lolos uji checklist 30 titik untuk memastikan tidak ada waktu terbuang akibat kendala mesin di lokasi.",
+                  "Dukungan ketersediaan suku cadang fast-moving dan mekanik yang siap meluncur ke basecamp proyek Anda menjamin operasional kerja berjalan sesuai jadwal."
+            ],
+            "highlights": [
+                  "Inspeksi menyeluruh pada mesin, transmisi, dan kebocoran silinder hidrolik sebelum mobilisasi.",
+                  "Operator berpengalaman dengan kepemilikan Surat Izin Operator (SIO) aktif dari Kemenaker.",
+                  "Jaminan jam breakdown transparan: argo jam sewa dihentikan bila unit mengalami gangguan teknis."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Berapa lama estimasi mobilisasi Vibro Roller Padfoot ke lokasi kerja di Sumatera Selatan?",
+            "answer": "Waktu mobilisasi berkisar 1–3 hari kerja menggunakan trailer lowbed darat atau penyeberangan kapal ferry terkoordinasi."
+      },
+      {
+            "question": "Apakah unit bisa disewa include operator dan bahan bakar solar?",
+            "answer": "Bisa. Kami melayani skema sewa kering (unit saja) maupun skema sewa basah (include operator bersertifikat SIO dan solar industri resmi)."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
   }
 ];
 
