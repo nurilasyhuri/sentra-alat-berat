@@ -2960,6 +2960,68 @@ export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
         context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
       },
     ],
+  },
+  {
+    slug: 'sewa-crawler-crane-80-ton-tiang-pancang',
+    title: "Sewa Crawler Crane 80 Ton untuk Pemancangan Spun Pile & Pengerjaan Pelabuhan",
+    metaDescription: "Rental crawler crane lattice boom 80 ton kapasitas berat untuk pekerjaan tiang pancang spun pile dermaga pelabuhan, jembatan bentang panjang, dan pondasi paku bumi.",
+    h1: "Sewa Crawler Crane 80 Ton Lattice Boom Pekerjaan Pondasi Pancang Se-Indonesia",
+    leadParagraph: "Pekerjaan pondasi tiang pancang spun pile di area perairan pesisir, dermaga pelabuhan, maupun rawa-rawa tidak dapat dijangkau oleh crane roda ban biasa. Crawler crane dengan roda rantai tapak lebar (crawler track) memiliki tekanan jejak tanah (ground bearing pressure) yang rendah dan sanggup bermanuver membawa beban gantungan (pick and carry) secara stabil di medan tanah lunak.",
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: "Sewa Crawler Crane 80 Ton untuk Pemancangan Spun Pile & Pengerjaan Pelabuhan",
+    imageCaption: "Sewa Crawler Crane 80 Ton Lattice Boom Pekerjaan Pondasi Pancang Se-Indonesia",
+    category: 'Sewa Alat Berat',
+    tags: ["#crawler-crane","#crane-80-ton","#tiang-pancang","#spun-pile","#dermaga-pelabuhan"],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    datePublished: '2026-10-31',
+    dateModified: '2026-10-31',
+    author: 'Tim Teknis Sentra Alat Berat',
+    sections: [
+      {
+            "heading": "Karakteristik Lattice Boom Baja Tarik Tinggi",
+            "content": [
+                  "Struktur boom kisi baja (lattice boom) memberikan rasio bobot-terhadap-kekuatan yang superior dibandingkan boom teleskopik hidrolik, memungkinkan crane 80 ton mengangkat tiang spun pile berdiameter 600 mm lengkap dengan diesel hammer seberat belasan ton tanpa risiko lentur berlebih."
+            ]
+      }
+],
+    locationTable: {
+      heading: 'Jangkauan Layanan & Estimasi Mobilisasi Proyek Se-Indonesia',
+      description: 'Sentra Alat Berat melayani pengiriman armada dan dukungan teknisi ke seluruh wilayah proyek strategis Indonesia:',
+      rows: INDONESIA_PROJECT_LOCATIONS,
+    },
+    faqs: [
+      {
+            "question": "Bagaimana proses mobilisasi crawler crane ke lokasi proyek?",
+            "answer": "Unit crawler crane dimobilisasi dalam bentuk modul terpisah (carbody, track shoe, counterweight, dan seksi lattice boom) menggunakan 4–6 unit trailer lowbed dan dirakit di lokasi kerja menggunakan mobile crane pembantu."
+      }
+],
+    internalLinks: [
+      {
+        anchorText: 'layanan sewa alat berat proyek konstruksi',
+        href: '/sewa-alat-berat/',
+        context: 'Konsultasikan ketersediaan unit dan jadwal mobilisasi di',
+      },
+      {
+        anchorText: 'pencarian suku cadang spare part alat berat',
+        href: '/spare-part-alat-berat/',
+        context: 'Komponen mesin diesel, filter, dan seal silinder tersedia di',
+      },
+      {
+        anchorText: 'service perbaikan teknisi alat berat panggilan',
+        href: '/service-alat-berat/',
+        context: 'Penanganan keluhan mesin dan hidrolik lapangan dapat diajukan di',
+      },
+      {
+        anchorText: 'pengadaan unit alat berat baru dan rekondisi',
+        href: '/jual-alat-berat/',
+        context: 'Cek katalog unit kerja siap pakai pada opsi',
+      },
+      {
+        anchorText: 'pengajuan penawaran resmi via WhatsApp',
+        href: '/kontak/',
+        context: 'Dapatkan rincian penawaran tertulis dengan menghubungi',
+      },
+    ],
   }
 ];
 
