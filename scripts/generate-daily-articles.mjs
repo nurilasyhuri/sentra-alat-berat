@@ -341,6 +341,242 @@ const ARTICLE_TOPICS_POOL = [
       },
     ],
   },
+  {
+    slug: 'sewa-mobile-crane-50-ton-erection-konstruksi',
+    keyword: 'sewa mobile crane 50 ton',
+    title: 'Sewa Mobile Crane 50 Ton untuk Erection Baja & Girder Jembatan Se-Indonesia',
+    metaDescription: 'Rental mobile crane 50 ton telescopic boom untuk lifting erection rangka baja bentang lebar, penempatan girder beton pracetak, dan relokasi mesin pabrik berat.',
+    h1: 'Sewa Mobile Crane 50 Ton Telescopic Boom Proyek Erection & Infrastruktur Se-Indonesia',
+    category: 'Sewa Alat Berat',
+    tags: ['#sewa-mobile-crane', '#crane-50-ton', '#erection-baja', '#lifting-plan', '#rental-crane'],
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: 'Unit mobile crane 50 ton mengangkat balok girder jembatan beton dengan outrigger terpasang kokoh',
+    imageCaption: 'Mobile crane 50 ton telescopic boom siap melayani pengangkatan presisi erection baja se-Indonesia.',
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Pekerjaan pengangkatan (lifting) struktur baja bentang lebar, penempatan girder jembatan beton pracetak, hingga relokasi tangki silo reaktor pabrik menuntut akurasi daya angkat dan radius kerja yang presisi tanpa toleransi kesalahan. Sentra Alat Berat menyediakan rental Mobile Crane 50 Ton dengan boom teleskopik hidrolik bersertifikasi Kemenaker dan rigger berpengalaman.',
+    sections: [
+      {
+        heading: 'Karakteristik & Kapasitas Load Chart Mobile Crane 50 Ton',
+        content: [
+          'Angka 50 ton pada mobile crane merujuk pada kapasitas angkat maksimum pada radius kerja terpendek (biasanya 3 meter dari sumbu putar swing). Begitu boom teleskopik dipanjangkan hingga 38–40 meter dan radius kerja menjauh hingga 15–20 meter, kapasitas angkat aman (Safe Working Load / SWL) akan menurun mengikuti kurva load chart pabrikan.',
+          'Unit mobile crane 50 ton kami dilengkapi sistem komputer Load Moment Indicator (LMI) digital otomatis yang menghentikan manuver hidrolik seketika bila beban melewati 90% dari batas aman, mencegah risiko crane terjungkit atau boom patah di lapangan.',
+        ],
+        highlights: [
+          'Panjang jangkauan main boom hidrolik 10,6 meter hingga 40,5 meter plus extension jib 8,5 meter.',
+          'Sistem kendali outrigger H-type hidrolik 4 titik dengan sensor leveling kemiringan tanah digital.',
+          'Dilengkapi sertifikat riksa uji SILO aktif dari Disnaker dan operator mengantongi SIO Kelas I Migas/Kemenaker.',
+        ],
+      },
+      {
+        heading: 'SOP Lifting Plan: Matras Baja Penahan Amblas Outrigger',
+        content: [
+          'Kegagalan fatal pengoperasian mobile crane 90% disebabkan oleh amblesnya tanah di bawah sepatu outrigger saat boom memutar membawa beban. Sentra Alat Berat mewajibkan pemasangan plat baja tebal (steel plate mats) minimal 20 mm berukuran 1,5 x 1,5 meter di atas bantalan kayu balok keras di setiap titik outrigger guna meratakan tekanan beban ke tanah.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Apakah sewa mobile crane 50 ton sudah termasuk rigger dan surat izin kerja?',
+        answer: 'Ya, paket rental kami mencakup operator ber-SIO aktif, rigger/juru ikat bersertifikat, dan dokumen uji kelayakan SILO Disnaker untuk keperluan induksi safety HSE proyek Anda.',
+      },
+      {
+        question: 'Bagaimana cara menentukan apakah proyek membutuhkan crane 25 ton atau 50 ton?',
+        answer: 'Kirimkan data berat beban terberat (ton) dan jarak terjauh (radius meter) dari posisi parkir crane ke titik pemasangan. Tim engineer kami akan membuatkan simulasi Lifting Plan dan Load Chart gratis untuk Anda.',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-genset-silent-diesel-500-kva-proyek',
+    keyword: 'sewa genset silent 500 kva',
+    title: 'Sewa Genset Silent Diesel 500 kVA Daya Proyek & Pengelasan Pipa Migas',
+    metaDescription: 'Rental genset silent diesel 500 kVA (400 kW) 3-phase untuk suplai daya tower crane, batching plant beton, pengelasan pipa migas, dan backup daya darurat pabrik.',
+    h1: 'Sewa Genset Silent Diesel 500 kVA untuk Proyek Konstruksi & Industri Se-Indonesia',
+    category: 'Sewa Alat Berat',
+    tags: ['#sewa-genset', '#genset-500-kva', '#genset-silent', '#listrik-proyek', '#genset-tambang'],
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: 'Genset silent diesel 500 kVA bersuara senyap siap menyuplai listrik proyek konstruksi',
+    imageCaption: 'Genset silent 500 kVA dengan peredam suara soundproof canopy tebal siap kerja 24 jam.',
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Ketiadaan jaringan listrik PLN di lokasi proyek rintisan, atau ketatnya jadwal pengecoran beton malam hari menuntut pasokan daya listrik yang stabil tanpa fluktuasi voltase. Genset Silent Diesel 500 kVA bertenaga mesin Cummins / Perkins adalah sumber tenaga andalan kontraktor untuk menggerakkan batching plant, pompa dewatering, dan mesin las pipa secara non-stop.',
+    sections: [
+      {
+        heading: 'Spesifikasi Mesin Heavy-Duty & Efisiensi Konsumsi Solar',
+        content: [
+          'Genset silent 500 kVA (output daya prima 400 kW pada faktor daya 0,8) didukung mesin diesel turbo intercooler 6-silinder yang menghasilkan tegangan 380/220 Volt 3-phase 50 Hz dengan toleransi regulasi voltase Automatic Voltage Regulator (AVR) di bawah +- 1%.',
+          'Tingkat kebisingan diredam oleh kanopi berinsulasi rockwool padat hingga di bawah 70 dB(A) pada jarak 7 meter, sangat aman digunakan di area perumahan padat atau proyek rumah sakit tanpa mengganggu ketenangan sekitar.',
+        ],
+        highlights: [
+          'Konsumsi bahan bakar solar efisien: berkisar 75–85 liter/jam pada beban kerja 75% prime rating.',
+          'Dilengkapi tangki solar harian terintegrasi di dasar sasis kapasitas 800 liter untuk 10 jam operasi.',
+          'Panel sinkron otomatis (Automatic Transfer Switch / ATS) opsional untuk peralihan instan saat PLN padam.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Apakah sewa genset 500 kVA sudah termasuk kabel power dan teknisi operator?',
+        answer: 'Ya, kami menyediakan paket sewa lengkap dengan kabel power tembaga NYY 4x1x185mm sepanjang 20–50 meter, panel distribusi, serta mekanik operator standby di lokasi.',
+      },
+      {
+        question: 'Berapa minimal durasi sewa genset diesel di Sentra Alat Berat?',
+        answer: 'Kami melayani sewa harian untuk event/standby darurat, sewa bulanan untuk proyek konstruksi, hingga kontrak tahunan pabrik industri.',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-tandem-roller-aspal-hotmix-jalan',
+    keyword: 'sewa tandem roller aspal',
+    title: 'Sewa Tandem Roller 8–10 Ton untuk Pemadatan Aspal Hotmix Jalan Raya Se-Indonesia',
+    metaDescription: 'Rental tandem roller double drum 8 hingga 10 ton untuk pemadatan aspal hotmix jalan tol, sirkuit, dan landas pacu bandara. Dilengkapi sistem semprotan air otomatis.',
+    h1: 'Sewa Tandem Roller Double Drum 8–10 Ton Pemadatan Aspal Hotmix Se-Indonesia',
+    category: 'Sewa Alat Berat',
+    tags: ['#sewa-tandem-roller', '#compactor-aspal', '#tandem-roller-8-ton', '#aspal-hotmix', '#jalan-tol'],
+    image: '/images/services/sewa-alat-berat.webp',
+    imageAlt: 'Tandem roller double drum menggilas lapisan aspal hotmix jalan raya',
+    imageCaption: 'Tandem roller 8 ton dengan sistem semprot air bertekanan anti-lengket aspal.',
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Kualitas permukaan jalan aspal hotmix yang rata bebas gelombang dan kedap air sangat ditentukan oleh proses penggilasan pada rentang temperatur aspal yang tepat (110°C–140°C). Tandem Roller double drum dengan sistem vibrasi ganda adalah alat pemadat utama yang menjamin tercapainya kepadatan laboratorium standar Bina Marga.',
+    sections: [
+      {
+        heading: 'Teknik Penggilasan Break-Down & Finishing Aspal Hotmix',
+        content: [
+          'Tandem roller bekerja pada dua fase kritis pengaspalan: pemadatan awal (breakdown rolling) untuk mengunci agregat batu dan pemadatan akhir (finish rolling) untuk menghilangkan bekas jejak roda ban pneumatik.',
+          'Kedua drum baja depan dan belakang dilengkapi bilah pembersih (scraper) dan nozel semprotan air bertekanan tinggi guna membasahi drum agar aspal panas tidak menempel pada drum baja dan mencuil permukaan jalan yang baru digelar asphalt finisher.',
+        ],
+        highlights: [
+          'Pilihan frekuensi getar ganda (High & Low Amplitude) untuk menyesuaikan ketebalan lapisan aspal AC-WC atau AC-BC.',
+          'Kemudi artikulasi hidrolik sudut belok tajam untuk manuver presisi di tikungan jalan.',
+          'Kondisi unit terawat, bebas oli bocor yang dapat melarutkan aspal baru.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Apakah tandem roller bisa digunakan untuk pemadatan tanah sirtu?',
+        answer: 'Untuk lapisan pondasi tanah sirtu atau base course, disarankan menggunakan Vibro Roller Single Drum 10-12 ton dengan drum baja beralur padfoot atau drum polos berbobot lebih berat.',
+      },
+      {
+        question: 'Bagaimana sistem mobilisasi tandem roller ke lokasi proyek?',
+        answer: 'Unit dimobilisasi menggunakan truk tronton towing derek khusus atau trailer lowbed sesuai regulasi beban sumbu jalan kelas III/II.',
+      },
+    ],
+  },
+  {
+    slug: 'panduan-uji-kelayakan-silo-alat-berat-disnaker',
+    keyword: 'syarat silo alat berat disnaker',
+    title: 'Panduan Lengkap Syarat Uji Riksa SILO & SIO Kemenaker Alat Berat Proyek',
+    metaDescription: 'Syarat kepatuhan K3 sertifikasi Surat Izin Layak Operasi (SILO) dan Surat Izin Operator (SIO) alat berat excavator, crane, loader, dan genset dari Kemenaker/Disnaker.',
+    h1: 'Panduan Lengkap Syarat Sertifikasi Uji Kelayakan SILO & SIO Alat Berat Proyek',
+    category: 'Panduan Teknis',
+    tags: ['#silo-alat-berat', '#sio-kemenaker', '#k3-proyek', '#inspeksi-alat-berat', '#disnaker'],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Memasuki kawasan proyek strategis nasional, kilang migas, maupun fasilitas tambang menuntut kepatuhan Keselamatan dan Kesehatan Kerja (K3) yang ketat. Alat berat tanpa dokumen Surat Izin Layak Operasi (SILO) aktif atau dikemudikan oleh operator tanpa lisensi Surat Izin Operator (SIO) resmi dari Kementerian Ketenagakerjaan akan langsung ditolak masuk gerbang proyek (*red-tag*).',
+    sections: [
+      {
+        heading: 'Perbedaan Mendasar Dokumen SILO dan Lisensi SIO',
+        content: [
+          'SILO (Surat Izin Layak Operasi) adalah sertifikat kelaikan teknis yang melekat pada UNIT ALAT BERAT itu sendiri. Diterbitkan setelah unit diperiksa secara fisik oleh Pengawas Ketenagakerjaan atau Perusahaan Jasa K3 (PJK3) terakreditasi, meliputi uji visual, uji fungsi sistem rem, kemudi, hidrolik, dan uji beban (*load test*). Masa berlaku SILO umumnya 1 tahun dan wajib diperpanjang.',
+          'SIO (Surat Izin Operator) adalah lisensi kompetensi yang melekat pada DIRI OPERATOR yang mengemudikan alat. Diterbitkan setelah operator mengikuti pelatihan resmi K3 Pesawat Angkat dan Angkut (PAA) dan lulus ujian teori serta praktek kerja.',
+        ],
+        highlights: [
+          'Dasar Hukum Wajib: Permenaker No. 8 Tahun 2020 tentang Keselamatan dan Kesehatan Kerja Pesawat Angkat dan Pesawat Angkut.',
+          'Pemeriksaan NDT pada titik pin boom dan struktur rangka penahan beban.',
+          'Semua unit rental di Sentra Alat Berat selalu dibekali dokumen SILO dan SIO aktif siap inspeksi HSE.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Apakah unit sewa di Sentra Alat Berat bisa langsung dipakai di proyek BUMN yang mensyaratkan SILO?',
+        answer: 'Bisa langsung operasional. Seluruh armada excavator, crane, dozer, dan dump truck kami memiliki riwayat inspeksi SILO berkala dan dokumen asli dapat diverifikasi langsung oleh tim HSE proyek Anda.',
+      },
+    ],
+  },
+  {
+    slug: 'overhaul-mesin-diesel-alat-berat-komatsu-caterpillar',
+    keyword: 'overhaul mesin diesel alat berat',
+    title: 'SOP Overhaul Mesin Diesel Excavator Komatsu & CAT: Kalibrasi Bospom & Injector',
+    metaDescription: 'Panduan teknis turun mesin (overhaul) diesel engine alat berat Komatsu SAA6D107E dan Caterpillar C7. Kalibrasi injector common rail, boring liner silinder, dan dyno test.',
+    h1: 'SOP Standar Overhaul Mesin Diesel Alat Berat Komatsu & Caterpillar Se-Indonesia',
+    category: 'Service Alat Berat',
+    tags: ['#overhaul-alat-berat', '#mesin-diesel-komatsu', '#caterpillar-c7', '#kalibrasi-injektor', '#service-alat-berat'],
+    relatedService: { label: 'Layanan Service Alat Berat', href: '/service-alat-berat/' },
+    leadParagraph: 'Penurunan performa mesin diesel alat berat—seperti knalpot mengepulkan asap hitam pekat, tenaga hidrolik loyo saat menggali tanah keras, oli mesin berkurang drastis, hingga suara knocking ketukan di ruang bakar—merupakan indikasi jelas bahwa mesin diesel telah mencapai batas jam operasi kritis (8.000–12.000 jam) dan membutuhkan perbaikan turun mesin menyeluruh (General Overhaul).',
+    sections: [
+      {
+        heading: 'Langkah Kritis Rekondisi Ruang Bakar & Sistem Bahan Bakar Common Rail',
+        content: [
+          'Pada mesin diesel generasi modern berteknologi Common Rail Direct Injection (seperti Komatsu SAA6D107E pada PC200-8), tekanan solar di dalam pipa rail mencapai 1.600 hingga 2.000 bar. Solar kotor berkadar air tinggi dari tangki lapangan cepat mengikis jarum nozzle injektor.',
+          'Dalam proses overhaul, injector wajib dikalibrasi di bangku tes digital khusus untuk memastikan debit pengabutan solar seragam di semua silinder, mencegah panas pembakaran berlebih yang dapat melelehkan mahkota piston (*piston crown melting*).',
+        ],
+        highlights: [
+          'Penggantian liner silinder basah (wet sleeve liner) dan perakitan ring piston sesuai clearance buku pedoman shop manual.',
+          'Pemeriksaan kerataan bidang blok silinder dan cylinder head menggunakan straight edge presisi toleransi 0,05 mm.',
+          'Penggantian metal duduk (main bearing) dan metal jalan (con-rod bearing) standar genuine part.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Berapa lama estimasi waktu pengerjaan overhaul mesin diesel excavator PC200?',
+        answer: 'Proses overhaul dari pembongkaran, pembersihan komponen, rekondisi kruk as & silinder head, hingga perakitan dan uji running memakan waktu sekitar 7 hingga 12 hari kerja.',
+      },
+      {
+        question: 'Apakah pekerjaan overhaul mesin di Sentra Alat Berat disertai garansi?',
+        answer: 'Ya, kami memberikan garansi servis dan suku cadang selama 1.000 jam kerja atau 6 bulan operasional.',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-crawler-crane-80-ton-tiang-pancang',
+    keyword: 'sewa crawler crane 80 ton',
+    title: 'Sewa Crawler Crane 80 Ton untuk Pemancangan Spun Pile & Pengerjaan Pelabuhan',
+    metaDescription: 'Rental crawler crane lattice boom 80 ton kapasitas berat untuk pekerjaan tiang pancang spun pile dermaga pelabuhan, jembatan bentang panjang, dan pondasi paku bumi.',
+    h1: 'Sewa Crawler Crane 80 Ton Lattice Boom Pekerjaan Pondasi Pancang Se-Indonesia',
+    category: 'Sewa Alat Berat',
+    tags: ['#crawler-crane', '#crane-80-ton', '#tiang-pancang', '#spun-pile', '#dermaga-pelabuhan'],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Pekerjaan pondasi tiang pancang spun pile di area perairan pesisir, dermaga pelabuhan, maupun rawa-rawa tidak dapat dijangkau oleh crane roda ban biasa. Crawler crane dengan roda rantai tapak lebar (crawler track) memiliki tekanan jejak tanah (ground bearing pressure) yang rendah dan sanggup bermanuver membawa beban gantungan (pick and carry) secara stabil di medan tanah lunak.',
+    sections: [
+      {
+        heading: 'Karakteristik Lattice Boom Baja Tarik Tinggi',
+        content: [
+          'Struktur boom kisi baja (lattice boom) memberikan rasio bobot-terhadap-kekuatan yang superior dibandingkan boom teleskopik hidrolik, memungkinkan crane 80 ton mengangkat tiang spun pile berdiameter 600 mm lengkap dengan diesel hammer seberat belasan ton tanpa risiko lentur berlebih.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Bagaimana proses mobilisasi crawler crane ke lokasi proyek?',
+        answer: 'Unit crawler crane dimobilisasi dalam bentuk modul terpisah (carbody, track shoe, counterweight, dan seksi lattice boom) menggunakan 4–6 unit trailer lowbed dan dirakit di lokasi kerja menggunakan mobile crane pembantu.',
+      },
+    ],
+  },
+  {
+    slug: 'sewa-pneumatic-tire-roller-ptr-jalan-tol',
+    keyword: 'sewa pneumatic tire roller ptr',
+    title: 'Sewa Pneumatic Tire Roller (PTR) 15–20 Ton untuk Kneading Seal Aspal Jalan Tol',
+    metaDescription: 'Rental compactor ban karet Pneumatic Tire Roller (PTR) 15-20 ton untuk efek meremas (kneading effect) menutup pori permukaan aspal hotmix jalan tol dan bandara.',
+    h1: 'Sewa Pneumatic Tire Roller (PTR) 15–20 Ton Pemadatan Aspal Hotmix Se-Indonesia',
+    category: 'Sewa Alat Berat',
+    tags: ['#sewa-ptr', '#pneumatic-tire-roller', '#pemadat-ban-karet', '#aspal-jalan-tol', '#kneading-effect'],
+    relatedService: { label: 'Layanan Sewa Alat Berat', href: '/sewa-alat-berat/' },
+    leadParagraph: 'Mencapai kepadatan aspal tanpa retak rambut (micro-fissures) membutuhkan aksi meremas fleksibel yang hanya bisa dihasilkan oleh roda ban pneumatik karet bertekanan tinggi. Pneumatic Tire Roller (PTR) 15–20 ton meratakan distribusi agregat halus ke sela-sela batu split dan menyegel permukaan jalan aspal agar benar-benar kedap dari rembesan air hujan.',
+    sections: [
+      {
+        heading: 'Mekanisme Kneading Action Ban Pneumatik',
+        content: [
+          'Susunan ban depan (4 roda) dan belakang (5 roda) yang saling bertumpang-tindih (overlapping) memastikan tidak ada jalur aspal yang terlewatkan saat roda melintas bolak-balik.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Apakah ban PTR bisa diatur tekanan anginnya saat operasional?',
+        answer: 'Ya, unit PTR modern dilengkapi sistem Central Tire Inflation System (CTIS) yang memungkinkan operator mengatur tekanan angin ban secara otomatis dari kabin sesuai temperatur aspal.',
+      },
+    ],
+  },
 ];
 
 // Helper to get formatted date string YYYY-MM-DD
@@ -470,9 +706,9 @@ export function generateDailyArticles(count = 3) {
     metaDescription: ${JSON.stringify(art.metaDescription)},
     h1: ${JSON.stringify(art.h1)},
     leadParagraph: ${JSON.stringify(art.leadParagraph)},
-    image: '${art.image}',
-    imageAlt: ${JSON.stringify(art.imageAlt)},
-    imageCaption: ${JSON.stringify(art.imageCaption)},
+    image: '${art.image || "/images/services/sewa-alat-berat.webp"}',
+    imageAlt: ${JSON.stringify(art.imageAlt || art.title)},
+    imageCaption: ${JSON.stringify(art.imageCaption || art.h1)},
     category: '${art.category}',
     tags: ${JSON.stringify(art.tags)},
     relatedService: { label: '${art.relatedService.label}', href: '${art.relatedService.href}' },
