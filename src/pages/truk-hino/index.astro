@@ -1,0 +1,465 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getHinoTrucks } from '../../data/hinoTrucks';
+import { getBreadcrumbSchema, getServiceSchema } from '../../utils/seo';
+import { generateGeneralInquiryUrl } from '../../utils/whatsapp';
+import { BUSINESS_INFO } from '../../data/businessInfo';
+
+const trucks = getHinoTrucks();
+const waUrl = generateGeneralInquiryUrl('Kebutuhan Sewa Armada & Jual Truk Hino (Baru/Bekas)');
+
+const title = 'Sewa & Jual Truk Hino, Dump Truck Proyek - Sentra Alat Berat';
+const description = 'Layanan sewa armada dump truck dan jual truk Hino baru maupun bekas untuk proyek konstruksi, cut and fill, hauling tambang, dan mobilisasi alat berat.';
+
+const serviceSchema = getServiceSchema({
+  title: 'Sewa Armada & Jual Truk Hino Proyek',
+  description,
+  url: '/truk-hino/',
+  serviceType: 'Commercial Truck Rental and Sales',
+  image: '/images/truk-hino/fm-280-jd-euro4.webp',
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: 'Beranda', url: '/' },
+  { name: 'Katalog Truk Hino', url: '/truk-hino/' },
+]);
+
+const categories = [
+  { id: 'all', label: 'Semua Kategori', count: trucks.length },
+  { id: 'dump-truck', label: 'Dump Truck', count: trucks.filter(t => t.categorySlug === 'dump-truck').length },
+  { id: 'truk-tambang', label: 'Truk Tambang & HD', count: trucks.filter(t => t.categorySlug === 'truk-tambang').length },
+  { id: 'truk-mixer', label: 'Truk Mixer Molen', count: trucks.filter(t => t.categorySlug === 'truk-mixer').length },
+  { id: 'tractor-head', label: 'Tractor Head Lowbed', count: trucks.filter(t => t.categorySlug === 'tractor-head').length },
+];
+
+const faqs = [
+  {
+    q: 'Apakah Sentra Alat Berat melayani sistem sewa dump truck bulanan atau ritase?',
+    a: 'Ya, kami melayani penyewaan armada dump truck (engkel 6 roda maupun tronton 10 roda FM 280 JD) dengan skema kontrak bulanan, kontrak durasi proyek, maupun sistem ritase kubikasi untuk pekerjaan cut & fill tanah dan material tambang.',
+  },
+  {
+    q: 'Bagaimana ketersediaan unit truk Hino baru dan unit bekas rekondisi?',
+    a: 'Kami menyediakan unit sasis baru Hino Euro 4 lengkap dengan paket karoseri resmi, serta unit dump truck bekas rekondisi siap kerja yang telah lolos inspeksi ketat pada mesin diesel, pompa hidrolik, sasis, dan keabsahan dokumen.',
+  },
+  {
+    q: 'Apakah sewa armada dump truck bisa termasuk operator dan bahan bakar solar?',
+    a: 'Bisa disesuaikan dengan kebutuhan proyek Anda. Kami menyediakan opsi include operator & teknisi lapangan, include solar, atau sistem sewa unit lepas kunci (exclude solar & operator) dengan ketentuan deposit aman.',
+  },
+  {
+    q: 'Berapa kapasitas muatan dump truck Hino yang tersedia untuk disewa atau dibeli?',
+    a: 'Tersedia dump truck engkel Hino Dutro (indeks 6–8 m³), dump truck medium FG 260 JJ (10–12 m³), dump truck tronton FM 280 JD / FM 340 PD 10 roda (20–24 m³), hingga truk tambang raksasa Hino Profia ZS/ZY (muatan 40–50 ton).',
+  },
+];
+---
+
+<BaseLayout title={title} description={description} jsonLd={[serviceSchema, breadcrumbSchema]}>
+  <!-- HERO SECTION -->
+  <section class="relative bg-[#020617] text-white py-12 lg:py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <nav aria-label="Breadcrumb" class="text-xs text-slate-400 flex items-center gap-2">
+            <a href="/" class="hover:text-white transition-colors">Beranda</a>
+            <span>/</span>
+            <span class="text-[#fbbf24] font-semibold">Katalog Truk Hino</span>
+          </nav>
+
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#fbbf24] text-xs font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-[#fbbf24]"></span>
+            <span>SEWA ARMADA PROYEK • JUAL UNIT BARU &amp; BEKAS</span>
+          </div>
+
+          <h1 class="text-[30px] leading-[36px] tracking-[-0.75px] md:text-[44px] md:leading-[50px] font-bold text-white">
+            Katalog Truk Hino: Sewa Armada &amp; Jual Unit
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+            Penyedia terpadu layanan sewa armada dump truck proyek serta penjualan unit truk Hino baru maupun bekas rekondisi siap kerja. Melayani kebutuhan galian tanah cut &amp; fill, hauling tambang, pengecoran ready mix, dan penarikan trailer lowbed alat berat.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              data-open-rfq
+              data-rfq-category="Sewa Truk Hino & Dump Truck"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Ajukan Sewa Armada</span>
+            </button>
+
+            <button
+              type="button"
+              data-open-rfq
+              data-rfq-category="Beli Truk Hino Baru / Bekas"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Beli Unit Baru / Bekas</span>
+            </button>
+
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold transition-colors"
+            >
+              <svg aria-hidden="true" class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
+              </svg>
+              <span>Konsultasi WA</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/10">
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-[#fbbf24]">Sewa Proyek</div>
+              <div class="text-[11px] text-slate-400">Bulanan &amp; Ritase</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-white">Unit Baru</div>
+              <div class="text-[11px] text-slate-400">Hino Euro 4 Resmi</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-white">Unit Bekas</div>
+              <div class="text-[11px] text-slate-400">Rekondisi Siap Kerja</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-white">23 Varian</div>
+              <div class="text-[11px] text-slate-400">Dutro, Ranger, Profia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="aspect-4/3 rounded-2xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl relative group">
+            <img
+              src="/images/truk-hino/fm-280-jd-euro4.webp"
+              alt="Unit dump truck tronton Hino Ranger FM 280 JD Euro 4 untuk pekerjaan galian tanah dan tambang"
+              width="640"
+              height="480"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="eager"
+            />
+            <div class="absolute bottom-3 left-3 right-3 bg-slate-950/80 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-white/10 flex items-center justify-between">
+              <div>
+                <p class="text-[11px] font-bold text-white">Hino Ranger FM 280 JD 6x4</p>
+                <p class="text-[10px] text-slate-400">Tersedia Sewa Armada &amp; Jual Unit</p>
+              </div>
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-[#b45309] text-white">Ready Stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 PILAR SKEMA PENGADAAN & SEWA -->
+  <section class="bg-slate-50 py-10 lg:py-12 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Pilar 1: Sewa Armada -->
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3 shadow-xs">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-amber-50 text-[#b45309] text-[10px] font-bold uppercase tracking-wider">
+            Layanan Sewa
+          </div>
+          <h3 class="text-base font-bold text-slate-950">Penyewaan Armada Dump Truck</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Penyewaan unit dump truck harian, kontrak bulanan, atau sistem ritase kubikasi untuk pekerjaan cut &amp; fill, quarry, dan proyek jalan. Tersedia opsi include operator berpengalaman dan solar.
+          </p>
+        </div>
+
+        <!-- Pilar 2: Unit Baru -->
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3 shadow-xs">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-wider">
+            Unit Baru ATPM
+          </div>
+          <h3 class="text-base font-bold text-slate-950">Jual Unit Baru Hino Euro 4</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Pengadaan sasis truk baru dari dealer resmi Hino dengan garansi pabrik, paket karoseri dump hardox indeks 8–24 m³ bersertifikat SRUT, serta dukungan pembiayaan leasing fleksibel.
+          </p>
+        </div>
+
+        <!-- Pilar 3: Unit Bekas -->
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3 shadow-xs">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-wider">
+            Unit Bekas Siap Kerja
+          </div>
+          <h3 class="text-base font-bold text-slate-950">Jual Unit Bekas Rekondisi</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Penyediaan dump truck bekas terverifikasi yang telah melewati inspeksi mesin diesel, tekanan hidrolik dump, kondisi sasis bebas retak, serta legalitas dokumen lengkap dan aman.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG FILTER & PRODUCT GRID -->
+  <section class="bg-white py-12 lg:py-16" id="katalog">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-6">
+        <div class="space-y-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-[#b45309]">ARMADA PROYEK &amp; DUMP TRUCK</span>
+          <h2 class="text-[24px] leading-[30px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+            Pilihan Unit Truk Hino (Sewa &amp; Jual)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
+            Klik unit untuk melihat lembar spesifikasi teknis lengkap, opsi aplikasi karoseri, serta pilihan sewa maupun pembelian unit baru dan bekas.
+          </p>
+        </div>
+
+        <!-- Series Badges Counter -->
+        <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-600">
+          <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200">Dutro 300 (7)</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200">Ranger 500 (14)</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200">Profia 700 (2)</span>
+        </div>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap items-center gap-2" id="filter-container">
+        {categories.map((cat, idx) => (
+          <button
+            type="button"
+            data-filter={cat.id}
+            class={`filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+              idx === 0
+                ? 'bg-[#020617] text-white shadow-sm'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200'
+            }`}
+          >
+            {cat.label} ({cat.count})
+          </button>
+        ))}
+      </div>
+
+      <!-- Truck Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="truck-grid">
+        {trucks.map((truck) => (
+          <article
+            data-category={truck.categorySlug}
+            data-series={truck.series}
+            class="truck-card rounded-2xl border border-slate-200 bg-white hover:border-slate-400 hover:shadow-lg transition-all duration-300 flex flex-col overflow-hidden group"
+          >
+            <!-- Card Image -->
+            <div class="aspect-4/3 bg-slate-100 relative overflow-hidden">
+              <img
+                src={truck.image}
+                alt={truck.imageAlt}
+                width="400"
+                height="300"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white backdrop-blur-xs">
+                  {truck.seriesBadge}
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-[10px] font-bold tracking-wider bg-[#b45309] text-white">
+                  {truck.drive}
+                </span>
+              </div>
+              <div class="absolute bottom-3 right-3">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-white/95 text-slate-800 shadow-sm border border-slate-200">
+                  Sewa &amp; Jual
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <h3 class="text-base font-bold text-slate-950 group-hover:text-[#b45309] transition-colors leading-snug">
+                  <a href={`/truk-hino/${truck.slug}/`}>
+                    {truck.name}
+                  </a>
+                </h3>
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                  {truck.tagline}
+                </p>
+              </div>
+
+              <!-- Quick Specs Grid -->
+              <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100 text-center">
+                <div class="bg-slate-50 rounded-xl p-2 border border-slate-100">
+                  <span class="block text-[10px] text-slate-400 uppercase font-semibold">Tenaga</span>
+                  <strong class="text-xs font-bold text-slate-900">{truck.power}</strong>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-2 border border-slate-100">
+                  <span class="block text-[10px] text-slate-400 uppercase font-semibold">GVWR</span>
+                  <strong class="text-xs font-bold text-slate-900">{truck.gvwr}</strong>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-2 border border-slate-100">
+                  <span class="block text-[10px] text-slate-400 uppercase font-semibold">Traksi</span>
+                  <strong class="text-xs font-bold text-slate-900">{truck.drive}</strong>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="pt-2 flex items-center gap-2">
+                <a
+                  href={`/truk-hino/${truck.slug}/`}
+                  class="flex-1 text-center py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-semibold transition-colors"
+                >
+                  Detail Spek
+                </a>
+                <button
+                  type="button"
+                  data-open-rfq
+                  data-rfq-category={`Sewa / Beli ${truck.name}`}
+                  class="flex-1 py-2.5 px-3 rounded-xl bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold transition-colors cursor-pointer text-center"
+                >
+                  Ajukan Sewa / Beli
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- NILAI TAMBAH PENGADAAN & SEWA -->
+  <section class="bg-slate-50 py-12 lg:py-16 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="max-w-2xl space-y-2">
+        <span class="text-xs font-semibold uppercase tracking-wider text-[#b45309]">KEUNGGULAN SENTRA ALAT BERAT</span>
+        <h2 class="text-[24px] leading-[30px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+          Standar Layanan Sewa &amp; Pengadaan Terpercaya
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Kami memberikan fleksibilitas penuh bagi kontraktor, mandor, dan pengelola tambang untuk memilih opsi sewa maupun pembelian unit:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] flex items-center justify-center font-bold text-sm">
+            01
+          </div>
+          <h3 class="text-sm font-bold text-slate-950">Fleksibilitas Sewa &amp; Beli</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Sesuaikan kebutuhan anggaran proyek Anda: sewa bulanan hemat biaya investasi, beli unit baru Euro 4 untuk aset tetap, atau unit bekas siap kerja.
+          </p>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] flex items-center justify-center font-bold text-sm">
+            02
+          </div>
+          <h3 class="text-sm font-bold text-slate-950">Inspeksi Teknis Terverifikasi</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Setiap unit bekas maupun armada sewa melalui uji tekanan hidrolik dump, kalibrasi bospom/injector diesel, dan pengecekan kelayakan sasis.
+          </p>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] flex items-center justify-center font-bold text-sm">
+            03
+          </div>
+          <h3 class="text-sm font-bold text-slate-950">Suku Cadang &amp; Teknisi Lapangan</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Dukungan ketersediaan spare part asli HGP/HOP serta teknisi siaga ke lokasi kerja untuk memastikan zero downtime selama masa kontrak proyek.
+          </p>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-[#b45309] flex items-center justify-center font-bold text-sm">
+            04
+          </div>
+          <h3 class="text-sm font-bold text-slate-950">Paket Gabungan Alat Berat</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Kemudahan kontrak terpadu satu pintu: sewa excavator, loader, atau vibro roller bersama armada dump truck dengan tarif paket yang lebih efisien.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ WEBSITE -->
+  <section class="bg-white py-12 lg:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-[24px] leading-[30px] md:text-[32px] md:leading-[38px] font-bold text-slate-950">
+          Pertanyaan Umum Sewa &amp; Pembelian Truk Hino
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600">
+          Hal-hal yang sering ditanyakan kontraktor dan pengelola armada mengenai sewa maupun beli truk Hino di Sentra Alat Berat.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 space-y-2">
+            <h3 class="text-sm font-bold text-slate-950 flex items-start gap-2.5">
+              <span class="text-[#b45309] font-black">Q:</span>
+              <span>{faq.q}</span>
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed pl-5">
+              {faq.a}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Single End of Task Action Row -->
+      <div class="rounded-2xl bg-[#020617] text-white p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="space-y-1 text-center sm:text-left">
+          <h3 class="text-lg font-bold text-white">Butuh Penawaran Sewa atau Pembelian Unit?</h3>
+          <p class="text-xs text-slate-300">
+            Sampaikan kebutuhan tipe unit, estimasi durasi sewa atau spesifikasi beli bersama konsultan teknis kami.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <button
+            type="button"
+            data-open-rfq
+            data-rfq-category="Konsultasi Sewa / Beli Truk Hino"
+            class="px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold transition-colors cursor-pointer"
+          >
+            Ajukan Kebutuhan
+          </button>
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3 rounded-full bg-white hover:bg-slate-100 text-slate-900 text-xs font-semibold transition-colors"
+          >
+            WhatsApp {BUSINESS_INFO.phoneDisplay}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client-side filter script -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.truck-card');
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Update active button state
+          filterBtns.forEach((b) => {
+            b.classList.remove('bg-[#020617]', 'text-white', 'shadow-sm');
+            b.classList.add('bg-slate-100', 'text-slate-700', 'border', 'border-slate-200');
+          });
+          btn.classList.add('bg-[#020617]', 'text-white', 'shadow-sm');
+          btn.classList.remove('bg-slate-100', 'text-slate-700', 'border', 'border-slate-200');
+
+          // Filter cards
+          cards.forEach((card) => {
+            const cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</BaseLayout>

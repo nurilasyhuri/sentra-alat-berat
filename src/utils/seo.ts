@@ -110,6 +110,37 @@ export function getBreadcrumbSchema(items: Array<{ name: string; url?: string }>
   };
 }
 
+export function getProductSchema(product: {
+  name: string;
+  description: string;
+  url: string;
+  image: string;
+  brand?: string;
+  category?: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    url: ensureAbsoluteUrl(product.url),
+    image: ensureAbsoluteUrl(product.image),
+    brand: {
+      '@type': 'Brand',
+      name: product.brand || 'Hino',
+    },
+    category: product.category,
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'IDR',
+      price: '0',
+      priceValidUntil: '2027-12-31',
+      availability: 'https://schema.org/InStock',
+      url: ensureAbsoluteUrl(product.url),
+    },
+  };
+}
+
 export function getServiceSchema(service: {
   title: string;
   description: string;

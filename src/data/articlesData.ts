@@ -160,6 +160,151 @@ export const INDONESIA_PROJECT_LOCATIONS: LocationTableRow[] = [
 
 export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
   {
+  "slug": "jual-dump-truck-hino-bekas-baru",
+  "title": "Jual Dump Truck Hino Bekas & Baru Proyek",
+  "metaDescription": "Panduan beli dump truck Hino Dutro dan Ranger FM 280 JD baru maupun bekas siap kerja. Perbandingan harga, checklist mesin hidrolik, dan paket karoseri.",
+  "h1": "Panduan Beli Dump Truck Hino Bekas & Baru untuk Proyek Konstruksi dan Tambang",
+  "leadParagraph": "Menentukan pilihan antara membeli dump truck Hino baru dari dealer atau unit bekas rekondisi siap kerja sering menjadi keputusan strategis paling krusial bagi kontraktor galian tanah cut & fill, pengusaha quarry batu andesit, dan armada angkutan tambang. Hino Dutro 136 HDX dan Hino Ranger FM 280 JD tetap menjadi tolak ukur utama di Indonesia berkat ketahanan sasis baja, kekuatan transmisi dengan crawler gear, serta kemudahan pasokan suku cadang di pelosok daerah.",
+  "image": "/images/truk-hino/fm-280-jd-euro4.webp",
+  "imageAlt": "Unit dump truck Hino Ranger FM 280 JD untuk pekerjaan galian tanah dan angkutan material tambang",
+  "imageCaption": "Dump truck tronton Hino Ranger FM 280 JD 6x4 siap kerja dengan karoseri dump indeks 20–24 m³.",
+  "category": "Jual Alat Berat",
+  "tags": [
+    "#dump-truck-hino",
+    "#jual-dump-truck",
+    "#hino-fm280jd",
+    "#truk-proyek-bekas",
+    "#hino-dutro"
+  ],
+  "relatedService": {
+    "label": "Katalog Truk Hino & Dump Truck",
+    "href": "/truk-hino/"
+  },
+  "datePublished": "2026-11-22",
+  "dateModified": "2026-11-22",
+  "author": "Tim Teknis Sentra Alat Berat",
+  "sections": [
+    {
+      "heading": "Komparasi Dump Truck Hino Baru vs Bekas: Menghitung ROI dan Arus Kas",
+      "content": [
+        "Dalam manajemen armada proyek, membeli unit baru memberikan rasa tenang mutlak berkat garansi resmi ATPM Hino, efisiensi konsumsi bahan bakar mesin Common Rail Euro 4, dan kepatuhan penuh terhadap standar keselamatan K3 perusahaan tambang multinasional yang sering mensyaratkan batasan usia kendaraan operasional di bawah 3 hingga 5 tahun. Selain itu, unit baru didukung fasilitas pembiayaan leasing dengan tenor angsuran hingga 3–4 tahun dan suku bunga kompetitif.",
+        "Di sisi lain, membeli dump truck Hino bekas rekondisi siap kerja menjadi solusi paling cerdas bagi kontraktor dengan batasan modal investasi awal (Capex) atau proyek berdurasi pendek (1–2 tahun). Nilai penyusutan (depresiasi) unit bekas jauh lebih landai, sehingga target titik impas (Break Even Point / BEP) dapat dicapai dalam waktu hitungan bulan alih-alih tahun. Kuncinya terletak pada ketepatan inspeksi teknis sebelum transaksi dilakukan."
+      ],
+      "subsections": [
+        {
+          "heading": "Faktor Penentu Keputusan: Durasi Proyek vs Likuiditas",
+          "content": "Bila proyek Anda adalah kontrak jangka panjang berkelanjutan dengan ritase tinggi harian, unit baru meminimalkan risiko downtime mekanis. Namun bila proyek bersifat borongan perorangan atau sub-base jalan daerah, unit bekas berkualitas menghindarkan modal kerja Anda dari beban cicilan jangka panjang saat pekerjaan lapangan sedang terjeda cuaca hujan."
+        }
+      ],
+      "highlights": [
+        "Unit baru Euro 4 dilengkapi garansi pabrik resmi, gratis servis berkala, dan catalytic converter ramah lingkungan.",
+        "Unit bekas berkualitas menghemat modal awal hingga 40–55% dibandingkan harga sasis baru plus karoseri.",
+        "Nilai jual kembali (resale value) dump truck Hino terbukti paling stabil dan paling likuid di bursa kendaraan komersial Indonesia."
+      ]
+    },
+    {
+      "heading": "Tipe Dump Truck Hino Paling Dicari: Dutro 6 Roda vs Ranger Tronton 10 Roda",
+      "content": [
+        "Karakteristik medan kerja dan kelas jalan menentukan konfigurasi sasis yang wajib dipilih kontraktor:",
+        "1. Hino Dutro 136 HDX (Engkel 6 Roda): Mengusung mesin 136 PS dengan rasio gigi akhir (final gear) besar 6.428, unit ini adalah raja pengangkutan material pasir, split, dan tanah galian di jalan sempit perumahan, gang kota, dan lereng perkebunan sawit dengan kapasitas bak dump indeks 6 hingga 8 kubik.",
+        "2. Hino Ranger FM 280 JD 6x4 (Tronton 10 Roda): Truk tronton legendaris nomor satu di Indonesia untuk proyek pematangan lahan, cut and fill tanah masif, quarry batu belah, dan hauling batubara. Dilengkapi transmisi 9 kecepatan dengan gigi rangkak (crawler gear) yang sanggup merayap di tanjakan curam tanpa slip kopling dengan kapasitas muat 20 hingga 24 kubik.",
+        "3. Hino Profia ZS 4141 & ZY 5041 (Heavy Duty Mining): Varian kelas berat dengan tenaga 410 PS dan fitur hub reduction double axle untuk operasional tambang batubara dan nikel terbuka dengan kapasitas muatan masif 40 hingga 50 ton."
+      ],
+      "highlights": [
+        "Dutro 136 HDX sangat lincah dengan radius putar kecil, bebas larangan truk tronton di jalan kelas III.",
+        "Ranger FM 280 JD memiliki rasio tonase terhadap efisiensi solar terbaik di kelas tronton Indonesia."
+      ]
+    },
+    {
+      "heading": "7 Checklist Wajib Sebelum Membeli Dump Truck Hino Bekas",
+      "content": [
+        "Sebelum menyetujui transaksi unit bekas, jangan hanya terpukau oleh cat bodi yang baru disemprot. Lakukan inspeksi multi-titik bersama mekanik berpengalaman:",
+        "1. Sasis Utama & Sub-Frame: Periksa bagian bawah sasis di dekat trunnion suspension dan dudukan silinder hoist. Pastikan tidak ada bekas retak rambut, lekukan akibat kelebihan beban (overload), atau sambungan las ulang yang menurunkan kekuatan tarik baja.",
+        "2. Silinder Hidrolik Hoist & Pompa PTO: Naikkan bak dump hingga sudut elevasi maksimal. Amati apakah batang hidrolik (chrome cylinder) terdapat baret kasar, rembesan oli pada gland seal packing, atau penurunan posisi bak secara perlahan saat mesin dimatikan.",
+        "3. Suara Mesin Diesel & Asap Knalpot: Periksa kemudahan starter mesin saat kondisi dingin (cold start). Amati apakah ada asap putih pekat (indikasi kebocoran oli ke ruang bakar) atau blow-by gas berlebih dari lubang dipstick oli mesin.",
+        "4. Gardan Belakang & Differential Lock: Jalankan truk dan dengarkan suara gardan. Gardan yang aus akan mengeluarkan dengung kasar pada kecepatan 40–60 km/jam. Uji fungsi inter-axle differential lock untuk memastikan kedua gardan belakang mengunci sempurna di medan licin.",
+        "5. Pegas Daun (Leaf Spring) & U-Bolt: Periksa lembaran per daun dari keretakan atau pergeseran posisi antar-lembar akibat benturan jalan quarry berlubang.",
+        "6. Ketebalan Pelat Bak Dump: Cek pelat lantai bak dump dari lekukan parah (gelombang) atau penipisan akibat gesekan batu belah. Pastikan struktur pintu belakang (tailgate) mengunci rapat saat diturunkan.",
+        "7. Keabsahan Dokumen & Riwayat KIR: Cocokkan nomor rangka dan nomor mesin dengan BPKB, STNK, dan buku uji KIR. Pastikan unit bebas dari blokir tilang elektronik (ETLE) maupun sengketa leasing."
+      ],
+      "highlights": [
+        "Uji dump hoist dengan muatan nyata minimal 50% kapasitas untuk membuktikan responsivitas katup hidrolik.",
+        "Cek riwayat servis rutin oli mesin dan filter bahan bakar untuk mencegah kerusakan injector common rail."
+      ]
+    },
+    {
+      "heading": "Pemesanan Unit Baru: Standar Karoseri Dump Bersertifikat SRUT Resmi",
+      "content": [
+        "Bila memutuskan membeli sasis baru, pemilihan mitra karoseri adalah faktor penentu keselamatan dan legalitas jalan raya. Sejak pemberlakuan regulasi Zero ODOL (Over Dimension Over Load), setiap unit dump truck baru wajib memiliki Surat Keputusan Rancang Bangun (SKRB) dan Sertifikat Registrasi Uji Tipe (SRUT) resmi dari Kementerian Perhubungan.",
+        "Sentra Alat Berat bekerja sama dengan karoseri terakreditasi untuk memastikan dimensi bak dump, ketebalan pelat baja (tersedia opsi Hardox 450 untuk aplikasi batuan tajam), sistem hidrolik teleskopik berkualitas (Penta, Hyva, atau ShinMaywa), serta perisai kolong pengaman samping dan belakang telah memenuhi regulasi uji kelaikan jalan nasional."
+      ],
+      "highlights": [
+        "Karoseri ber-SRUT resmi mempermudah pengurusan uji KIR pertama dan penerbitan STNK tanpa kendala perizinan.",
+        "Material pelat Hardox memberikan ketahanan abrasi 4 kali lipat lebih tangguh dibanding pelat baja lunak biasa."
+      ]
+    },
+    {
+      "heading": "Layanan Pengadaan Terpadu Dump Truck di Sentra Alat Berat",
+      "content": [
+        "Melalui Sentra Alat Berat, Anda mendapatkan solusi satu pintu pengadaan kendaraan proyek tanpa kerumitan:",
+        "• Konsultasi Penentuan Unit: Kami menganalisis jenis material angkut, jarak hauling, kondisi tanjakan, dan target volume kubikasi harian proyek Anda untuk merekomendasikan model yang paling hemat biaya operasional.",
+        "• Paket Bundling Alat Berat: Dapatkan penawaran khusus bila memesan paket gabungan unit dump truck bersama excavator PC200, wheel loader, atau vibro roller dalam satu kontrak proyek.",
+        "• Garansi Kesiapan Kerja: Seluruh unit bekas yang kami sediakan telah melewati rekondisi teknis menyeluruh dan siap langsung dimobilisasi ke lokasi proyek tanpa perlu perbaikan bengkel lanjutan."
+      ]
+    }
+  ],
+  "locationTable": {
+    "heading": "Jangkauan Pengiriman Unit Dump Truck Hino Se-Indonesia",
+    "description": "Sentra Alat Berat melayani pengiriman dan mobilisasi unit dump truck Hino baru maupun bekas rekondisi ke berbagai pusat proyek strategis di seluruh Indonesia:",
+    "rows": INDONESIA_PROJECT_LOCATIONS
+  },
+  "faqs": [
+    {
+      "question": "Berapa kisaran harga dump truck Hino FM 280 JD bekas siap kerja?",
+      "answer": "Harga dump truck Hino FM 280 JD tronton bekas di pasaran Indonesia umumnya berkisar antara Rp 450 juta hingga Rp 850 juta tergantung tahun pembuatan (Euro 2 vs Euro 4), jam kerja operasional, kondisi sasis, serta ketebalan bak dump hidrolik."
+    },
+    {
+      "question": "Apakah pembelian dump truck Hino bekas di Sentra Alat Berat bisa dicicil?",
+      "answer": "Ya, kami bekerja sama dengan berbagai lembaga pembiayaan dan leasing rekanan terpercaya yang melayani skema kredit untuk unit truk komersial bekas dengan uang muka (DP) fleksibel dan tenor 1 hingga 3 tahun."
+    },
+    {
+      "question": "Berapa kapasitas kubikasi bak dump truck Hino yang ideal untuk proyek tanah?",
+      "answer": "Untuk pekerjaan cut & fill tanah dan pasir urug, kapasitas yang paling ideal adalah dump truck tronton 10 roda berkapasitas 20 hingga 24 meter kubik (indeks 20–24 m³), atau 6 hingga 8 meter kubik untuk truk engkel 6 roda Dutro 136 HDX."
+    },
+    {
+      "question": "Apakah unit bekas yang dibeli mendapatkan garansi fungsi dari Sentra Alat Berat?",
+      "answer": "Ya, seluruh unit dump truck bekas rekondisi dari Sentra Alat Berat disertai garansi fungsi pada komponen utama mesin diesel, transmisi, dan pompa hidrolik dump saat serah terima di lokasi proyek."
+    }
+  ],
+  "internalLinks": [
+    {
+      "anchorText": "katalog lengkap truk Hino dan dump truck proyek",
+      "href": "/truk-hino/",
+      "context": "Lihat daftar spesifikasi teknis dan pilihan 23 model pada"
+    },
+    {
+      "anchorText": "spesifikasi dump truck Hino Ranger FM 280 JD Euro 4",
+      "href": "/truk-hino/fm-280-jd-euro4/",
+      "context": "Informasi detail rasio gardan dan tenaga mesin tronton ada di"
+    },
+    {
+      "anchorText": "layanan pengadaan unit alat berat baru dan rekondisi",
+      "href": "/jual-alat-berat/",
+      "context": "Cari paket gabungan excavator dan dump truck pada opsi"
+    },
+    {
+      "anchorText": "layanan penyewaan alat berat dan armada proyek",
+      "href": "/sewa-alat-berat/",
+      "context": "Bila proyek membutuhkan skema sewa bulanan, kunjungi"
+    },
+    {
+      "anchorText": "penyediaan suku cadang spare part alat berat dan hidrolik",
+      "href": "/spare-part-alat-berat/",
+      "context": "Pencarian seal silinder dump dan komponen diesel tersedia di"
+    }
+  ]
+},
+  {
     slug: 'sewa-excavator-pc200-proyek-indonesia',
     title: 'Sewa Excavator PC200 Proyek Indonesia: Tarif & Spesifikasi Lengkap',
     metaDescription:
