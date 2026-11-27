@@ -160,6 +160,145 @@ export const INDONESIA_PROJECT_LOCATIONS: LocationTableRow[] = [
 
 export const INITIAL_SEO_ARTICLES: SeoArticle[] = [
   {
+  "slug": "jasa-overhaul-mesin-alat-berat-excavator-loader-crane",
+  "title": "Jasa Overhaul Mesin Alat Berat: Excavator, Loader & Crane",
+  "metaDescription": "Jasa overhaul mesin alat berat profesional: Excavator, Wheel Loader, Bulldozer, Crane, Forklift. Inspeksi on-site lapangan, perbaikan mesin, transmisi & hidrolik.",
+  "h1": "Jasa Overhaul Mesin Alat Berat: Panduan Turun Mesin, Rekondisi Hidrolik & Inspeksi On-Site",
+  "leadParagraph": "Menjaga keandalan mesin diesel alat berat seperti excavator, wheel loader, bulldozer, hingga mobile crane merupakan pilar utama kelancaran operasional di sektor konstruksi, pertambangan batu split/batubara, dan perkebunan sawit. Ketika mesin mengalami penurunan tenaga (loss power), pembakaran oli (asap putih pekat), atau blow-by gas berlebih, tindakan overhaul (turun mesin) terencana menjadi investasi paling efisien untuk mencegah kerusakan fatal (engine catastrophic failure) bernilai miliaran rupiah.",
+  "image": "/images/services/jasa-overhaul-mesin-alat-berat.webp",
+  "imageAlt": "Jasa overhaul mesin alat berat mencakup pembongkaran engine, kalibrasi komponen vital dan perbaikan sistem hidrolik",
+  "imageCaption": "Layanan overhaul mesin alat berat terintegrasi untuk berbagai merek dan jenis alat berat proyek.",
+  "category": "Service Alat Berat",
+  "tags": [
+    "#overhaul-alat-berat",
+    "#service-alat-berat",
+    "#turun-mesin-excavator",
+    "#perbaikan-mesin-diesel",
+    "#mekanik-alat-berat"
+  ],
+  "relatedService": {
+    "label": "Layanan Service & Perbaikan Alat Berat",
+    "href": "/service-alat-berat/"
+  },
+  "datePublished": "2026-11-27",
+  "dateModified": "2026-11-27",
+  "author": "Tim Teknis Sentra Alat Berat",
+  "sections": [
+    {
+      "heading": "Kapan Alat Berat Harus Overhaul? Mengenali Gejala Kerusakan Internal Mesin",
+      "content": [
+        "Mesin diesel alat berat dirancang untuk memikul beban berat berkelanjutan pada kondisi medan berdebu dan bertemperatur tinggi. Namun seiring bertambahnya jam kerja operasional (Hour Meter / HM), keausan mekanikal pada ruang bakar dan sistem pelumasan tidak dapat dihindari. Mengenali gejala penurunan performa sejak dini memungkinkan penjadwalan overhaul terencana sebelum terjadi kerusakan katastropik yang mengakibatkan mesin macet total.",
+        "Indikasi utama mesin memerlukan tindakan turun mesin antara lain: terjadinya blow-by gas pekat dari selang pernafasan karter oli akibat kebocoran cincin piston, konsumsi oli mesin yang meningkat tajam diiringi asap knalpot biru keputihan, penurunan tenaga drastis saat unit memikul beban kerja hidrolik maksimal, serta timbulnya suara ketukan (knocking sound) dari crankshaft atau connecting rod bearing yang aus."
+      ],
+      "subsections": [
+        {
+          "heading": "Interval Jam Kerja Rekomendasi Pabrikan",
+          "content": "Secara umum, mesin alat berat direkomendasikan menjalani pemeriksaan semi overhaul pada interval 5.000 hingga 7.000 HM dan major overhaul total pada interval 10.000 hingga 15.000 HM, dengan penyesuaian bergantung pada kualitas bahan bakar solar dan disiplin pemeliharaan filter."
+        }
+      ],
+      "highlights": [
+        "Blow-by gas bertekanan tinggi menandakan ring piston aus atau cylinder liner mengalami goresan (scuffing).",
+        "Penurunan tekanan oli mesin pada putaran stasioner (low idle) mengindikasikan ausnya metal duduk dan metal jalan.",
+        "Overhaul terencana menghemat biaya operasional hingga 60% dibandingkan perbaikan darurat saat mesin mogok mendadak di lokasi proyek."
+      ]
+    },
+    {
+      "heading": "Cakupan Layanan Overhaul: Engine, Transmisi Powershift, dan Sistem Hidrolik",
+      "content": [
+        "Layanan overhaul komprehensif tidak hanya terbatas pada bagian blok silinder mesin, melainkan mencakup penyelarasan menyeluruh pada seluruh rantai transfer tenaga unit alat berat. Keseimbangan antara daya mesin diesel, responsivitas transmisi, dan kestabilan tekanan pompa hidrolik adalah kunci agar unit kembali menghasilkan produktivitas seperti baru keluar dari pabrik.",
+        "Pengerjaan overhaul melibatkan pembongkaran total (complete teardown), pembersihan kerak karbon secara kimiawi, inspeksi toleransi dimensi menggunakan mikrometer dan bore gauge, pemulihan permukaan head cylinder, penggantian suku cadang overhaul kit baru orisinal, serta kalibrasi torsi sudut baut sesuai standar OEM pabrikan."
+      ],
+      "subsections": [
+        {
+          "heading": "Rekondisi Transmisi & Sistem Hidrolik Terintegrasi",
+          "content": "Selain mesin (turun mesin), kami juga menangani perbaikan transmisi powershift, torque converter, main hydraulic pump, relief valve, dan penggantian seal silinder boom/arm/bucket untuk menghilangkan gejala hidrolik lambat atau panas berlebih."
+        }
+      ],
+      "highlights": [
+        "Pemeriksaan keretakan mikro komponen vital menggunakan metode Non-Destructive Testing (NDT) Magnetic Particle Inspection.",
+        "Penggantian komponen aus: cylinder liner, piston & ring set, metal jalan, metal duduk, valve seal, dan gasket kit tembaga orisinal.",
+        "Running test komprehensif mencakup pemantauan tekanan oli, temperatur pendingin radiator, dan kalibrasi injeksi solar."
+      ]
+    },
+    {
+      "heading": "10 Kategori Alat Berat yang Ditangani dalam Layanan Overhaul Kami",
+      "content": [
+        "Kami melayani jasa overhaul mesin diesel dan sistem hidrolik untuk 10 kategori alat berat utama yang beroperasi di sektor tambang, konstruksi, perkebunan, dan industri manufaktur:",
+        "1. Jasa Overhaul Engine Excavator (mini excavator, standar 20 ton, hingga heavy excavator pertambangan 50–80 ton).\n2. Jasa Overhaul Engine Wheel Loader (unit quarry batu andesit, batching plant beton, dan stockpile batubara).\n3. Jasa Overhaul Engine Bulldozer (traktor perata tanah, ripping batuan keras, dan pembersihan lahan gambut LGP).\n4. Jasa Overhaul Engine Motor Grader (perata jalan angkut tambang hauling road dan pekerjaan sub-base jalan raya).\n5. Jasa Overhaul Engine Forklift (forklift diesel logistik pergudangan 3 ton hingga heavy duty container handler 25 ton).\n6. Jasa Overhaul Engine Boomlift (unit akses ketinggian mekanis pada konstruksi gedung dan instalasi industri).\n7. Jasa Overhaul Engine Telehandler (material handler multifungsi dengan boom teleskopik di area proyek).\n8. Jasa Overhaul Engine Mobile Crane (crane roda karet untuk erection girder jembatan dan instalasi struktur baja).\n9. Jasa Overhaul Engine Crawler Crane (crane roda rantai kapasitas angkat puluhan hingga ratusan ton pondasi tiang pancang).\n10. Jasa Overhaul Engine Skidsteer Loader (alat manuver kompak ruang terbatas untuk pembersihan material)."
+      ],
+      "subsections": [
+        {
+          "heading": "Dukungan Berbagai Merek Populer di Indonesia",
+          "content": "Tim mekanik kami berpengalaman menangani mesin diesel dari berbagai prinsipal dunia seperti Komatsu, Caterpillar, Kobelco, Hitachi, Hyundai, Doosan, SANY, XCMG, Liugong, Volvo, Kubota, hingga Yanmar."
+        }
+      ],
+      "highlights": [
+        "Penanganan mencakup unit diesel konvensional (in-line fuel injection pump) maupun modern Common Rail Diesel Injection (CRDI).",
+        "Ketersediaan suku cadang pengganti orisinal (Genuine) dan alternatif OEM berkualitas tinggi bergaransi.",
+        "Dukungan diagnosa sistem kelistrikan dan pembacaan fault code modul kontrol elektronik mesin (ECU/ECM)."
+      ]
+    },
+    {
+      "heading": "Dua Metode Layanan: On-Site Troubleshooting vs Workshop Overhaul",
+      "content": [
+        "Memahami kendala logistik dan tingginya biaya mobilisasi alat berat dari remote area ke bengkel, kami menghadirkan fleksibilitas penanganan sesuai dengan urgensi dan tingkat kerusakan mesin di lapangan.",
+        "Untuk kendala teknis darurat, tim teknisi kami dapat segera meluncur ke lokasi proyek untuk melakukan troubleshooting on-site, uji kompresi, penyetelan injektor, penggantian turbocharger, atau perbaikan minor. Sedangkan untuk pengerjaan major overhaul yang membutuhkan permesinan presisi (machining, line boring, honing), blok mesin dapat dilepas dan dibawa ke bengkel resmi dengan peralatan uji terlengkap."
+      ],
+      "subsections": [
+        {
+          "heading": "Keunggulan Layanan Kunjungan On-Site ke Lokasi Proyek",
+          "content": "Teknisi tiba langsung di site proyek dengan mobile service car lengkap berisi peralatan diagnostik hidrolik, pressure gauge, pemindai ECU, dan toolset kalibrasi torsi untuk meminimalkan waktu henti unit."
+        }
+      ],
+      "highlights": [
+        "Kunjungan On-Site: Diagnosa cepat di lapangan, uji kompresi ruang bakar, kalibrasi sistem kontrol hidrolik.",
+        "Workshop Bengkel Resmi: Pembongkaran total, line boring dudukan poros engkol, dyno run-in test, dan garansi operasional.",
+        "Transparansi estimasi biaya dan suku cadang sebelum tindakan pembongkaran mesin dilakukan."
+      ]
+    }
+  ],
+  "locationTable": {
+    "heading": "Jangkauan Layanan Service & Overhaul Alat Berat Se-Indonesia",
+    "description": "Sentra Alat Berat melayani inspeksi troubleshooting langsung ke lokasi kerja proyek (on-site) serta penerimaan unit overhaul mesin di workshop untuk seluruh wilayah Indonesia:",
+    "rows": INDONESIA_PROJECT_LOCATIONS
+  },
+  "faqs": [
+    {
+      "question": "Apa perbedaan top overhaul, semi overhaul, dan major overhaul pada alat berat?",
+      "answer": "Top overhaul berfokus pada bagian atas mesin (cylinder head, klep/valve, nozzle injektor) tanpa melepas piston dari blok silinder. Major overhaul (turun mesin total) membongkar seluruh blok mesin hingga crankshaft, mengganti cylinder liner, piston ring, metal duduk/jalan, serta mereparasi sistem pompa oli dan timing gear."
+    },
+    {
+      "question": "Berapa lama waktu yang dibutuhkan untuk proses overhaul mesin alat berat?",
+      "answer": "Untuk perbaikan ringan dan troubleshooting on-site membutuhkan 1 hingga 3 hari kerja. Sementara major overhaul mesin di bengkel umumnya memakan waktu 7 hingga 14 hari kerja, tergantung ketersediaan suku cadang dan tingkat keausan komponen yang memerlukan rekondisi mesin bubut atau line boring."
+    },
+    {
+      "question": "Apakah mekanik bisa datang memeriksa unit alat berat yang rusak langsung di lokasi proyek?",
+      "answer": "Ya, kami menyediakan layanan kunjungan inspeksi dan troubleshooting on-site ke lokasi tambang, quarry, perkebunan, atau proyek konstruksi Anda untuk melakukan diagnosis kompresi, scanner ECU, serta tes kebocoran hidrolik sebelum memutuskan tindakan perbaikan."
+    },
+    {
+      "question": "Merek alat berat apa saja yang dapat ditangani mesinnya?",
+      "answer": "Kami melayani overhaul mesin untuk berbagai merek alat berat terkemuka seperti Komatsu, Caterpillar (CAT), Kobelco, Hitachi, Hyundai, Doosan, SANY, XCMG, Liugong, Volvo, Kubota, hingga Yanmar."
+    }
+  ],
+  "internalLinks": [
+    {
+      "anchorText": "Service dan Perbaikan Alat Berat",
+      "href": "/service-alat-berat/",
+      "context": "Ajukan kebutuhan service dan pemeriksaan teknis mekanik panggilan ke lokasi proyek."
+    },
+    {
+      "anchorText": "Jual Spare Part Alat Berat",
+      "href": "/spare-part-alat-berat/",
+      "context": "Penyediaan suku cadang orisinal dan OEM overhaul kit mesin alat berat lengkap."
+    },
+    {
+      "anchorText": "Panduan Memilih Spare Part Alat Berat",
+      "href": "/informasi-alat-berat/cara-memilih-spare-part-alat-berat/",
+      "context": "Tips memilih suku cadang mesin dan hidrolik presisi sesuai nomor seri part number."
+    }
+  ]
+},
+  {
   "slug": "jual-dump-truck-hino-bekas-baru",
   "title": "Jual Dump Truck Hino Bekas & Baru Proyek",
   "metaDescription": "Panduan beli dump truck Hino Dutro dan Ranger FM 280 JD baru maupun bekas siap kerja. Perbandingan harga, checklist mesin hidrolik, dan paket karoseri.",

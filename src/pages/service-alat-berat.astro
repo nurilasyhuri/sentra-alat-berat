@@ -22,6 +22,10 @@ const breadcrumbSchema = getBreadcrumbSchema([
 
 const serviceTypes = [
   {
+    title: 'Jasa Overhaul Mesin Alat Berat (Turun Mesin & Rekondisi)',
+    desc: 'Layanan overhaul menyeluruh untuk engine, transmisi, dan sistem hidrolik: Excavator, Loader, Bulldozer, Grader, Crane, hingga Forklift.',
+  },
+  {
     title: 'Pemeriksaan & Perawatan Berkala',
     desc: 'Pemeriksaan dan perawatan berkala sesuai rekomendasi pabrikan untuk menjaga keandalan kerja unit.',
   },
@@ -139,6 +143,131 @@ const diagnosticChecklist = [
             <p class="text-xs text-slate-600 leading-relaxed">{srv.desc}</p>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN UNGGULAN: JASA OVERHAUL MESIN ALAT BERAT -->
+  <section class="bg-slate-900 text-white py-12 lg:py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Text & Specs -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/20 text-[#fbbf24] text-xs font-semibold tracking-wide border border-amber-500/30">
+            <span>Layanan Spesialis Workshop &amp; On-Site</span>
+          </div>
+
+          <div class="space-y-3">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight">
+              Jasa Overhaul Mesin Alat Berat Presisi
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
+              Layanan overhaul alat berat mencakup pembongkaran menyeluruh, pemeriksaan dimensi toleransi, penggantian komponen aus, serta penyetelan ulang pada bagian vital seperti engine (turun mesin), transmisi powershift, dan sistem hidrolik agar performa unit kembali optimal.
+            </p>
+          </div>
+
+          <!-- Unit Support Grid -->
+          <div class="space-y-3">
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400">
+              10 Kategori Alat Berat yang Ditangani:
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs text-slate-200">
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Engine Excavator</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Engine Loader</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Engine Bulldozer</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Engine Motor Grader</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Engine Forklift</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Boomlift &amp; Telehandler</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Mobile &amp; Crawler Crane</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Skidsteer Loader</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/60">
+                <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                <span>Pompa &amp; Valve Hidrolik</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight On-Site & Workshop -->
+          <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-xs sm:text-sm text-slate-200 space-y-1">
+            <p class="font-semibold text-amber-400">
+              Kunjungan Inspeksi / Troubleshooting On-Site &amp; Workshop Bengkel
+            </p>
+            <p class="text-xs text-slate-300">
+              Tim mekanik kami siap kunjungan langsung ke lokasi proyek tambang dan konstruksi Anda untuk pengecekan awal, atau penanganan perbaikan dan rekondisi total di bengkel kami.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <button
+              type="button"
+              data-open-rfq
+              data-rfq-category="Overhaul Mesin Alat Berat"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#b45309] hover:bg-[#92400e] text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+            >
+              <span>Ajukan Kebutuhan Overhaul</span>
+            </button>
+
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold transition-colors"
+            >
+              <svg aria-hidden="true" class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
+              </svg>
+              <span>Konsultasi Overhaul</span>
+            </a>
+
+            <a
+              href="/informasi-alat-berat/jasa-overhaul-mesin-alat-berat-excavator-loader-crane/"
+              class="text-xs text-amber-400 hover:text-amber-300 underline font-medium ml-2"
+            >
+              Baca Panduan Lengkap Overhaul &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Flyer / Showcase Image -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative rounded-2xl overflow-hidden border-2 border-slate-700/80 shadow-2xl max-w-sm group">
+            <img
+              src="/images/services/jasa-overhaul-mesin-alat-berat.webp"
+              alt="Layanan Jasa Overhaul Mesin Alat Berat - PT Javasindo Global Perkasa & Sentra Alat Berat"
+              class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 text-xs text-slate-200">
+              <span class="font-semibold text-amber-400 block">Jasa Overhaul Mesin Alat Berat</span>
+              <span>Turun mesin, transmisi &amp; sistem hidrolik optimal</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
